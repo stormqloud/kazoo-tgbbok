@@ -17,8 +17,11 @@ or add that path into your unix shell.
 Investigation:
 -----------------
 sup whapps_config get whapps_controller whapps   #configured
+
 sup whapps_controller running_apps # actually running
+
 sup -n ecallmgr ecallmgr_config get fs_nodes
+
 sup -n ecallmgr ecallmgr_maintenance list_fs_nodes
 sup amqp_mgr get_host
 
