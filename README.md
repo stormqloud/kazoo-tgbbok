@@ -32,7 +32,7 @@ http://utcc.utoronto.ca/~cks/space/blog/unix/TheLegendOfSync
 
 ##Reseller
 * Annoint an account Reseller Status
-  * sup whistle_services_maintenance make_reseller '<account_id>'
+  * sup whistle_services_maintenance make_reseller `<account_id>`
 
 ##Whapps
 /opt/kazoo/utils/sup/sup whapps_config get whapps_controller whapps
