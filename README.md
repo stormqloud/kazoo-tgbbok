@@ -5,7 +5,7 @@ The Great Book Of Sup
 
 These are here so I can add to them easily.   There are too many sup commands listed in too many places.  The super ingenius will know how to scan the Erlang source code to sniff out there own sup commands.
 
-This list is for the mere mortals.
+This list is for the mere mortals.  Things may appear multiple times under different categories.
 
 Mostly it's stolen from 
 https://2600hz.atlassian.net/wiki/display/Dedicated/How+to+use+the+SUP+command
@@ -29,10 +29,21 @@ http://utcc.utoronto.ca/~cks/space/blog/unix/TheLegendOfSync
 * Flush all cached docs for all accounts:
   * /opt/kazoo/utils/sup/sup couch_mgr flush_cache_docs
 
+##Accounts
+* Flush all cached docs for all accounts:
+  * /opt/kazoo/utils/sup/sup couch_mgr flush_cache_docs
+* Flush all cached docs for a specific account:
+  * /opt/kazoo/utils/sup/sup couch_mgr flush_cache_docs account%2Fab%2Fcd%2Fefghi
+  * /opt/kazoo/utils/sup/sup couch_mgr flush_cache_docs accounts
 
-##Reseller
+
+###Reseller
 * Annoint an account Reseller Status
   * sup whistle_services_maintenance make_reseller `<account_id>`
+
+##Degug
+
+
 
 ##Whapps
 /opt/kazoo/utils/sup/sup whapps_config get whapps_controller whapps
