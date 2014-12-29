@@ -18,26 +18,23 @@ functions running out in VM land.
 sup lives in /opt/kazoo/utils/sup/sup on most installations.  You might need to prefix your commands with that
 or add that path into your unix shell.
 
-##Investigation:
------------------
-* sup whapps_config get whapps_controller whapps   
-  * configured
-
-* sup whapps_controller running_apps 
-  * actually running
-
-* sup -n ecallmgr ecallmgr_config get fs_nodes
-
-* sup -n ecallmgr ecallmgr_maintenance list_fs_nodes
-
-* sup amqp_mgr get_host
-
 ##Flushing:
 -----------------
 
-When you are developing or playing better to do all these every time..
+Probably the first thing you need from sup are the various cache flushing.  When you are developing or playing better to do all these every time..
+
+Depeding on your unix experience you might want to run everything thrice.
+http://utcc.utoronto.ca/~cks/space/blog/unix/TheLegendOfSync
+
+* Flush all cached docs for all accounts:
+  * /opt/kazoo/utils/sup/sup couch_mgr flush_cache_docs
 
 
+##Reseller
+* Annoint an account Reseller Status
+  * sup whistle_services_maintenance make_reseller <account_id>
+
+##Whapps
 /opt/kazoo/utils/sup/sup whapps_config get whapps_controller whapps
 * Get the currently running whapps:
   * /opt/kazoo/utils/sup/sup whapps_controller running_apps
