@@ -27,14 +27,14 @@ Depeding on your unix experience you might want to run everything thrice.
 http://utcc.utoronto.ca/~cks/space/blog/unix/TheLegendOfSync
 
 * Flush all cached docs for all accounts:
-  * /opt/kazoo/utils/sup/sup couch_mgr flush_cache_docs
+  * sup couch_mgr flush_cache_docs
 
 ##Accounts
 * Flush all cached docs for all accounts:
-  * /opt/kazoo/utils/sup/sup couch_mgr flush_cache_docs
+  * sup couch_mgr flush_cache_docs
 * Flush all cached docs for a specific account:
-  * /opt/kazoo/utils/sup/sup couch_mgr flush_cache_docs account%2Fab%2Fcd%2Fefghi
-  * /opt/kazoo/utils/sup/sup couch_mgr flush_cache_docs accounts
+  * sup couch_mgr flush_cache_docs `account%2Fab%2Fcd%2Fefghi`
+  * sup couch_mgr flush_cache_docs accounts
 
 
 ###Reseller
@@ -42,7 +42,12 @@ http://utcc.utoronto.ca/~cks/space/blog/unix/TheLegendOfSync
   * sup whistle_services_maintenance make_reseller `<account_id>`
 
 ##Degug
-
+-----------------
+* Increase the log level for whapps:
+  * sup whistle_maintenance syslog_level debug
+* Increase the log level for ecallmgr:
+  * sup -n ecallmgr whistle_maintenance syslog_level debug
+* You can use any of the syslog severity levels to change what is logged.
 
 
 ##Whapps
@@ -129,8 +134,4 @@ http://utcc.utoronto.ca/~cks/space/blog/unix/TheLegendOfSync
   * sup -necallmgr ecallmgr_maintenance sbc_acls list_acls
   * sup -necallmgr ecallmgr_maintenance reload_acls -> issues a reloadacl on all FreeSWITCH servers 
   * sup -necallmgr ecallmgr_maintenance flush_acls -> just flushes the caches, not FreeSWITCH
-* Flush all cached docs for all accounts:
-  * /opt/kazoo/utils/sup/sup couch_mgr flush_cache_docs
-* Flush all cached docs for a specific account:
-  * /opt/kazoo/utils/sup/sup couch_mgr flush_cache_docs account%2Fab%2Fcd%2Fefghi
-  * /opt/kazoo/utils/sup/sup couch_mgr flush_cache_docs accounts
+
