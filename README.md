@@ -28,9 +28,10 @@ Everything except this part assumes you are running the `sup` command on the sam
 For example this is a local command that operates on localhost
   * `sup whapps_controller restart_app crossbar`
 
-This command operates on a remote host
+This is the same command operating on a remote host
   * `sup -h www.stormqloud.ca -c erlang_token whapps_controller restart_app crossbar`
- Of course you need to change the -h and the -c values.
+ 
+Of course you need to change the -h and the -c values.
 
 Try `sup --help` for more options. 
 
