@@ -35,17 +35,16 @@ notify | sd
 omnipresence | Phone presenece
 pivot | asdf
 registrar | self evident
+reorder |
+skel |
+spyvsspy |
+stats |
+stepswitch |
+sysconf |
+teletype |
+trunkstore |
+webhooks |
 
-
-reorder
-skel
-spyvsspy
-stats
-stepswitch
-sysconf
-teletype
-trunkstore
-webhooks
 
 
 
