@@ -4,7 +4,7 @@ There are too many sup commands listed in too many places.  The super ingenius w
 
 This list is for the mere mortals but mostly me.  Things may appear multiple times under different categories.
 
-Mostly it's stolen from `https://2600hz.atlassian.net/wiki/display/Dedicated/How+to+use+the+SUP+command` with additions I find around the net.
+Mostly it's stolen from https://2600hz.atlassian.net/wiki/display/Dedicated/How+to+use+the+SUP+command with additions I find around the net.
 
 The sup command is an almost limitless since it passes values directly to Erlang
 functions running out in VM land.
