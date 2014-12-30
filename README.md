@@ -5,6 +5,8 @@ The Great Big Book Of Kazoo
 
 These are here so I can add to them easily. 
 
+This stuff is not for the absolute beginner or teh expert.  Mostly the admin that gets lost along the way.
+
 In reality you should already know about the following resources
 
 ####Websites:
