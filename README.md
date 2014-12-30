@@ -1,16 +1,13 @@
 kazoo-tgbos
 ===========
 
-The Great Book Of SUP
+The Great Book Of Kazoo SUP
 
 These are here so I can add to them easily.   There are too many sup commands listed in too many places.  The super ingenius will know how to scan the Erlang source code to sniff out there own sup commands.
 
-This list is for the mere mortals.  Things may appear multiple times under different categories.
+This list is for the mere mortals but mostly me.  Things may appear multiple times under different categories.
 
-Mostly it's stolen from 
-https://2600hz.atlassian.net/wiki/display/Dedicated/How+to+use+the+SUP+command
-
-After that I add when I run into them.
+Mostly it's stolen from `https://2600hz.atlassian.net/wiki/display/Dedicated/How+to+use+the+SUP+command` with additions I find around the net.
 
 The sup command is an almost limitless since it passes values directly to Erlang
 functions running out in VM land.
@@ -165,5 +162,6 @@ If you want permanent changes look in `/etc/kazoo/config.ini`
   * sup -necallmgr ecallmgr_maintenance sbc_acls list_acls
   * sup -necallmgr ecallmgr_maintenance reload_acls -> issues a reloadacl on all FreeSWITCH servers 
   * sup -necallmgr ecallmgr_maintenance flush_acls -> just flushes the caches, not FreeSWITCH
-#####Reload stepswitch to update carriers manually:
+
+####Reload stepswitch to update carriers manually:
   * /opt/kazoo/utils/sup/sup stepswitch_maintenance reload_resources
