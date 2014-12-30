@@ -13,7 +13,7 @@ Unfortunately, Kazoo has some very badly named applications that go along with i
   *  The entire application should be called `ratedeck` and silly names like `hotornot` should be retired and discouraged.
   
 
-
+|--------------|--------------------------------------------|
 | acdc | Automatic Call Distribution|
 
 | blackhole | Block stuff |
