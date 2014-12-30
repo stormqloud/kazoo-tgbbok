@@ -14,29 +14,27 @@ Unfortunately, Kazoo has some very badly named applications that go along with i
   
 
 
-acdc
+acdc | Automatic Call Distribution
 blackhole | Block stuff 
 callflow | Callflows
 camper | Hold a call in various ways
-cccp
+cccp | unk
 cdr | self evident
 conference | self evident
-crossbar
-doodle
-dth
-ecallmgr
+crossbar | asdf
+doodle | unk
+dth | unk
+ecallmgr | core
 fax | self evident
-hangups
-hotornot
-jonny5
-konami
-Makefile
-media_mgr
-milliwatt
-notify
-omnipresence
-pivot
-registrar
+hangups | self evident
+hotornot | rate calls
+jonny5 | limit calls
+konami | as
+milliwatt | sd
+notify | sd
+omnipresence | Phone presenece
+pivot | asdf
+registrar | self evident
 reorder
 skel
 spyvsspy
