@@ -172,3 +172,12 @@ If you want permanent changes look in `/etc/kazoo/config.ini`
 
 ####Reload stepswitch to update carriers manually:
   * /opt/kazoo/utils/sup/sup stepswitch_maintenance reload_resources
+
+
+####Looking for your own sup commands..
+
+anything that is in erlang with export and /1
+
+
+
+
