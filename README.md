@@ -19,7 +19,6 @@ sup lives in /opt/kazoo/utils/sup/sup on most installations.  You might need to 
 or add that path into your unix shell.
 
 ##Flushing:
------------------
 
 Probably the first thing you need from sup are the various cache flushing.  When you are developing or playing better to do all these every time..
 
@@ -42,7 +41,7 @@ http://utcc.utoronto.ca/~cks/space/blog/unix/TheLegendOfSync
   * sup whistle_services_maintenance make_reseller `<account_id>`
 
 ##Logging
------------------
+
 * Increase the log level for whapps to *max*:
   * sup whistle_maintenance syslog_level debug
 * Increase the log level for ecallmgr to *max*:
@@ -131,7 +130,8 @@ If you want permanent changes look in `/etc/kazoo/config.ini`
 * Display Registrations status:
   * /opt/kazoo/utils/sup/sup -n ecallmgr ecallmgr_maintenance registrar_summary
  
-* Manipulate the ACLs
+##Carriers
+* Manipulate carriers and ACLs
   * sup -necallmgr ecallmgr_maintenance allow_carrier CarrierName CarrierIP
   * sup -necallmgr ecallmgr_maintenance allow_carrier CarrierName CIDR
   * sup -necallmgr ecallmgr_maintenance allow_sbc SBCName SBCIP 
