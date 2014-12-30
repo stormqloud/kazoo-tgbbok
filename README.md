@@ -24,13 +24,18 @@ for
 `/opt/kazoo/utils/sup/sup`
 
 
-##### Remote hosts
+#### Remote hosts
 
 Everything except this part assumes you are running the `sup` command on the same host as the the Erlang VM you want to talk to.
 
+For example this is a local command that operates on localhost
+  * `sup whapps_controller restart_app crossbar`
 
+This command operates on a remote host
+  * `sup -h www.stormqloud.ca -c erlang_token whapps_controller restart_app crossbar`
+ Of course you need to change the -h and the -c values.
 
-
+Try `sup --help` for more options. 
 
 ##Flushing:
 
@@ -43,6 +48,7 @@ It's probably not safe to do this on a super busy production cluster.  If you ru
 
 * Flush all cached docs for all accounts:
   * sup couch_mgr flush_cache_docs
+  * sup -necallmgr ecallmgr_maintenance flush_acls -> just flushes the caches, not FreeSWITCH
 
 ##Accounts
 
@@ -159,4 +165,5 @@ If you want permanent changes look in `/etc/kazoo/config.ini`
   * sup -necallmgr ecallmgr_maintenance sbc_acls list_acls
   * sup -necallmgr ecallmgr_maintenance reload_acls -> issues a reloadacl on all FreeSWITCH servers 
   * sup -necallmgr ecallmgr_maintenance flush_acls -> just flushes the caches, not FreeSWITCH
-
+#####Reload stepswitch to update carriers manually:
+  * /opt/kazoo/utils/sup/sup stepswitch_maintenance reload_resources
