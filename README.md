@@ -41,13 +41,21 @@ http://utcc.utoronto.ca/~cks/space/blog/unix/TheLegendOfSync
 * Annoint an account Reseller Status
   * sup whistle_services_maintenance make_reseller `<account_id>`
 
-##Degug
+##Logging
 -----------------
-* Increase the log level for whapps:
+* Increase the log level for whapps to *max*:
   * sup whistle_maintenance syslog_level debug
-* Increase the log level for ecallmgr:
+* Increase the log level for ecallmgr to *max*:
   * sup -n ecallmgr whistle_maintenance syslog_level debug
-* You can use any of the syslog severity levels to change what is logged.
+
+You can use any of the syslog severity levels (in order) to change what is logged.
+
+emerg,alert,crit,err,warn,notice,info,debug
+
+* To turn off all logging use
+  * sup -n ecallmgr whistle_maintenance syslog_level emerg
+
+If you want permanent changes look in `/etc/kazoo/config.ini`
 
 
 ##Whapps
