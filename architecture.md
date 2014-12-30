@@ -1,4 +1,4 @@
-#Network Architechture
+#Network Architecture
 
 Many people appear to be looking for implementation details about a Kazoo cluster for a service provider.
 
