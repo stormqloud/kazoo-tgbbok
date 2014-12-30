@@ -1,7 +1,7 @@
 kazoo-tgbos
 ===========
 
-The Great Book Of Sup
+The Great Book Of SUP
 
 These are here so I can add to them easily.   There are too many sup commands listed in too many places.  The super ingenius will know how to scan the Erlang source code to sniff out there own sup commands.
 
@@ -15,8 +15,22 @@ After that I add when I run into them.
 The sup command is an almost limitless since it passes values directly to Erlang
 functions running out in VM land.
 
-sup lives in /opt/kazoo/utils/sup/sup on most installations.  You might need to prefix your commands with that
+sup lives in `/opt/kazoo/utils/sup/sup` on most installations.  You might need to prefix your commands with that
 or add that path into your unix shell.
+
+ie: if you have problems substitute
+`sup` 
+for
+`/opt/kazoo/utils/sup/sup`
+
+
+##### Remote hosts
+
+Everything except this part assumes you are running the `sup` command on the same host as the the Erlang VM you want to talk to.
+
+
+
+
 
 ##Flushing:
 
@@ -25,20 +39,23 @@ Probably the first thing you need from sup are the various cache flushing.  When
 Depeding on your unix experience you might want to run everything thrice.
 http://utcc.utoronto.ca/~cks/space/blog/unix/TheLegendOfSync
 
+It's probably not safe to do this on a super busy production cluster.  If you run a super busy production cluster you arn't reading this.
+
 * Flush all cached docs for all accounts:
   * sup couch_mgr flush_cache_docs
 
 ##Accounts
+
+###Reseller
+* Annoint an account Reseller Status
+  * sup whistle_services_maintenance make_reseller `<account_id>`
+  
 * Flush all cached docs for all accounts:
   * sup couch_mgr flush_cache_docs
 * Flush all cached docs for a specific account:
   * sup couch_mgr flush_cache_docs `account%2Fab%2Fcd%2Fefghi`
   * sup couch_mgr flush_cache_docs accounts
 
-
-###Reseller
-* Annoint an account Reseller Status
-  * sup whistle_services_maintenance make_reseller `<account_id>`
 
 ##Logging
 
