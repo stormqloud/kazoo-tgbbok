@@ -14,7 +14,7 @@ Unfortunately, Kazoo has some very badly named applications that go along with i
   
 
 
-acdc | Automatic Call Distribution
+|acdc | Automatic Call Distribution|
 blackhole | Block stuff 
 callflow | Callflows
 camper | Hold a call in various ways
@@ -35,6 +35,8 @@ notify | sd
 omnipresence | Phone presenece
 pivot | asdf
 registrar | self evident
+
+
 reorder
 skel
 spyvsspy
