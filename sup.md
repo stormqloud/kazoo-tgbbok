@@ -174,10 +174,42 @@ If you want permanent changes look in `/etc/kazoo/config.ini`
   * /opt/kazoo/utils/sup/sup stepswitch_maintenance reload_resources
 
 
-####Looking for your own sup commands..
+####Secret SUP hiding places, Looking for your own sup commands..
+
+SUP commands are actually a way of calling Erlang functions directly
+
+For example to tunderstand how you can find your own SUP command look at this example..
+
+The 2 example commands are below..
+
+`/opt/kazoo/utils/sup/sup hotornot_maintenance local_summary
+use rates_for_did/1 to see what rates would be used for a DID
+ok`
+`/opt/kazoo/utils/sup/sup hotornot_maintenance rates_for_did "15149072511"`
+
 
 anything that is in erlang with export and /1
 
+
+[root@k6 ~]# /opt/kazoo/utils/sup/sup hotornot_maintenance local_summary
+use rates_for_did/1 to see what rates would be used for a DIDok
+[root@k6 ~]# 
+[root@k6 ~]# 
+[root@k6 ~]# 
+[root@k6 ~]# 
+[root@k6 ~]# 
+[root@k6 ~]# /opt/kazoo/utils/sup/sup hotornot_maintenance rates_for_did "15149072511"
+
+
+kazoo/applications/hotornot/src/ hotornot_maintenance.erl
+`-module(hotornot_maintenance).
+-module(hotornot_maintenance).
+
+-export([local_summary/0
+         ,rates_for_did/1, rates_for_did/3
+         ,rates_between/2
+        ]).
+`
 
 
 
