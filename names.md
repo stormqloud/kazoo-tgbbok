@@ -15,17 +15,17 @@ Unfortunately, Kazoo has some very badly named applications that go along with i
 
 ```
 acdc
-blackhole
-callflow
-camper
+blackhole | Block stuff 
+callflow | Callflows
+camper | Hold a call in various ways
 cccp
-cdr
-conference
+cdr | self evident
+conference | self evident
 crossbar
 doodle
 dth
 ecallmgr
-fax
+fax | self evident
 hangups
 hotornot
 jonny5
