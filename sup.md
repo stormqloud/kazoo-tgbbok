@@ -1,9 +1,6 @@
-kazoo-tgbos
-===========
+#SUP
 
-The Great Book Of Kazoo SUP
-
-These are here so I can add to them easily.   There are too many sup commands listed in too many places.  The super ingenius will know how to scan the Erlang source code to sniff out there own sup commands.
+There are too many sup commands listed in too many places.  The super ingenius will know how to scan the Erlang source code to sniff out there own sup commands.
 
 This list is for the mere mortals but mostly me.  Things may appear multiple times under different categories.
 
