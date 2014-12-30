@@ -200,8 +200,9 @@ use rates_for_did/1 to see what rates would be used for a DIDok
 [root@k6 ~]# 
 [root@k6 ~]# /opt/kazoo/utils/sup/sup hotornot_maintenance rates_for_did "15149072511"
 
-
-kazoo/applications/hotornot/src/ hotornot_maintenance.erl
+You can find the important bit's inside the Erlang source file
+* kazoo/applications/hotornot/src/ hotornot_maintenance.erl
+  * https://github.com/stormqloud/kazoo/blob/master/applications/hotornot/src/hotornot_maintenance.erl#L9-L14
 `-module(hotornot_maintenance).
 -module(hotornot_maintenance).
 
