@@ -17,4 +17,12 @@ In reality you should already know about the following resources
 
 Kazoo and 2600hz are an really nicely engineered and awesome software.  
 
-Asterisk is a dead end compared to the Kazoo platform.  For carriers,isp etc.  It's a nice retail product that can be toasted into an appliance.  
+Asterisk is a dead end compared to the Kazoo platform.  
+
+The VOIP landscape has changed.
+
+Asterisk is now a retail product that can be burned into disposable appliances.
+
+Kazoo has emerged as the successive technology for ISP, Carriers, Service providers of all kinds.
+
+There is a cost however.  The kazoo learning curve cannot be understated!
