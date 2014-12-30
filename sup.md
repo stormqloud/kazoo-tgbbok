@@ -43,7 +43,8 @@ It's probably not safe to do this on a super busy production cluster.  If you ru
 
 * Flush all cached docs for all accounts:
   * sup couch_mgr flush_cache_docs
-  * sup -necallmgr ecallmgr_maintenance flush_acls -> just flushes the caches, not FreeSWITCH
+  * sup -necallmgr ecallmgr_maintenance flush_acls
+  * sup stepswitch_maintenance reload_resources
 
 ##Accounts
 
@@ -110,8 +111,10 @@ If you want permanent changes look in `/etc/kazoo/config.ini`
   * /opt/kazoo/utils/sup/sup -n whistle_apps erlang halt
 * Stop the ecallmgr erlang VM
   * /opt/kazoo/utils/sup/sup -n ecallmgr erlang halt
+
 * Alias the sup command: (for the user you are logged as)
   * /opt/kazoo/utils/sup/add_alias.sh
+
 * Lookup an account via the realm:
   * /opt/kazoo/utils/sup/sup crossbar_maintenance find_account_by_realm 83a99b.sip.mydomain.com
 * Lookup an account via the phone number:
@@ -148,6 +151,12 @@ If you want permanent changes look in `/etc/kazoo/config.ini`
 * Display Registrations status:
   * /opt/kazoo/utils/sup/sup -n ecallmgr ecallmgr_maintenance registrar_summary
  
+
+##Hotornot (Call rating)
+
+* Lookup the cost to call a number
+  * sup hotornot_maintenance rates_for_did "15141110000"
+
 ##Carriers
 * Manipulate carriers and ACLs
   * sup -necallmgr ecallmgr_maintenance allow_carrier CarrierName CarrierIP
