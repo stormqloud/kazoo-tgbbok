@@ -14,8 +14,12 @@ Unfortunately, Kazoo has some very badly named applications that go along with i
   
 
 
-|acdc | Automatic Call Distribution|
-blackhole | Block stuff 
+| acdc | Automatic Call Distribution|
+
+| blackhole | Block stuff |
+
+
+
 callflow | Callflows
 camper | Hold a call in various ways
 cccp | unk
