@@ -5,14 +5,14 @@ The Great Big Book Of Kazoo
 
 These are here so I can add to them easily. 
 
-This stuff is not for the absolute beginner or teh expert.  Mostly the admin that gets lost along the way.
+This stuff is not for the absolute beginner or the expert.  Mostly the admin that gets lost along the way.
 
 In reality you should already know about the following resources
 
 ####Websites:
-`https://github.com/2600hz/kazoo`
-`https://github.com/2600hz/kazoo/tree/master/applications/crossbar/doc`
-`https://2600hz.atlassian.net/wiki/display/docs/Overview`
+* https://github.com/2600hz/kazoo
+* https://github.com/2600hz/kazoo/tree/master/applications/crossbar/doc
+* https://2600hz.atlassian.net/wiki/display/docs/Overview
 
 ###Mailing list
 `https://groups.google.com/forum/#!forum/2600hz-users`
