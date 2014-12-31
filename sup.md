@@ -168,6 +168,18 @@ sup notify_maintenance configure_smtp_port 123
 
 * Lookup the cost to call a number
   * sup hotornot_maintenance rates_for_did "15141110000"
+```
+sup hotornot_maintenance rates_for_did +14161230000
+Candidates:
+                                     RATE NAME |      COST | INCREMENT |   MINIMUM | SURCHARGE |    WEIGHT |          PREFIX |
+                                          US-1 |      0.01 |        60 |        60 |       0.0 |         9 |               1 |
+Matching:
+                                     RATE NAME |      COST | INCREMENT |   MINIMUM | SURCHARGE |    WEIGHT |          PREFIX |
+                                        * US-1 |      0.01 |        60 |        60 |       0.0 |         9 |               1 |
+ok
+
+
+```
 
 ##Carriers
 * Manipulate carriers and ACLs
