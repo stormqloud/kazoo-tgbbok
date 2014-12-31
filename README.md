@@ -7,6 +7,8 @@ These are here so I can add to them easily.
 
 This stuff is not for the absolute beginner or the expert.  Mostly the admin that gets lost along the way.
 
+Think of it as tips and tricks once the platform is installed and you have made a first few calls.
+
 In reality you should already know about the following resources
 
 ####Websites:
