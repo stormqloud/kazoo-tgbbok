@@ -75,6 +75,14 @@ emerg,alert,crit,err,warn,notice,info,debug
 
 If you want permanent changes look in `/etc/kazoo/config.ini`
 
+## Notify
+```
+sup notify_maintenance configure_smtp_relay my.relay.com
+sup notify_maintenance configure_smtp_username username
+sup notify_maintenance configure_smtp_password password
+sup notify_maintenance configure_smtp_auth always
+sup notify_maintenance configure_smtp_port 123
+```
 
 ##Whapps
 /opt/kazoo/utils/sup/sup whapps_config get whapps_controller whapps
