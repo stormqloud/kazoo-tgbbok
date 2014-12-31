@@ -12,6 +12,7 @@ Think of it as tips and tricks once the platform is installed and you have made 
 In reality you should already know about the following resources
 
 ####Websites:
+* https://2600hz.com/
 * https://github.com/2600hz/kazoo
 * https://github.com/2600hz/kazoo/tree/master/applications/crossbar/doc
 * https://2600hz.atlassian.net/wiki/display/docs/Overview
@@ -19,9 +20,7 @@ In reality you should already know about the following resources
 ###Mailing list
 `https://groups.google.com/forum/#!forum/2600hz-users`
 
-Kazoo and 2600hz are an really nicely engineered and awesome software.  
-
-Asterisk is a dead end compared to the Kazoo platform.  
+Asterisk is single server compared to the Kazoo cloud platform.  
 
 The VOIP landscape has changed.
 
