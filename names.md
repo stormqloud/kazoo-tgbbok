@@ -40,9 +40,9 @@ spyvsspy | unkown status, evesdropping program for pbx mode
 stats | SNMP Stats
 stepswitch |
 sysconf |
-teletype |
-trunkstore |
-webhooks |
+teletype | replacing notify.....
+trunkstore | self evident
+webhooks | unkn
 
 
 
