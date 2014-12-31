@@ -10,13 +10,12 @@ Unfortunately, Kazoo has some very badly named applications that go along with i
 * `hotornot`
   * `hotornot` is an application for `rating` calls.  IE determining call cost/price.
   *  The main application is named `hotornot` yet the databse table where the values reside is called `ratedeck`
-  *  The entire application should be called `ratedeck` and silly names like `hotornot` should be retired and discouraged.
-  
+
 | Kazoo name | What it does |
 |--------------|--------------------------------------------|
 | acdc | Automatic Call Distribution |
 | blackhole | Block stuff |
-callflow | Callflows
+callflow | Callflows, this is important Kazoo concept
 camper | Hold a call in various ways
 cccp | unk
 cdr | self evident
@@ -29,11 +28,11 @@ fax | self evident
 hangups | self evident
 hotornot | rate calls
 jonny5 | limit calls
-konami | as
-milliwatt | sd
+konami | Cool Transfer Feature
+milliwatt | Milliwatt test tone, echo test, readback callerid etc
 notify | sd
 omnipresence | Phone presenece
-pivot | asdf
+pivot | API Call control (asterisk AGI like)
 registrar | self evident
 reorder |
 skel |
