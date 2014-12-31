@@ -15,14 +15,14 @@ Unfortunately, Kazoo has some very badly named applications that go along with i
 |--------------|--------------------------------------------|
 | acdc | Automatic Call Distribution |
 | blackhole | Block stuff |
-callflow | Callflows, this is important Kazoo concept
+callflow | Callflows, this is important Kazoo concept hiding lots of stuff
 camper | Hold a call in various ways
-cccp | unk
+cccp | Calling Card Callback Platform
 cdr | self evident
 conference | self evident
 crossbar | asdf
-doodle | unk
-dth | unk
+doodle | SMS app of some kind
+dth | unkown
 ecallmgr | core
 fax | self evident
 hangups | self evident
@@ -30,14 +30,14 @@ hotornot | rate calls
 jonny5 | limit calls
 konami | Cool Transfer Feature
 milliwatt | Milliwatt test tone, echo test, readback callerid etc
-notify | sd
+notify | email templates
 omnipresence | Phone presenece
 pivot | API Call control (asterisk AGI like)
 registrar | self evident
-reorder |
-skel |
+reorder | redorder with forward and other unknown features
+skel | Only for developers
 spyvsspy | unkown status, evesdropping program for pbx mode
-stats |
+stats | SNMP Stats
 stepswitch |
 sysconf |
 teletype |
