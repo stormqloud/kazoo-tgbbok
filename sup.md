@@ -75,6 +75,10 @@ emerg,alert,crit,err,warn,notice,info,debug
 
 If you want permanent changes look in `/etc/kazoo/config.ini`
 
+## Monthly
+
+* sup kazoo_modb_maintenance verify_rollups
+
 ## Notify
 ```
 sup notify_maintenance configure_smtp_relay my.relay.com
