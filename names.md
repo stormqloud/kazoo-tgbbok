@@ -36,7 +36,7 @@ pivot | API Call control (asterisk AGI like)
 registrar | self evident
 reorder |
 skel |
-spyvsspy |
+spyvsspy | unkown status, evesdropping program for pbx mode
 stats |
 stepswitch |
 sysconf |
