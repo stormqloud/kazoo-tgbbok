@@ -12,7 +12,7 @@ Unfortunately, Kazoo has some very badly named applications that go along with i
   *  The main application is named `hotornot` yet the databse table where the values reside is called `ratedeck`
 
 | Kazoo name | Status |What it does |
-|--------------|--------------------------------------------|
+|--------------|--------|------------------------------------|
 | acdc | |Automatic Call Distribution |
 | blackhole | | Block stuff |
 callflow | | Callflows, this is important Kazoo concept hiding lots of stuff
