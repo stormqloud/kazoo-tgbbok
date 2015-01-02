@@ -2,6 +2,8 @@
 
 There are too many sup commands listed in too many places.  The super ingenius will know how to scan the Erlang source code to sniff out there own sup commands.
 
+It is almost impossible to define all the sup commands.  Read below for discovering your own sup command and you should understand why.
+
 This list is for the mere mortals but mostly me.  Things may appear multiple times under different categories.
 
 Mostly it's stolen from https://2600hz.atlassian.net/wiki/display/Dedicated/How+to+use+the+SUP+command with additions I find around the net.
@@ -87,6 +89,17 @@ sup notify_maintenance configure_smtp_password password
 sup notify_maintenance configure_smtp_auth always
 sup notify_maintenance configure_smtp_port 123
 ```
+
+## ecallmgr
+*  sup ecallmgr_maintenance channel_summary
+*  sup ecallmgr_maintenance channel_detail
+*  sup ecallmgr_maintenance flush_authn
+*  sup ecallmgr_maintenance flush_util
+*  sup ecallmgr_maintenance enable_authz
+*  sup ecallmgr_maintenance registrar_details
+*  sup ecallmgr_maintenance registrar_summary
+
+
 
 ##Whapps
 /opt/kazoo/utils/sup/sup whapps_config get whapps_controller whapps
