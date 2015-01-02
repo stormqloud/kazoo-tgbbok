@@ -98,6 +98,7 @@ sup notify_maintenance configure_smtp_port 123
 *  sup ecallmgr_maintenance enable_authz
 *  sup ecallmgr_maintenance registrar_details
 *  sup ecallmgr_maintenance registrar_summary
+*  sup ecallmgr_maintenance carrier_acls
 
 
 
