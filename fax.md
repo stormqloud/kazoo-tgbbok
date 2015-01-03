@@ -10,8 +10,10 @@ Kazoo has inbound and outbound faxing to/from PDF.
 
 
 ## Email to Fax
-* This will require multiple configuration changes.
-
+* This will require multiple configuration changes.  The shortlist
+  * DNS MX records, get the email to Kazoo server
+  * Get Kazoo Fax to answer SMTP PORT 25, get the email into the right program
+  * 
 * https://groups.google.com/forum/#!topic/2600hz-users/IHtSwuuveTQ
 
 * To get the email flowing into Kazoo you must hijack port 25 on your inbound MX mail server and point it into Kazoo instead of Postfix.
