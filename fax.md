@@ -49,3 +49,58 @@ Escape character is '^]'.
 
 
 ```
+
+Listening ports for this can be changed in haproxy.cfg
+
+The following example will get Fax answering on port 25.
+
+You also need to disable Postgres.  In centos this can be done easily with the `chkconfig postfix off` command.
+
+```
+#haproxy.cfg
+global
+log 127.0.0.1 local0
+log 127.0.0.1 local1 notice
+maxconn 4096
+user haproxy
+group haproxy
+stats socket /tmp/haproxy.sock mode 777
+
+defaults
+log global
+maxconn 2000
+retries 3
+timeout connect 6000ms
+timeout client 12000ms
+timeout server 12000ms
+
+listen kazoo-fax-smtp
+       bind *:25
+       mode tcp
+       no option http-server-close
+       maxconn 50
+       log global
+       option tcplog
+       timeout client 1m
+       timeout server 1m
+       timeout connect 5s
+       balance roundrobin
+       server k6.prodosec.com 127.0.0.1:19025 check check-send-proxy send-proxy
+
+listen bigcouch-data 127.0.0.1:15984
+balance roundrobin
+    mode http
+    option httplog
+    server k6.prodosec.com 127.0.0.1:5984
+
+listen bigcouch-mgr 127.0.0.1:15986
+balance roundrobin
+    mode http
+    option httplog
+    server k6.prodosec.com 127.0.0.1:5986
+
+listen haproxy-stats 127.0.0.1:22002
+mode http
+stats uri /
+
+```
