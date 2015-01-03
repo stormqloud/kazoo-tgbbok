@@ -14,7 +14,16 @@ Kazoo has inbound and outbound faxing to/from PDF.
 
 * To get the email flowing into Kazoo you must hijack port 25 on your inbound MX mail server and point it into Kazoo instead of Postfix.
 
-For example, this is Postgres answering the SMTP TCP port 25.
+Kazoo inbound fax service should already be running on your Kazoo servers on TCP PORT 19025
+
+```
+[root@kaz ~]# telnet lh 19025
+Trying 127.0.0.1...
+Connected to lh.
+Escape character is '^]'.
+220 kaz.prodosec.com Kazoo Email to Fax Server
+```
+For example, this is Postgres answering the SMTP TCP port 25 in a default Linux setup.
 
 ```
 [root@kaz ~]# telnet lh 25
@@ -26,6 +35,8 @@ Escape character is '^]'.
 ```
 
 You either need to get Kazoo to answer port 25 as below or work with Postgres to redeliver the traffic.
+
+You can see below TCP PORT 25 is now answering with the Kazoo Email to Fax service.
 
 ```
 [root@k6 kazoo]# telnet lh 25
