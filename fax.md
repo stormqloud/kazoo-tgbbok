@@ -8,4 +8,6 @@ Kazoo has inbound and outbound faxing to/from PDF.
 
 
 ## Email to Fax
+* This will require multiple configuration changes.
+
 * https://groups.google.com/forum/#!topic/2600hz-users/IHtSwuuveTQ
