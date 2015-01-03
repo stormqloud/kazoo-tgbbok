@@ -2,6 +2,8 @@
 
 Kazoo has inbound and outbound faxing to/from PDF.
 
+Faxing has progressed from 3.16 to 3.18 and some features held off until 3.20
+
 ## Fax to Email
 * This should work with no problem.  Assign a callflow with a DID number to go into "receive fax".  The "receive fax" application will associate with a user record.  The PDF will be delivered to the users email address.
 * There is inbound faxbox funcationality also.  
@@ -13,8 +15,10 @@ Kazoo has inbound and outbound faxing to/from PDF.
 * This will require multiple configuration changes.  The shortlist
   * DNS MX records, get the email to Kazoo server
   * Get Kazoo Fax to answer SMTP PORT 25, get the email into the right program
-  * 
+  
+* These 2 links have much ore information
 * https://groups.google.com/forum/#!topic/2600hz-users/IHtSwuuveTQ
+* https://github.com/2600hz/kazoo/tree/master/applications/fax/doc
 
 * To get the email flowing into Kazoo you must hijack port 25 on your inbound MX mail server and point it into Kazoo instead of Postfix.
 
