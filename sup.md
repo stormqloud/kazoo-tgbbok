@@ -47,6 +47,7 @@ It's probably not safe to do this on a super busy production cluster.  If you ru
   * sup couch_mgr flush_cache_docs
   * sup -necallmgr ecallmgr_maintenance flush_acls
   * sup stepswitch_maintenance reload_resources
+  * sup whapps_config flush
 
 ##Accounts
 
