@@ -4,6 +4,8 @@ Kazoo has inbound and outbound faxing to/from PDF.
 
 Faxing has progressed from 3.16 to 3.18 and some features held off until 3.20
 
+All that said, I have had success in backporting the fax application from "master" to 3.18 branches.
+
 ## Fax to Email
 * This should work with no problem.  Assign a callflow with a DID number to go into "receive fax".  The "receive fax" application will associate with a user record.  The PDF will be delivered to the users email address.
 * There is inbound faxbox funcationality also.  
