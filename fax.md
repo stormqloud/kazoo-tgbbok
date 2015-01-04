@@ -17,7 +17,8 @@ All that said, I have had success in backporting the fax application from "maste
 * This will require multiple configuration changes.  The shortlist
   * DNS MX records, get the email to Kazoo server
   * Get Kazoo Fax to answer SMTP PORT 25, get the email into the right program
-  
+  * make sure you have gs (ghostscript) installed in /usr/bin/gs
+  *
 * These 2 links have much ore information
 * https://groups.google.com/forum/#!topic/2600hz-users/IHtSwuuveTQ
 * https://github.com/2600hz/kazoo/tree/master/applications/fax/doc
