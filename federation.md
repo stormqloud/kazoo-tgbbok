@@ -22,7 +22,8 @@ n=1
 
 * 2600hz setup
   * https://github.com/2600hz/kazoo-configs/blob/master/bigcouch/local.ini#L19-L23
-```
+
+  ```
 [cluster]
 q=3
 r=2
