@@ -6,7 +6,7 @@
 
 I searched to fgure out really what this means in Kazoo.
 
-Kazoo uses AMQP so Federation is best defined over there.  Kazoo federation is an extension of RabbitMQ federation.
+Kazoo uses AMQP and BigCouch so Federation is a mix of what is defined in the other projects.
 
 * https://www.rabbitmq.com/federation-reference.html
 * http://www.erlang-factory.com/upload/presentations/369/Kocoloski-BigCouch-ErlangFactory.pdf
