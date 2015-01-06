@@ -1,6 +1,6 @@
 # Federation
 
-The Holy Grail.
+## The Holy Grail.
 
 * http://en.wikipedia.org/wiki/Federation
 
@@ -12,6 +12,17 @@ Kazoo uses AMQP so Federation is best defined over there.  Kazoo federation is a
 * http://www.erlang-factory.com/upload/presentations/369/Kocoloski-BigCouch-ErlangFactory.pdf
 
 Federation appear to rest on a few paramters of bigcouch
+
+* BigCouch databases are governed by 4 parameters
+  * Q: Number of shards
+  * N: Number of redundant copies of each shard
+  * R: Read quorum constant
+  * W: Write quorum constant
+  * 
+  
+# Examples
+
+
 * Single Server install
   ```
 [cluster]
