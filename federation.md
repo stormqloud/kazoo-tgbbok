@@ -18,11 +18,12 @@ Federation appear to rest on a few paramters of bigcouch
   * N: Number of redundant copies of each shard
   * R: Read quorum constant
   * W: Write quorum constant
-  * 
+
+Consider the following in determining how you will define these paramters.
+
+
   
 # Examples
-
-
 * Single Server install
   ```
 [cluster]
