@@ -1,8 +1,12 @@
 # Ports
 
-The foloowing ports are involved in a running Kazoo setup.
+The following ports are involved in a running Kazoo setup.
 
 You should firewall ACL these appropriately at your border router.
+
+This is probably not an exhaustive list.  Remember about TCP/UDP.
+
+Each port really exists twice.
 
 * 25 - SMTP
 * 80 - www
@@ -21,4 +25,4 @@ You should firewall ACL these appropriately at your border router.
 * 15984 - Haproxy to 5984
 * 15986 - Haproxy to 5986
 * 19025 - Email to Fax
-* 
+ 
