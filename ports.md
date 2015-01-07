@@ -13,6 +13,7 @@ You should firewall ACL these appropriately at your border router.
 * 5986 - CouchDB Mgr
 * 7000 - Kamailio ALG SIP
 * 7001 - Kamailio ALG TLS SIP
+* 8000 - Cowboy (API into Kazoo)
 * 8080 - Kamailio websocket
 * 8031 - Freeswitch
 * 8443 - Kamailio WebSocket TLS
