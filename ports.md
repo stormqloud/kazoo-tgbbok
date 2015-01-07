@@ -2,11 +2,12 @@
 
 * 25 - SMTP
 * 80 - www
-* 5060 - SIP
+* 2525 - Haproxy to 19025
+* 5060 - Kamailio
 * 5984 - CouchDB Data
 * 5986 - CouchDB Mgr
-
-* 15984 - BigCouch Data
-* 15986 - BigCouch Mgr
+* 8031 - Freeswitch
+* 15984 - Haproxy to 5984
+* 15986 - Haproxy to 5986
 * 19025 - Email to Fax
 * 
