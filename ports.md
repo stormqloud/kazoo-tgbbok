@@ -16,6 +16,7 @@ You should firewall ACL these appropriately at your border router.
 * 8080 - Kamailio websocket
 * 8031 - Freeswitch
 * 8443 - Kamailio WebSocket TLS
+* 11000 - Freeswitch (Kamailio Dispatcher sends to this)
 * 15984 - Haproxy to 5984
 * 15986 - Haproxy to 5986
 * 19025 - Email to Fax
