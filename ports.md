@@ -13,6 +13,7 @@ Each port really exists twice.
 * 2525 - Haproxy to 19025
 * 5060 - Kamailio
 * 5061 - Kamailio TLS
+* 5672 - amqp 
 * 5984 - CouchDB Data
 * 5986 - CouchDB Mgr
 * 7000 - Kamailio ALG SIP
