@@ -1,5 +1,9 @@
 # Ports
 
+The foloowing ports are involved in a running Kazoo setup.
+
+You should firewall ACL these appropriately at your border router.
+
 * 25 - SMTP
 * 80 - www
 * 2525 - Haproxy to 19025
