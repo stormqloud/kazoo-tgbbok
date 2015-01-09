@@ -43,3 +43,18 @@ r=2
 w=2
 n=3
 ```
+
+From IRC
+```
+zones ensures data is replicated to multiple zones, typically defined geographically
+mc_
+so you'd have two zones, east and west, defined to group servers in la and nyc
+mc_
+the z param would then ensure at least one of the n replications would happen in east and west
+mc_
+so you would have geo-redundancy
+mc_
+of course, zone names are arbitrary so you could map them to whatever you want
+mc_
+but typically people use the datacenter, country, etc as the zone name
+```
