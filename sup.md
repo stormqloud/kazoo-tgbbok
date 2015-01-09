@@ -101,6 +101,15 @@ sup notify_maintenance configure_smtp_port 123
 *  sup ecallmgr_maintenance registrar_summary
 *  sup ecallmgr_maintenance carrier_acls
 
+## whapps_maintenance
+* sup whapps_maintenance migrate
+* sup whapps_maintenance refresh
+* sup whapps_maintenance refresh system_schemas (covered by above?)
+* sup whapps_maintenance blocking_refresh
+* sup whapps_maintenance sup kazoo_modb_maintenance verify_rollups
+* sup whapps_maintenance find_invalid_acccount_dbs
+* sup whapps_maintenance ensure_aggregate_devices
+* sup whapps_maintenance get_all_account_views
 
 
 ##Whapps
@@ -259,8 +268,4 @@ You can find the important bit's inside the Erlang source file
  1055  sup whistle_maintenance nodes
  1056  sup whistle_maintenance gc_all
  1057  sup whistle_maintenance etop
- 1058  sup whapps_maintenance sup kazoo_modb_maintenance verify_rollups
- 1059  sup whapps_maintenance find_invalid_acccount_dbs
- 1060  sup whapps_maintenance ensure_aggregate_devices
- 1061  sup whapps_maintenance get_all_account_views
-
+ 
