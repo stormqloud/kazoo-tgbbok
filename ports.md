@@ -27,4 +27,4 @@ Each port really exists twice.
 * 15984 - Haproxy to 5984
 * 15986 - Haproxy to 5986
 * 19025 - Email to Fax
- 
+* 22002 - HAProxy Stats 
