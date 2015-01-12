@@ -49,9 +49,8 @@ It's probably not safe to do this on a super busy production cluster.  If you ru
   * sup stepswitch_maintenance reload_resources
   * sup whapps_config flush
 
-##Accounts
 
-###Reseller
+##Reseller Accounts
 * Annoint an account Reseller Status
   * sup whistle_services_maintenance make_reseller `<account_id>`
   
@@ -114,6 +113,12 @@ sup notify_maintenance configure_smtp_port 123
 ## whapps_controller
   * sup whapps_controller running_apps
   * sup whapps_controller restart_app conference
+
+# crossbar
+* sup whapps_controller restart_app crossbar
+* sup crossbar_maintenance start_module cb_braintree
+* sup crossbar_maintenance find_account_by_number 5149072508
+* sup crossbar_maintenance running_modules
 
 ##Whapps
 /opt/kazoo/utils/sup/sup whapps_config get whapps_controller whapps
