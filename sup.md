@@ -111,6 +111,9 @@ sup notify_maintenance configure_smtp_port 123
 * sup whapps_maintenance ensure_aggregate_devices
 * sup whapps_maintenance get_all_account_views
 
+## whapps_controller
+  * sup whapps_controller running_apps
+  * sup whapps_controller restart_app conference
 
 ##Whapps
 /opt/kazoo/utils/sup/sup whapps_config get whapps_controller whapps
