@@ -269,3 +269,4 @@ You can find the important bit's inside the Erlang source file
  1056  sup whistle_maintenance gc_all
  1057  sup whistle_maintenance etop
  
+ sup omnipresence_maintenance current_subscriptions
