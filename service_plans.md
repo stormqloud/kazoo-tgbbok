@@ -3,14 +3,12 @@
 This is not cleaned up yet.  The information is mostly taken from this link written by "cando"
 
 * https://docs.google.com/document/d/1--LCpmRXG4iCYUNcLvMPzt6kQztw12O3BsAoI39jguo/edit
+* https://2600hz.atlassian.net/wiki/display/Dedicated/Service+Plans
 
-
-
-https://2600hz.atlassian.net/wiki/display/Dedicated/Service+Plans
-needed:
-Jonny5 (limits)
-HotOrNot (per-minute rating with rate deck - recommended)
-BrainTree (bookkeeper accounting module that connects with merchant service provider)
+# Prerequisites
+* Jonny5 (limits)
+* HotOrNot (per-minute rating with rate deck - recommended)
+* BrainTree (bookkeeper accounting module that connects with merchant service provider)
 
 Possible code changes needed
 If you add numbers from a carrier not using the buy number method your number will be set as “local” carrier. The erlang code for that carrier definition returns false when requested if the number is billable. So it doesn’t get counted in the services for the account. If you want them billed you just need to make 1 change.
