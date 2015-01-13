@@ -10,7 +10,7 @@ This is not cleaned up yet.  The information is mostly taken from this link writ
 * HotOrNot (per-minute rating with rate deck - recommended)
 * BrainTree https://www.braintreepayments.com (Credit card processing)
 
-* Possible code changes needed
+# Possible code changes needed
   * If you add numbers from a carrier not using the buy number method your number will be set as “local” carrier. The erlang code for that carrier definition returns false when requested if the number is billable. So it doesn’t get counted in the services for the account. If you want them billed you just need to make 1 change.
   * In /opt/kazoo/core/whistle_number_manager-1.0.0/src/carriers/wnm_local.erl
   * change
@@ -19,16 +19,17 @@ This is not cleaned up yet.  The information is mostly taken from this link writ
     * is_number_billable(_Number) -> 'true'.
   * re-compile: (cd /opt/kazoo/core/whistle_number_manager-1.0.0/ ; make)
   * restart kz-whistle_apps
-* Set account(s) as reseller per your needs.
-As of ver 3.08 only 1 braintree for entire system. 
-Road map
-Abstracted braintree logic to bookkeeper to support other billing connections like quickbooks, freshbooks...
-resellers can have their own bookkeeper config/account for trickle down. (eg: customer adds money to their per-minute balance and money goes to reseller’s bank account. Reseller per-minute (local) balance is not affected)
-Setting an account as a reseller. All sub accounts of it will set it as their reseller
-sup whistle_services_maintenance make_reseller <account_id to make reseller>
+# Set account(s) as reseller per your needs.
+As of ver 3.08-3.18 only *1* braintree account for entire system. 
+* Road map
+  * Abstracted braintree logic to bookkeeper to support other billing connections like quickbooks, freshbooks...
+  * resellers can have their own bookkeeper config/account for trickle down. (eg: customer adds money to their per-minute balance and money goes to reseller’s bank account. Reseller per-minute (local) balance is not affected)
+* Setting an account as a reseller. All sub accounts of it will set it as their reseller
+  * sup whistle_services_maintenance make_reseller <account_id to make reseller>
 If you need to demote an account from being a reseller:
 sup whistle_services_maintenance demote_reseller <account_id>
-Create Reseller service plan(s)
+
+# Create Reseller service plan(s)
 Important notes about the 
 phone_numbers 
 This is for inbound assigned DIDs.
