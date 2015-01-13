@@ -1,6 +1,6 @@
 # Service Plans.
 
-This is not cleaned up yet.  The information is mostly taken from this link written by "cando"
+This is not cleaned up yet.  The information is mostly taken from this link written by "cando" or the 2600hz documents.
 
 * https://docs.google.com/document/d/1--LCpmRXG4iCYUNcLvMPzt6kQztw12O3BsAoI39jguo/edit
 * https://2600hz.atlassian.net/wiki/display/Dedicated/Service+Plans
