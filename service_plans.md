@@ -10,16 +10,16 @@ This is not cleaned up yet.  The information is mostly taken from this link writ
 * HotOrNot (per-minute rating with rate deck - recommended)
 * BrainTree https://www.braintreepayments.com (Credit card processing)
 
-Possible code changes needed
-If you add numbers from a carrier not using the buy number method your number will be set as “local” carrier. The erlang code for that carrier definition returns false when requested if the number is billable. So it doesn’t get counted in the services for the account. If you want them billed you just need to make 1 change.
-In /opt/kazoo/core/whistle_number_manager-1.0.0/src/carriers/wnm_local.erl
-change
-is_number_billable(_Number) -> 'false'.
-to
-is_number_billable(_Number) -> 'true'.
-re-compile: (cd /opt/kazoo/core/whistle_number_manager-1.0.0/ ; make)
-restart kz-whistle_apps
-Set account(s) as reseller per your needs.
+* Possible code changes needed
+  * If you add numbers from a carrier not using the buy number method your number will be set as “local” carrier. The erlang code for that carrier definition returns false when requested if the number is billable. So it doesn’t get counted in the services for the account. If you want them billed you just need to make 1 change.
+  * In /opt/kazoo/core/whistle_number_manager-1.0.0/src/carriers/wnm_local.erl
+  * change
+    * is_number_billable(_Number) -> 'false'.
+    * to
+    * is_number_billable(_Number) -> 'true'.
+  * re-compile: (cd /opt/kazoo/core/whistle_number_manager-1.0.0/ ; make)
+  * restart kz-whistle_apps
+* Set account(s) as reseller per your needs.
 As of ver 3.08 only 1 braintree for entire system. 
 Road map
 Abstracted braintree logic to bookkeeper to support other billing connections like quickbooks, freshbooks...
@@ -54,7 +54,7 @@ Assign Add-ons and Discounts to the service plan you just created in your braint
 SAVE :)
 User API to create the plan
 
-Assign Accounts to service plans
+* Assign Accounts to service plans
 db.fqdn:15984/_utils/document.html?services/<customer_account_id>
 example: /opt/kazoo/core/whistle_services-1.0.0/priv/example_account_services.json
 for end customers pvt_reseller: false
