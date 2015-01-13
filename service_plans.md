@@ -6,7 +6,7 @@ This is not cleaned up yet.  The information is mostly taken from this link writ
 * https://2600hz.atlassian.net/wiki/display/Dedicated/Service+Plans
 
 # Prerequisites
-* Jonny5 (limits)
+* Jonny5 (limits) Also called j5
 * HotOrNot (per-minute rating with rate deck - recommended)
 * BrainTree https://www.braintreepayments.com (Credit card processing)
 
@@ -30,10 +30,8 @@ If you need to demote an account from being a reseller:
 sup whistle_services_maintenance demote_reseller <account_id>
 
 # Create Reseller service plan(s)
-Important notes about the 
-phone_numbers 
-This is for inbound assigned DIDs.
-The identifiers under phone_numbers, ex “did_us”, are derived from the classification of  numbers, the same as what is used for restriction of outbound calls. So be sure classifications cover the numbers you are selling. They are also used for j5 allotments. There can be overlap of classification definition but only the first match is used in each system. So careful planning is essential.
+* Important notes about phone_numbers, IE: inbound assigned DIDs.
+* The identifiers under phone_numbers, ex “did_us”, are derived from the classification of  numbers, the same as what is used for restriction of outbound calls. So be sure classifications cover the numbers you are selling. They are also used for j5 allotments. There can be overlap of classification definition but only the first match is used in each system. So careful planning is essential.
 http://db.fqdn:15984/_utils/document.html?system_config/number_manager
 The reseller (pvt_reseller_id) for an account is found in the doc in the services db with the _id the same as the account_id. db.myfqdn:15984/_utils/document.html?services/<account_ID>
 If pvt_account_id is the same as pvt_reseller_id, they are their own reseller.
@@ -67,6 +65,7 @@ account_id -> match the value for pvt_reseller_id
 db.myfqdn:15984/_utils/document.html?system_config/services
 To activate service plan billing.
 for testing probably use frequent checks and syncs:
+```
 {   "_id": "services",
    "_rev": "<current rev>",
    "default": {
@@ -75,6 +74,7 @@ for testing probably use frequent checks and syncs:
        "scan_rate": 20000,
        "master_account_bookkeeper": "wh_bookkeeper_braintree"
    } }
+```
 
 For production probably set 
  "scan_rate": 60000 -> check for service changes to sync every 60 sec.
