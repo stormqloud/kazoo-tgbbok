@@ -70,7 +70,7 @@ It's probably not safe to do this on a super busy production cluster.  If you ru
 
 You can use any of the syslog severity levels (in order) to change what is logged.
 
-emerg,alert,crit,err,warn,notice,info,debug
+* emerg,alert,crit,err,warn,notice,info,debug
 
 * To turn off all logging use
   * sup -n ecallmgr whistle_maintenance syslog_level emerg
