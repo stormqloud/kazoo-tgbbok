@@ -199,7 +199,7 @@ sup notify_maintenance configure_smtp_port 123
 ##Hotornot (Call rating)
 
 * Lookup the cost to call a number
-  * sup hotornot_maintenance rates_for_did "15141110000"
+  * sup hotornot_maintenance rates_for_did "15149072508"
 ```
 sup hotornot_maintenance rates_for_did +14161230000
 Candidates:
@@ -212,6 +212,12 @@ ok
 
 
 ```
+* sup hotornot_maintenance rates_for_did +15149072511
+* sup hotornot_maintenance rates_for_did 15149072511
+* sup hotornot_maintenance rates_for_did 5149072511
+
+All three queries should return the same result if htings are setup correctly.
+
 
 ##Carriers
 * Manipulate carriers and ACLs
@@ -229,6 +235,16 @@ ok
 ####Reload stepswitch to update carriers manually:
   * /opt/kazoo/utils/sup/sup stepswitch_maintenance reload_resources
 
+####Number Classifier
+
+* sup wnm_util classify_number 15149072508
+* sup wnm_util classify_number +15149072508
+* sup wnm_util classify_number 5149072508
+
+
+All three of these should give the same result.  Just different ways of saying the same thing.
+
+
 
 ####Secret SUP hiding places, Looking for your own sup commands..
 
@@ -238,7 +254,7 @@ For example to tunderstand how you can find your own SUP command look at this ex
 
 The 2 example commands are below..
 
-`/opt/kazoo/utils/sup/sup hotornot_maintenance local_summary
+`/opt/kazoo/utils/sup/sup hornot_maintenance local_summary
 use rates_for_did/1 to see what rates would be used for a DID
 ok`
 `/opt/kazoo/utils/sup/sup hotornot_maintenance rates_for_did "15149072511"`
