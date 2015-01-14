@@ -1,6 +1,6 @@
 # Service Plans.
 
-This is not cleaned up yet.  The information is mostly taken from this link written by "cando" or the 2600hz documents.
+This is not cleaned up yet.  The information is mostly taken from this link written by "cando" for 3.08 or the 2600hz documents.  
 
 * https://docs.google.com/document/d/1--LCpmRXG4iCYUNcLvMPzt6kQztw12O3BsAoI39jguo/edit
 * https://2600hz.atlassian.net/wiki/display/Dedicated/Service+Plans
@@ -76,7 +76,7 @@ for testing probably use frequent checks and syncs:
    } }
 ```
 
-For production probably set 
+# For production probably set 
  "scan_rate": 60000 -> check for service changes to sync every 60 sec.
 "sync_buffer_period": 600  -> wait 10 min (600 sec) after the last change to an account’s services doc before syncing/updating the service plan (subscription) on braintree
 save the doc
@@ -86,3 +86,7 @@ add whistle_services to db.myfqdn:15984/_utils/document.html?system_config/whapp
 sync/re-process an account
 good for when a plan changed or configured an account to use a plan.
 sup whistle_services_maintenance sync <account_id>
+
+## Account TOPUP - Add money to account
+* https://github.com/2600hz/kazoo/blob/master/core/whistle_transactions-1.0.0/doc/top_up.md
+
