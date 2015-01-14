@@ -19,3 +19,7 @@ Do not think this is going to get provisioning installed.  Provisioning is broke
 * You should install this code inside you kazoo-ui/applications/voip folder
   * /var/www/html/kazoo-ui/whapps/voip/phone/phone.js
  
+* Edit /var/www/html/kazoo-ui/config/config.js 
+  * Add a line like 
+  * ```        provisioner_url: '/p', ```
+ 
