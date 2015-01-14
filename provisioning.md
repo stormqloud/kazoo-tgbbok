@@ -12,6 +12,8 @@ To the reader: you have two options to get Provisionign working ;-)
 
 In the meantime here are a few random things.
 
+Do not think this is going to get provisioning installed.  Provisioning is broken and undeveloped.  Nobody can help you except yourself.
+
 * The Kazoo-ui has old provisioning code. 
   * https://github.com/2600hz/phone
 * You should install this code inside you kazoo-ui/applications/voip folder
