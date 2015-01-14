@@ -101,6 +101,9 @@ sup notify_maintenance configure_smtp_port 123
 *  sup ecallmgr_maintenance registrar_summary
 *  sup ecallmgr_maintenance carrier_acls
 
+## amqp 
+sup whistle_amqp_maintenance broker_summary
+
 ## whapps_maintenance
 * sup whapps_maintenance migrate
 * sup whapps_maintenance refresh
@@ -295,3 +298,5 @@ You can find the important bit's inside the Erlang source file
  1057  sup whistle_maintenance etop
  
  sup omnipresence_maintenance current_subscriptions
+
+sup whistle_amqp_maintenance broker_summary
