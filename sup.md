@@ -118,6 +118,10 @@ sup whistle_amqp_maintenance broker_summary
   * sup whapps_controller running_apps
   * sup whapps_controller restart_app conference
 
+## whistle_services
+* sup whistle_services_maintenance credit account_id amount
+* sup whistle_services_maintenance debit account_id amount
+
 # crossbar
 * sup whapps_controller restart_app crossbar
 * sup crossbar_maintenance start_module cb_braintree
