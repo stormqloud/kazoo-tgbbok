@@ -10,7 +10,7 @@
 
 * Buy support from 2600hz.com (good idea ;-)
 
-* Research old unreliable provisioning yourself and send me (stormqloud.ca) the instructions!
+* Research and rewrite the old unreliable provisioning yourself and send me (stormqloud.ca) the instructions ;-)
 
 # Open Source Provisioning (provisioner-v5)
 * The old open source code is now know as provisioner-v5 in the source tree.
