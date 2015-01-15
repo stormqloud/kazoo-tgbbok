@@ -42,8 +42,7 @@ Do not think this is going to get provisioning installed.  Provisioning is broke
   * You need to track down in futon the doc for your master user in the master account.
   * In there you will find an "apps"->"voip" section
     * insert this
-    * ``` 
-    *            "ui_flags": {
+```            "ui_flags": {
                "provision_admin": true,
                "super_duper_admin": true
            }
