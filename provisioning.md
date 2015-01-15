@@ -38,3 +38,13 @@ Do not think this is going to get provisioning installed.  Provisioning is broke
   * Add a line like 
   * ```        provisioner_url: '/p', ```
  
+* To turn on the old provisioner-v5 in kazoo-ui needs a ui_flag that does not already exist.
+  * You need to track down in futon the doc for your master user in the master account.
+  * In there you will find an "apps"->"voip" section
+    * insert this
+    * ``` 
+    *            "ui_flags": {
+               "provision_admin": true,
+               "super_duper_admin": true
+           }
+```
