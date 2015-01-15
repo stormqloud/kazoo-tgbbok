@@ -40,8 +40,7 @@ Do not think this is going to get provisioning installed.  Provisioning is broke
  
 * To turn on the old provisioner-v5 in kazoo-ui needs a ui_flag that does not already exist.
   * You need to track down in futon the doc for your master user in the master account.
-  * In there you will find an "apps"->"voip" section
-
+  * In there you will find an "apps"->"voip" section where you can add these flags.
 
 ```
 "ui_flags": {
@@ -50,3 +49,5 @@ Do not think this is going to get provisioning installed.  Provisioning is broke
            }
 ```
 
+  * there are about a billion other things that need to be done.
+  * rewrite provisioner-v5 cause it's not compatable with Kazoo 3.18 !
