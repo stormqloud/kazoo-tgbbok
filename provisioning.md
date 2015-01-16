@@ -13,7 +13,8 @@
 * Research and rewrite the old unreliable provisioning yourself and send me (stormqloud.ca) the instructions ;-)
 
 # What's in the Kazoo source tree?
-* There are currently 4 versions of provisiong in the Kazoo backend.  It's unclear how different or similar these are to each other.
+* There are currently 4 versions of provisiong in the Kazoo backend.  It's unclear how different or similar these are to each other.  Based on the dates things were checked into the source tree, it would appear that provisioner_v5 is the newest.  Newest doesn;t mean the best working however!
+
   * super_awesome_provisioner
   * awesome_provisioner
   * simple_provisioner
