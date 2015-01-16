@@ -12,6 +12,14 @@
 
 * Research and rewrite the old unreliable provisioning yourself and send me (stormqloud.ca) the instructions ;-)
 
+# What's in the Kazoo source tree?
+* There are currently 4 versions of provisiong in the Kazoo backend.  It's unclear how different or similar these are to each other.
+* super_awesome_provisioner
+* awesome_provisioner
+* simple_provisioner
+* provisioner_v5
+
+
 # Open Source Provisioning (provisioner-v5)
 * The old open source code is now know as provisioner-v5 in the source tree.
 * It's not secure, it's unreliable
