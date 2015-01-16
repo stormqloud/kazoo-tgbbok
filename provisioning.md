@@ -14,10 +14,10 @@
 
 # What's in the Kazoo source tree?
 * There are currently 4 versions of provisiong in the Kazoo backend.  It's unclear how different or similar these are to each other.
-* super_awesome_provisioner
-* awesome_provisioner
-* simple_provisioner
-* provisioner_v5
+  * super_awesome_provisioner
+  * awesome_provisioner
+  * simple_provisioner
+  * provisioner_v5
 
 
 # Open Source Provisioning (provisioner-v5)
