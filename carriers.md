@@ -1,6 +1,8 @@
-# Carriers
+# Carriers & Long distance
 
 These are some random notes for now on setting up a carrier.  
+
+You should be aware that the base Kazoo install comes is not able to dial "international".  IE anything outside of +1.
 
 Kazoo supports local carriers and global carriers.  Inherited reseller carriers even.
 
