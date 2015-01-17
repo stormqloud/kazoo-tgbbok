@@ -5,7 +5,7 @@ Unfortunately, Kazoo has some very badly named applications that go along with i
 ###Two examples before we provide a translation matrix
 
 * `jonny5`
-  * For exmaple, sohow "jonny5" is an appropriate name for the module that does limiting.  Whatever comic book or other minor cultural reference `jonny5` comes from is unknown.
+  * For exmaple, somehow "jonny5" is an appropriate name for the module that does limiting.  Whatever comic book or other minor cultural reference `jonny5` comes from is unknown.
   * In reality this is a module for controlling max channel limits for an account etc.
 * `hotornot`
   * `hotornot` is an application for `rating` calls.  IE determining call cost/price.
