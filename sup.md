@@ -106,6 +106,9 @@ sup notify_maintenance configure_smtp_port 123
 ## amqp 
 sup whistle_amqp_maintenance broker_summary
 
+## whapps_account_config
+* sup whapps_account_config set `<acccount_id>` media default_language fr-ca 
+
 ## whapps_maintenance
 * sup whapps_maintenance migrate
 * sup whapps_maintenance refresh
