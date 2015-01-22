@@ -7,3 +7,7 @@ You can tell when new yum packages are ready for Kazoo by following this site.
 
 * Get your YUM compatabile software updates here.
   * http://repo.2600hz.com/
+
+# Github
+* Workflow of how to maintain your own Kazoo fork on github
+* http://www.eqqon.com/index.php/Collaborative_Github_Workflow
