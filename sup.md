@@ -134,6 +134,7 @@ sup whistle_amqp_maintenance broker_summary
 * sup crossbar_maintenance start_module cb_braintree
 * sup crossbar_maintenance find_account_by_number 5149072508
 * sup crossbar_maintenance running_modules
+* sup crossbar_maintenance allow_account_number_additions `<account_id>`
 
 ##Whapps
 /opt/kazoo/utils/sup/sup whapps_config get whapps_controller whapps
