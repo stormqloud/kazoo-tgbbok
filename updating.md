@@ -16,3 +16,8 @@ You can tell when new yum packages are ready for Kazoo by following this site.
 # Github
 * Workflow of how to maintain your own Kazoo fork on github
 * http://www.eqqon.com/index.php/Collaborative_Github_Workflow
+
+# Stuff you should never use
+
+* yum erase kazoo-librabbitmq-master kazoo-bigcouch-R15B kazoo-R15B kazoo-prompts kazoo-kamailio  kazoo-json-c-master  kazoo-freeswitch-R15B kazoo-configs
+* yum install kazoo-librabbitmq-master kazoo-bigcouch-R15B kazoo-R15B kazoo-prompts kazoo-kamailio  kazoo-json-c-master  kazoo-freeswitch-R15B kazoo-configs
