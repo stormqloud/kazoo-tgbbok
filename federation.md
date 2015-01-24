@@ -4,6 +4,9 @@
 
 * http://en.wikipedia.org/wiki/Federation
 
+* Bigcouch is designed to this standard which explains some background to the shards, quorum etc
+  * http://www.allthingsdistributed.com/2007/10/amazons_dynamo.html
+
 I searched to fgure out really what this means in Kazoo.
 
 Kazoo uses AMQP and BigCouch so Federation is a mix of what is defined in the other projects.
