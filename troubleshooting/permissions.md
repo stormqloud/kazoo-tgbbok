@@ -66,3 +66,14 @@ bigcouch:x:497:2::/srv:/sbin/nologin
 bigcouch:x:490:2::/srv:/sbin/nologin
 
 ```
+
+
+* fixing on the broken server.  Somethign is out of whack with the username/numbers.  We can manually fix this in bulk.
+ 
+```
+# Make all the unknown 496 kazoo user
+chown --from=496 kazoo * -R /
+# 
+chown --from=497 bigcouch * -R /
+
+```
