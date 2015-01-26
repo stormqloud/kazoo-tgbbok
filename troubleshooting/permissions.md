@@ -2,7 +2,8 @@
 
 * Somehow I managed to mess up permissions by `yum erase` `yum install` different versions on the same server.
   ** my issue was really when you do yum-erase it's not a clean erase.  It half fails.  The user gets removed but many of the files stay around.  Then you install on top with a new user.. 
-
+     ** Make sure you shutdown all the daemons properly before you `yum erase`
+     ** TBD
 * Working kazoo installation..
 ```
 [root@kaz kazoo]# find / -nouser | wc
