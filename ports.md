@@ -4,6 +4,8 @@ The following ports are involved in a running Kazoo setup.
 
 You should firewall ACL these appropriately at your border router.
 
+Specifically you should by default deny all public traffic to your Kazoo machines.  Open up ports below as required.
+
 This is probably not an exhaustive list.  Remember about TCP/UDP.
 
 Each port really exists twice.
