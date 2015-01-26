@@ -123,6 +123,10 @@ sup whistle_amqp_maintenance broker_summary
   * sup whapps_controller running_apps
   * sup whapps_controller restart_app conference
 
+## whistle_media_maintenance
+* sup whistle_media_maintenance refresh
+* sup whistle_media_maintenance set_account_language `<account_id>` fr-ca
+
 ## whistle_number_manager (wnm)
 * sup whistle_number_manager_maintenance reconcile_accounts
 * sup whistle_number_manager_maintenance reconcile_numbers
