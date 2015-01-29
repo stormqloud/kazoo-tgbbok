@@ -26,4 +26,5 @@ You can tell when new yum packages are ready for Kazoo by following this site.
 * chkconfig --level 2345 kz-whistle_apps off
 * chkconfig --level 2345 kamailio off
 * chkconfig --level 2345 freeswitch off
+* chkconfig --level 2345 rabbitmq-server off
 
