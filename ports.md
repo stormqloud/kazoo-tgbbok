@@ -13,6 +13,7 @@ Each port really exists twice.
 * 25 - SMTP
 * 80 - www
 * 2525 - Haproxy to 19025
+* 4369 - epmd
 * 5060 - Kamailio
 * 5061 - Kamailio TLS
 * 5672 - amqp 
@@ -25,6 +26,7 @@ Each port really exists twice.
 * 8031 - Freeswitch
 * 8443 - Kamailio WebSocket TLS
 * 11000 - Freeswitch (Kamailio Dispatcher sends to this)
+* 11500 - BigCouch used for ?
 * 15672 - RabbitMQ GUI
 * 15984 - Haproxy to 5984
 * 15986 - Haproxy to 5986
