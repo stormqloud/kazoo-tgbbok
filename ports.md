@@ -12,6 +12,7 @@ Each port really exists twice.
 
 * 25 - SMTP
 * 80 - www
+* 443 - HTTPS
 * 2525 - Haproxy to 19025
 * 4369 - epmd
 * 5060 - Kamailio
