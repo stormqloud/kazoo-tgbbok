@@ -21,3 +21,9 @@ You can tell when new yum packages are ready for Kazoo by following this site.
 
 * yum erase kazoo-librabbitmq-master kazoo-bigcouch-R15B kazoo-R15B kazoo-prompts kazoo-kamailio  kazoo-json-c-master  kazoo-freeswitch-R15B kazoo-configs
 * yum install kazoo-librabbitmq-master kazoo-bigcouch-R15B kazoo-R15B kazoo-prompts kazoo-kamailio  kazoo-json-c-master  kazoo-freeswitch-R15B kazoo-configs
+
+* chkconfig --level 2345 kz-ecallmgr off
+* chkconfig --level 2345 kz-whistle_apps off
+* chkconfig --level 2345 kamailio off
+* chkconfig --level 2345 freeswitch off
+
