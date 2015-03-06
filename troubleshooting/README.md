@@ -8,7 +8,7 @@
 
 * Run this command
 
-'''
+```
 # /opt/kazoo-scripts/kazoo-status.sh 
 Kazoo-RabbitMQ is running                                  [  OK  ]
   Version: kazoo-R15B-3.19-34.el6.x86_64
@@ -26,4 +26,4 @@ Kazoo-FreeSWITCH is running                                [  OK  ]
   Version: kazoo-freeswitch-R15B-1.4.7-11.el6.x86_64
 Kazoo-Bigcouch is running                                  [  OK  ]
   Version: kazoo-bigcouch-R15B-0.4.x-1.el6.x86_64
-'''
+```
