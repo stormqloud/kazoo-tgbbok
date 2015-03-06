@@ -1,8 +1,9 @@
 # Kazoo versions.
 
-* You should probably aim to install 3.18
-  * 3.19 development/master branch
-  * 3.18 is stable as of early 2015
+* You should probably aim to install 3.19
+  * 3.20 development/master branch
+  * 3.19 is stable as of March 2015
+  * 3.18 was short lived before it 3.19 arrived
   * 3.16 and before are not worth starting a new install
 
 
