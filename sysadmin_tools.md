@@ -8,7 +8,10 @@
 ## ngrep
   * super useful to watch traffic on the network.  Crafting filters is different from wireshark/tcpdump
   * ngrep -W byline -i eth0 'dialog-info '
+  * ngrep -Td lo0 port 5672
   
 ## wireshark
   * If you are doing VOIP you should already be using this product.  VOIP is about the SIP RFC standards.  
   Nothing better then seeing them on the wire.
+
+http://stormqloud.ca
