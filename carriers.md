@@ -16,6 +16,8 @@ If you want backup and promary VOIP carriers etc you handle that with weight_cos
 
 ## sup stepswitch_maintenance reload_resources
 
+format_from_uri controls what you send as your outbound header when the call heads to the carrier.
+
 ### offnet document 
 ```
 {
