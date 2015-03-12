@@ -10,6 +10,12 @@ Carriers are often listed under "resources" in the Futon CouchDB filter views.
 
 The following offnet db document works to send calls to StormQloud or Prodosec
 
+Make sure to reload the docs before oyu do anything.
+
+If you want backup and promary VOIP carriers etc you handle that with weight_cost.  The lower weight_cost will be picked first.
+
+## sup stepswitch_maintenance reload_resources
+
 ### offnet document 
 ```
 {
