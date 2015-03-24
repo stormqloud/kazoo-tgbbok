@@ -8,7 +8,7 @@
 
 * To make sure CNAM is enabled and running on the DID make sure to set these attributes.
 
-'''
+"""
    "cnam": {
        "inbound_lookup": true
    },
@@ -18,8 +18,7 @@ and
    "pvt_features": [
        "inbound_cnam"
    ]
-'''
-
+"""
 
 
 * www.stormqloud.ca
