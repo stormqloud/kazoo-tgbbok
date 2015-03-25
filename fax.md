@@ -46,7 +46,7 @@ Escape character is '^]'.
  This option is discouraged.
 
 ### Option 2:
- *  Use Postfix to send inbound smtp traffic to kazoo and outboudn traffic outbound.
+ *  Use Postfix to send inbound smtp traffic to kazoo and outbound traffic outbound.
 
 This is Postgres answering the SMTP TCP port 25 in a default Linux setup.  IE your Kazoo server
 
