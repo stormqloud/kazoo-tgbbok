@@ -2,7 +2,7 @@
 
 Kazoo has inbound and outbound faxing to/from PDF.
 
-Faxing has progressed from 3.16 to 3.18 and now 3.19.  There are certainly more parts to faxing on Kazoo then are documented.  As they say, the best documentation is the source code..
+Faxing has progressed from 3.16 to 3.18 and now 3.19.  There are certainly more parts to faxing on Kazoo then are documented here.  As they say, the best documentation is the source code..
 
 I have had success in backporting the fax application from "master/3.20" to 3.18.
 
