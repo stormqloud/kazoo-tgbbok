@@ -1,5 +1,7 @@
 # Kazoo versions.
 
+* You might want to check out the information on "upgrading" as well.
+
 * You should probably aim to install 3.19
   * 3.20 development/master branch
   * 3.19 is stable as of March 2015
@@ -20,3 +22,5 @@
 * Freeswitch
  * mature voip project, use the canned stuff!
  * 
+
+stormqloud.ca
