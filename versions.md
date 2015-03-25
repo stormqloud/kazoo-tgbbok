@@ -21,6 +21,6 @@
  
 * Freeswitch
  * mature voip project, use the canned stuff!
- * 
+ * No reason to maintain local changes unless you are a developer
 
 stormqloud.ca
