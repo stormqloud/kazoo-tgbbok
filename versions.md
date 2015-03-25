@@ -13,3 +13,10 @@
     * 15B is stable/running 
     * 16B unknown..
     
+
+* Kamaillio 4.0 vs 4.2
+ * Kamaillio flipped from 4.0 to 4.2 in the 3.18 to 3.19 version bump
+ 
+* Freeswitch
+ * mature voip project, use the canned stuff!
+ * 
