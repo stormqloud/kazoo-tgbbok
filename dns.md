@@ -1,8 +1,9 @@
 # DNS
-* Desiging, understanding and laying out your DNS structure for Kazoo is more important then you may think.
+* Designing, understanding and laying out your DNS structure for Kazoo is more important then you may think.
 
 * DNS controls Kazoo white label
 * DNS controls phone handsets registration
+* DNS is the key to the Faxbox system
 
 * Decisions
   * Self host DNS mgmt or DNS hosting with ISP, provider etc.
