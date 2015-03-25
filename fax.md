@@ -4,19 +4,29 @@ Kazoo has inbound and outbound faxing to/from PDF.
 
 Faxing has progressed from 3.16 to 3.18 and now 3.19.  There are certainly more parts to faxing on Kazoo then are documented here.  As they say, the best documentation is the source code..
 
-I have had success in backporting the fax application from "master/3.20" to 3.18.
+I have had success in backporting the fax application from "master/3.20" to 3.18.  This is currently not needed for 3.19
 
-Specifically, make sure you are running kazoo-ui from *github* if you want to use faxboxes!  You have been warned.
-
+Specifically, make sure you are running kazoo-ui from *github* if you want to use faxboxes!  You have been warned.  You need to have the latest code.
 
 ## Fax to Email
 * This should work with no problem.  Assign a callflow with a DID number to go into "receive fax".  The "receive fax" application will associate with a user record.  The PDF will be delivered to the users email address.
 * There is inbound faxbox funcationality also.  
   * You set this up the same way, just ue the "faxbox" callflow.
   * The faxbox has extra functionality related to the "user app" in kazoo app store within your accounts.
-
+  * There is some code for an online fax document viewer.  I think it's only in monster-ui and not kazoo-ui.
 
 ## Email to Fax
+
+* This is much much more complicated to setup.
+
+* The basic approach is as follows
+  * You want to fax a few lines of text to +15147872030 for example.
+  * You send an EMAIL to a faxbox like this
+    * 15147872030@4nfk24btd.fax.stormqloud.ca
+  * The faxbox has a personal individual unique dns name.
+    * Each user of the fax system will need a unique dns record.
+    * I repeat, each faxbox requires a dns MX record 
+
 * This will require multiple configuration changes.  The shortlist
   * DNS MX records, get the email to Kazoo server
   * make sure you have gs (ghostscript) installed in /usr/bin/gs
@@ -133,3 +143,4 @@ mode http
 stats uri /
 
 ```
+SIP stormqloud.ca
