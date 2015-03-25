@@ -29,3 +29,12 @@ Asterisk is now a retail product that can be burned into disposable appliances.
 Kazoo has emerged as the successive technology for ISP, Carriers, Service providers of all kinds.
 
 There is a cost however.  The kazoo learning curve cannot be understated!
+
+Please never say that Kazoo doesn;t have some feature because you can't find it online here.  This is documenting some features that I have personally tested under various configurations.
+
+This is by no means a universal experience.
+
+wlloyd@stormqloud.ca
+
+tx
+
