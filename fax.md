@@ -8,25 +8,25 @@ I have had success in backporting the fax application from "master/3.20" to 3.18
 
 Specifically, make sure you are running kazoo-ui from *github* if you want to use faxboxes!  You have been warned.  You need to have the latest code.
 
-## Fax to Email
+## Fax to Email gateway
 * This should work with no problem.  Assign a callflow with a DID number to go into "receive fax".  The "receive fax" application will associate with a user record.  The PDF will be delivered to the users email address.
 * There is inbound faxbox funcationality also.  
   * You set this up the same way, just ue the "faxbox" callflow.
   * The faxbox has extra functionality related to the "user app" in kazoo app store within your accounts.
   * There is some code for an online fax document viewer.  I think it's only in monster-ui and not kazoo-ui.
 
-## Email to Fax
-
-* This is much much more complicated to setup.
-
-* The basic approach is as follows
-  * You want to fax a few lines of text (or attachment) to +15147872030 for example.
+## Email to Fax gateway
+* This is _much_ _much_ more complicated to setup.
+* This example shows some of the setup required.  Depending on your needs there might be some steps left out..
+  * You want to fax a few lines of text (or pdf) to +15147872030 for example.
   * You send an EMAIL to a faxbox like this
-    * 15147872030@4nfk24btd.fax.stormqloud.ca
+    * +15147872030@4nfk24btd.fax.stormqloud.ca
   * The faxbox has a personal individual unique dns name.
     * Each user of the fax system will need a unique dns record.
     * I repeat, each faxbox requires a unique dns MX record and name
-
+     * This means 4nfk24btd.fax.stormqloud.ca must resolve to a MX record.
+       *  Be RFC compliant, don;t be lazy and go for A records for email!~
+       
 * In my own case, I already restrict spam filtering for the fax domain.  I'm skipping over it but it's needed in a serious setup.  Kazoo isn;t built for spam filtering.  It's done "upstream".   Email me for more information or borrow from the installations that cover it.
 
 * Email always arrives on SMTP port 25.
