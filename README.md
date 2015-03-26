@@ -3,13 +3,15 @@ kazoo-tgbbok
 
 The Great Big Book Of Kazoo
 
-These are here so I can add to them easily. 
+These ramblings are here so I can add to them easily.  When I write them, I'm fairly sure where to find it again.
 
-This stuff is not for the absolute beginner or the expert.  Mostly the admin that gets lost along the way.
+This stuff is not for the absolute beginner.  If you are just starting Kazoo, this is probably not the best starting point.
+
+This is mostly for the system admin that gets lost looking for the Kazoo yellow brick road.  I offer you some bricks.
 
 Think of it as tips and tricks once the platform is installed and you have made a first few calls.
 
-In reality you should already know about the following resources
+In reality you should already know about the following resources at this point.
 
 ####Websites:
 * https://2600hz.com/
@@ -19,6 +21,8 @@ In reality you should already know about the following resources
 
 ###Mailing list
 `https://groups.google.com/forum/#!forum/2600hz-users`
+
+## Background
 
 Asterisk is single server compared to the Kazoo cloud platform.  
 
