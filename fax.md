@@ -20,17 +20,27 @@ Specifically, make sure you are running kazoo-ui from *github* if you want to us
 * This is much much more complicated to setup.
 
 * The basic approach is as follows
-  * You want to fax a few lines of text to +15147872030 for example.
+  * You want to fax a few lines of text (or attachment) to +15147872030 for example.
   * You send an EMAIL to a faxbox like this
     * 15147872030@4nfk24btd.fax.stormqloud.ca
   * The faxbox has a personal individual unique dns name.
     * Each user of the fax system will need a unique dns record.
-    * I repeat, each faxbox requires a dns MX record 
+    * I repeat, each faxbox requires a unique dns MX record and name
 
-* This will require multiple configuration changes.  The shortlist
+* In my own case, I already restrict spam filtering for the fax domain.  I'm skipping over it but it's needed in a serious setup.  Kazoo isn;t built for spam filtering.  It's done "upstream".   Email me for more information or borrow from the installations that cover it.
+
+* Email always arrives on SMTP port 25.
+  * On Kazoo port 25 is running Postfix.
+    * Postfix uses the file 
+     `/etc/postfix/transport`
+
+
+
+
+* This will require multiple configuration changes.  The shortlist..
   * DNS MX records, get the email to Kazoo server
   * make sure you have gs (ghostscript) installed in /usr/bin/gs
-  *
+  
 * These 2 links have much more information
 * https://groups.google.com/forum/#!topic/2600hz-users/IHtSwuuveTQ
 * https://github.com/2600hz/kazoo/tree/master/applications/fax/doc
