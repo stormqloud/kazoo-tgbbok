@@ -3,7 +3,7 @@ kazoo-tgbbok
 
 The Great Big Book Of Kazoo
 
-These ramblings are here so I can add to them easily.  When I write them, I'm fairly sure where to find it again.
+These ramblings are here so I can add to them easily.  When I write them, I'm fairly sure where to find it again.  Kazoo is so large that it's easy to forget hat you already know.  At the same time remember, "You don't know, what you don't know".
 
 This stuff is not for the absolute beginner.  If you are just starting Kazoo, this is probably not the best starting point.
 
@@ -30,13 +30,15 @@ The VOIP landscape has changed.
 
 Asterisk is now a retail product that can be burned into disposable appliances.
 
+## Kazoo Again
+
 Kazoo has emerged as the successive technology for ISP, Carriers, Service providers of all kinds.
 
-There is a cost however.  The kazoo learning curve cannot be understated!
+There is a cost however.  The kazoo learning curve cannot be understated!  The background of knowledge needs to be highlighted. 
 
 Please never say that Kazoo doesn;t have some feature because you can't find it online here.  This is documenting some features that I have personally tested under various configurations.
 
-This is by no means a universal experience.
+The best documentation is the source code.
 
 wlloyd@stormqloud.ca
 
