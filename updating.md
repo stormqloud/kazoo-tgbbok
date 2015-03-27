@@ -11,15 +11,19 @@ You can tell when new yum packages are ready for Kazoo by following this site.
   * http://build001-fmt.2600hz.com:8080/view/Dashboard/
 
 * Get your YUM compatabile software updates here.
-  * http://repo.2600hz.com/
+  * Assuming you are running CentOS, this will work for you 
+  * Dig here manually if you wish.
+    * http://repo.2600hz.com/
   * cd /etc/yum.repo.d
   * wget http://repo.2600hz.com/2600.repo
-
+  * yum update
+ 
 * Kamailio builds
   * https://build.opensuse.org/project/show/home:lazedo:kamailio
 
 # Github
 * Workflow of how to maintain your own Kazoo fork on github
+* This is useful if you are going to check code out of github instead of yum
 * http://www.eqqon.com/index.php/Collaborative_Github_Workflow
 
 # Stuff you should never use
