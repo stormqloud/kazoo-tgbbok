@@ -33,3 +33,7 @@ Each port really exists twice.
 * 15986 - Haproxy to 5986
 * 19025 - Email to Fax
 * 22002 - HAProxy Stats 
+
+* 10000-60000 UDP for RTP traffic.  That's the audio packets.
+  * You must have this open for a freeswitch server.  Deal with it.
+  
