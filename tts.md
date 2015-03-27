@@ -11,7 +11,7 @@
 * If you buy the service and try the languages and so forth it works *really* well.  Like scary welcome to the future.
 
 * Kazoo will cache a copy of the audio stream as a wav file inside of couchdb before you ever hear it.
-  * In general you "save money" because each IVR message is onyl purchased once but used over and over.
+  * In general you "save money" because each IVR message is only purchased once, but used over and over.
  
 
 www.stormqloud.ca
