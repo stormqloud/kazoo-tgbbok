@@ -1,8 +1,14 @@
 #SUP
 
-There are too many sup commands listed in too many places.  The super ingenius will know how to scan the Erlang source code to sniff out there own sup commands.
+## Help
+* I've tried to list as many SUP commands as I can casually find onto on this page.
+* You need to understand what the SUP commnd does..
 
-It is almost impossible to define all the sup commands.  Read below for discovering your own sup command and you should understand why.
+There are too many sup commands listed in too many places so far...  The super ingenius will know how to scan the Erlang source code to sniff out there own sup commands.
+
+It is almost impossible to define all the sup commands.  The best way would be to write a scrip to parse the Erlang source.
+
+Read below for discovering your own sup command and you should understand why.
 
 This list is for the mere mortals but mostly me.  Things may appear multiple times under different categories.
 
