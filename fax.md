@@ -68,7 +68,14 @@ Escape character is '^]'.
 ### Option 2:
  *  Use Postfix to send inbound smtp traffic to kazoo and outbound traffic outbound.
 
-This is Postgres answering the SMTP TCP port 25 in a default Linux setup.  IE your Kazoo server
+This is Postgres answering the SMTP TCP port 25 in a default Linux setup.
+
+*So your email arrives at port 25 by SMTP
+*Then Postgres uses the "transport" mechanism to push it to haproxy running on 2525
+*Haproxy does it's thing mapping the email onto port 19025
+
+*Got it? ;-)
+
 
 ```
 [root@kaz ~]# telnet lh 25
