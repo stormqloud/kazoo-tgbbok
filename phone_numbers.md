@@ -1,6 +1,6 @@
 # Phone numbmers
 
-* cnam
+* CNAM
   * Cnam gets enabled or disabled on a per number basis
   * CNAM is a USA thing only
   * Canadian DID's do not support CNAM for example
