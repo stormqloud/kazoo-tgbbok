@@ -26,7 +26,7 @@ Specifically, make sure you are running kazoo-ui from *github* if you want to us
     * I repeat, each faxbox requires a unique dns MX record and name
      * This means 4nfk24btd.fax.stormqloud.ca must resolve to a MX record.
        *  Be RFC compliant, don;t be lazy and go for A records for email!~
-       
+  * Make sure to turn on the specific user "fax notification" checkbox if you want return error/status messages.
 * In my own case, I already restrict spam filtering for the fax domain.  I'm skipping over it but it's needed in a serious setup.  Kazoo isn;t built for spam filtering.  It's done "upstream".   Email me for more information or borrow from the installations that cover it.
 
 * Email always arrives on SMTP port 25.
