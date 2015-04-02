@@ -23,7 +23,7 @@ Specifically, make sure you are running kazoo-ui from *github* if you want to us
     * +15147872030@4nfk24btd.fax.stormqloud.ca
     * Include your document as an attachment
     * PDF/PS/TIFF should all be ok
-    * Subject line, other text goes to /dev/null
+    * Subject line, other text goes to /dev/null ( http://en.wikipedia.org/wiki/Null_device )
   * The faxbox has a personal individual unique dns name.
     * Each user of the fax system will need a unique dns record.
     * I repeat, each faxbox requires a unique dns MX record and name
