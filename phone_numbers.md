@@ -20,6 +20,17 @@ and
    ]
 ```
 
+* If you need to be able to handle 'Dial 9 for an outside line' on a Kazoo system, you can handle that with a dial_plan on a per account basis.
+
+```
+  "dial_plan": {
+       "^91?(\\d{10})$": {
+           "description": "PBX Dial9",
+           "prefix": "+1"
+       }
+   },
+```
+
 
 * www.stormqloud.ca
 * http://www.canadadids.ca
