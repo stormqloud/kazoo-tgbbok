@@ -21,7 +21,8 @@ and
 ```
 
 * If you need to be able to handle 'Dial 9 for an outside line' on a Kazoo system, you can handle that with a dial_plan on a per account basis.
-
+* Dial 9 outside trunks is obviously not needed in Kazoo, however it makes it easier for transitioning clients.
+* SIP trunking and LCR routing makes this mostly not used anymore.
 ```
   "dial_plan": {
        "^91?(\\d{10})$": {
