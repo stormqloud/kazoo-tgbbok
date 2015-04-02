@@ -3,9 +3,9 @@ kazoo-tgbbok
 
 The Great Big Book Of Kazoo
 
-These ramblings are here so I can add to them easily.  When I write them, I'm fairly sure where to find it again.  Kazoo is so large that it's easy to forget hat you already know.  At the same time remember, "You don't know, what you don't know".
+These ramblings are here so I can add to them easily.  When I write them, I'm fairly sure where to find it again.  Kazoo is so large that it's easy to forget what you already learned about Kazoo.  At the same time remember, "You don't know, what you don't know".
 
-This stuff is not for the absolute beginner.  If you are just starting Kazoo, this is probably not the best starting point.
+This stuff is not for the absolute beginner.  If you are just starting Kazoo or wanting to install for the first time, this is probably not the best starting point for your adventure.
 
 This is mostly for the system admin that gets lost looking for the Kazoo yellow brick road.  I offer you some bricks.
 
