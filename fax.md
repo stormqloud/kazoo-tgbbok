@@ -21,11 +21,15 @@ Specifically, make sure you are running kazoo-ui from *github* if you want to us
   * You want to fax a few lines of text (or pdf) to +15147872030 for example.
   * You send an EMAIL to a faxbox like this
     * +15147872030@4nfk24btd.fax.stormqloud.ca
+    * Include your document as an attachment
+    * PDF/PS/TIFF should all be ok
+    * Subject line, other text goes to /dev/null
   * The faxbox has a personal individual unique dns name.
     * Each user of the fax system will need a unique dns record.
     * I repeat, each faxbox requires a unique dns MX record and name
      * This means 4nfk24btd.fax.stormqloud.ca must resolve to a MX record.
        *  Be RFC compliant, don;t be lazy and go for A records for email!~
+
   * Make sure to turn on the specific user "fax notification" checkbox if you want return error/status messages.
   * Carrier flags can select a "fax specific" call path!
     * If your regular SIP trunk provider doesn;t handle T38, you can ship it to second provider path
