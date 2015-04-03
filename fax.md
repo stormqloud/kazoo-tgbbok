@@ -2,11 +2,9 @@
 
 Kazoo has inbound and outbound faxing to/from PDF.
 
-Faxing has progressed from 3.16 to 3.18 and now 3.19.  There are certainly more parts to faxing on Kazoo then are documented here.  As they say, the best documentation is the source code..
+Faxing has progressed from 3.16 to 3.18 and now 3.19.  Master is ahead of what you will discover here.
 
-I have had success in backporting the fax application from "master/3.20" to 3.18.  This is currently not needed for 3.19
-
-Specifically, make sure you are running kazoo-ui from *github* if you want to use faxboxes!  You have been warned.  You need to have the latest code.
+There are certainly more parts to faxing on Kazoo then are documented here.  As they say, the best documentation is the source code..
 
 ## Fax to Email gateway
 * This should work with no problem.  Assign a callflow with a DID number to go into "receive fax".  The "receive fax" application will associate with a user record.  The PDF will be delivered to the users email address.
@@ -18,17 +16,17 @@ Specifically, make sure you are running kazoo-ui from *github* if you want to us
 ## Email to Fax gateway
 * This is _much_ _much_ more complicated to setup.
 * This example shows some of the setup required.  Depending on your needs there might be some steps left out..
-  * You want to fax a few lines of text (or pdf) to +15147872030 for example.
+  * You want to fax a pdf to +15147872030 for example.
   * You send an EMAIL to a faxbox like this
     * +15147872030@4nfk24btd.fax.stormqloud.ca
     * Include your document as an attachment
     * PDF/PS/TIFF should all be ok
     * Subject line, other text goes to /dev/null ( http://en.wikipedia.org/wiki/Null_device )
   * The faxbox has a personal individual unique dns name.
-    * Each user of the fax system will need a unique dns record.
-    * I repeat, each faxbox requires a unique dns MX record and name
-     * This means 4nfk24btd.fax.stormqloud.ca must resolve to a MX record.
-       *  Be RFC compliant, don;t be lazy and go for A records for email!~
+    * Each user of the fax system will need a unique DNS domain record.
+    * I repeat, each faxbox requires a unique DNS MX record and name
+     * This means 4nfk24btd.fax.stormqloud.ca must resolve to a MX record and is unique per faxbox.
+       *  Be RFC compliant, don;'t be lazy and go for A records for email!~
 
   * Make sure to turn on the specific user "fax notification" checkbox if you want return error/status messages.
   * Carrier flags can select a "fax specific" call path!
@@ -40,9 +38,6 @@ Specifically, make sure you are running kazoo-ui from *github* if you want to us
   * On Kazoo port 25 is running Postfix.
     * Postfix uses the file 
      `/etc/postfix/transport`
-
-
-
 
 * This will require multiple configuration changes.  The shortlist..
   * DNS MX records, get the email to Kazoo server
@@ -112,10 +107,6 @@ Edit or create /etc/postfix/transport
 
 ```
 
-
-
-
-
 Listening ports for this can be changed in haproxy.cfg
 
 
@@ -167,4 +158,4 @@ mode http
 stats uri /
 
 ```
-SIP stormqloud.ca
+SIP Trunks stormqloud.ca
