@@ -1,5 +1,10 @@
 # Updating
 
+## You need to decide how you will follow the main Kazoo code base.
+* At some point in the future you will want to upgrade.
+* When that happens, it's much like, "Close the stable door after the horse has bolted".
+* Setup Kazoo with upgrading in mind.
+ 
 You can tell when new yum packages are ready for Kazoo by following this site.
 
 * Short version
