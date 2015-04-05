@@ -44,3 +44,6 @@ which you can manipulate as you wish
 
 
 ```
+
+**  Links
+* https://github.com/2600hz/kazoo/blob/master/applications/crossbar/doc/user_authentication.md
