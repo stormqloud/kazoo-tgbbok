@@ -1,6 +1,7 @@
 # Some tips..
 
 * syslog - change to asynch
+  *  Remote syslog server.. 
 
 
 * kamaillio 4.2 anyway..
