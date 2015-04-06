@@ -20,7 +20,10 @@ In reality you should already know about the following resources at this point.
 * https://2600hz.atlassian.net/wiki/display/docs/Overview
 
 ###Mailing list
+* People, please stick with the descriptions...
+* Basic user questions are *NOT* for -dev
 `https://groups.google.com/forum/#!forum/2600hz-users`
+`https://groups.google.com/forum/#!forum/2600hz-dev`
 
 ## Background
 
