@@ -20,9 +20,9 @@ In reality you should already know about the following resources at this point.
 * https://2600hz.atlassian.net/wiki/display/docs/Overview
 
 ###Mailing list
-`https://groups.google.com/forum/#!forum/2600hz-users`
+* `https://groups.google.com/forum/#!forum/2600hz-users`
 * Dev mailing list is not for setup questions..
-`https://groups.google.com/forum/#!forum/2600hz-dev`
+* `https://groups.google.com/forum/#!forum/2600hz-dev`
 
 ## Background
 
