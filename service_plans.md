@@ -1,6 +1,11 @@
 # Service Plans.
 
-This is not cleaned up yet.  The information is mostly taken from this link written by "cando" for 3.08 or the 2600hz documents.  
+## This is not cleaned up yet and getting long in the tooth.  
+## Specifically some new service plan code has been committed to the tree in 3.19+ 
+## Check back soon, I will be updating this section as I dig through the code and test..
+## stormqloud.ca
+
+The information is mostly taken from this link written by "cando" for 3.08 or the 2600hz documents.  
 
 * https://docs.google.com/document/d/1--LCpmRXG4iCYUNcLvMPzt6kQztw12O3BsAoI39jguo/edit
 * https://2600hz.atlassian.net/wiki/display/Dedicated/Service+Plans
