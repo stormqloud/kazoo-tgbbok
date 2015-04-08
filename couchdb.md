@@ -4,8 +4,10 @@
 * 2600hz has said (mailing list) they intend to move back to couchdb at some point in the future
 
 * Special URLs for bigcouch (appear to be called global handlers)..
+* You might want direct these to port 15984 instead..
+
 ```
-* http://kazoocloud.stormqloud.ca:5984/_membership
+  * http://kazoocloud.stormqloud.ca:5984/_membership
   * http://kazoocloud.stormqloud.ca:5984/_config
   * http://kazoocloud.stormqloud.ca:5984/_active_tasks
   * http://kazoocloud.stormqloud.ca:5984/_all_dbs
