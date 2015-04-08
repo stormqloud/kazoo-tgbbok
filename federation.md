@@ -61,3 +61,6 @@ of course, zone names are arbitrary so you could map them to whatever you want
 mc_
 but typically people use the datacenter, country, etc as the zone name
 ```
+
+* Information on setting up zones for 3.19
+  * https://groups.google.com/forum/#!topic/2600hz-users/JDy6YHJU0C0
