@@ -5,6 +5,7 @@
 
 * Special URLs for bigcouch..
   * http://kazoocloud.stormqloud.ca:5984/_membership
+  * http://kazoocloud.stormqloud.ca:5984/_config
 
 * Things to look into one day..
 
