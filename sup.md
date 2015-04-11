@@ -4,15 +4,15 @@
 * I've tried to list as many SUP commands as I can casually find onto on this page.
 * You need to understand what the SUP commnd does..
 
-There are too many sup commands listed in too many places so far...  The super ingenius will know how to scan the Erlang source code to sniff out there own sup commands.
+There are too many sup commands listed in too many places so far...  The super ingenius will know how to scan the Erlang source code to sniff out their own sup commands.
 
-It is almost impossible to define all the sup commands.  The best way would be to write a scrip to parse the Erlang source.
+It is almost impossible to define all the sup commands.  The best way would be to write a script to parse the Erlang source.
 
 Read below for discovering your own sup command and you should understand why.
 
 This list is for the mere mortals but mostly me.  Things may appear multiple times under different categories.
 
-Mostly it's stolen from https://2600hz.atlassian.net/wiki/display/Dedicated/How+to+use+the+SUP+command with additions I find around the net.
+Mostly it's stolen from https://2600hz.atlassian.net/wiki/display/Dedicated/How+to+use+the+SUP+command with additions I find around the net or needed myself.
 
 The sup command is an almost limitless since it passes values directly to Erlang
 functions running out in VM land.
@@ -47,7 +47,7 @@ Probably the first thing you need from sup are the various cache flushing.  When
 Depeding on your unix experience you might want to run everything thrice.
 http://utcc.utoronto.ca/~cks/space/blog/unix/TheLegendOfSync
 
-It's probably not safe to do this on a super busy production cluster.  If you run a super busy production cluster you arn't reading this.
+It's probably not safe to do this on a super busy production cluster.  However, if you run a super busy production cluster, you arn't reading this.
 
 * Flush all cached docs for all accounts:
   * sup couch_mgr flush_cache_docs
