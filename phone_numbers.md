@@ -1,5 +1,9 @@
 # Phone numbmers
 
+# Numbers Lifecycle
+* This is very important when you start to care about DID's.
+* https://2600hz.atlassian.net/wiki/display/Dedicated/Number+Lifecycle
+
 * CNAM
   * Cnam gets enabled or disabled on a per number basis
   * CNAM is a USA thing only
