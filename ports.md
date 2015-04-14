@@ -28,7 +28,7 @@ Each port really exists twice.
 * 8443 - Kamailio WebSocket TLS
 * 11000 - Freeswitch (Kamailio Dispatcher sends to this)
 * 11500 - BigCouch used for ?
-* 15672 - RabbitMQ GUI (admin/admin)
+* 15672 - RabbitMQ GUI (guest/guest)
 * 15984 - Haproxy to 5984
 * 15986 - Haproxy to 5986
 * 19025 - Email to Fax
