@@ -1,6 +1,6 @@
 # Service Plans.
 
-## This is not cleaned up yet and getting olf.  
+## This is not cleaned up yet and getting old.  
 ## Specifically, some new service plan code has been committed to the tree in 3.19+ 
 ## Check back soon, I will be updating this section as I dig through the code and test..
 ## stormqloud.ca
@@ -63,18 +63,19 @@ Assign Add-ons and Discounts to the service plan you just created in your braint
 SAVE :)
 User API to create the plan
 
-* Assign Accounts to service plans
-db.fqdn:15984/_utils/document.html?services/<customer_account_id>
-example: /opt/kazoo/core/whistle_services-1.0.0/priv/example_account_services.json
-for end customers pvt_reseller: false
-pvt_reseller_id -> probably parent account
-billing_id -> most cases the customer’s account id
-plans
-match the _id of the plan created (eg: mycompany_default_plan) created above
-account_id -> match the value for pvt_reseller_id
-db.myfqdn:15984/_utils/document.html?system_config/services
-To activate service plan billing.
-for testing probably use frequent checks and syncs:
+## Assign Accounts to service plans
+* db.fqdn:15984/_utils/document.html?services/<customer_account_id>
+  * example: /opt/kazoo/core/whistle_services-1.0.0/priv/example_account_services.json
+* for end customers pvt_reseller: false
+* pvt_reseller_id -> probably parent account
+* billing_id -> most cases the customer’s account id
+* plans
+* match the _id of the plan created (eg: mycompany_default_plan) created above
+* account_id -> match the value for pvt_reseller_id
+* db.myfqdn:15984/_utils/document.html?system_config/services
+
+## To activate service plan billing.
+* for testing probably use frequent checks and syncs:
 ```
 {   "_id": "services",
    "_rev": "<current rev>",
