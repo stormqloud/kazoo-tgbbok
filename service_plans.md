@@ -1,7 +1,7 @@
 # Service Plans.
 
-## This is not cleaned up yet and getting long in the tooth.  
-## Specifically some new service plan code has been committed to the tree in 3.19+ 
+## This is not cleaned up yet and getting olf.  
+## Specifically, some new service plan code has been committed to the tree in 3.19+ 
 ## Check back soon, I will be updating this section as I dig through the code and test..
 ## stormqloud.ca
 
@@ -10,12 +10,12 @@ The information is mostly taken from this link written by "cando" for 3.08 or th
 * https://docs.google.com/document/d/1--LCpmRXG4iCYUNcLvMPzt6kQztw12O3BsAoI39jguo/edit
 * https://2600hz.atlassian.net/wiki/display/Dedicated/Service+Plans
 
-# Prerequisites
+## Prerequisites
 * Jonny5 (limits) Also called j5
 * HotOrNot (per-minute rating with rate deck - recommended)
 * BrainTree https://www.braintreepayments.com (Credit card processing)
 
-# Possible code changes needed depending on your use case
+## Possible code changes needed depending on your use case
   * If you add numbers from a carrier not using the buy number method your number will be set as “local” carrier. The erlang code for that carrier definition returns false when requested if the number is billable. So it doesn’t get counted in the services for the account. If you want them billed you just need to make 1 change.
   * In /opt/kazoo/core/whistle_number_manager-1.0.0/src/carriers/wnm_local.erl
   * change
@@ -29,15 +29,17 @@ The information is mostly taken from this link written by "cando" for 3.08 or th
 * There is only ONE Braintree account for entire system.
   * You cannot have different accoutns or resellers use different Braintree accounts.
   
-* Road map
+# Road map
   * Abstracted braintree logic to bookkeeper to support other billing connections like quickbooks, freshbooks...
   * resellers can have their own bookkeeper config/account for trickle down. (eg: customer adds money to their per-minute balance and money goes to reseller’s bank account. Reseller per-minute (local) balance is not affected)
-* Setting an account as a reseller. All sub accounts of it will set it as their reseller
-  * sup whistle_services_maintenance make_reseller <account_id to make reseller>
-If you need to demote an account from being a reseller:
-sup whistle_services_maintenance demote_reseller <account_id>
 
-# Create Reseller service plan(s)
+## Setting an account as a reseller. 
+* All sub accounts of it will set it as their reseller
+  * sup whistle_services_maintenance make_reseller <account_id to make reseller>
+*If you need to demote an account from being a reseller:
+  * sup whistle_services_maintenance demote_reseller <account_id>
+
+## Create Reseller service plan(s)
 * Important notes about phone_numbers, IE: inbound assigned DIDs.
 * The identifiers under phone_numbers, ex “did_us”, are derived from the classification of  numbers, the same as what is used for restriction of outbound calls. So be sure classifications cover the numbers you are selling. They are also used for j5 allotments. There can be overlap of classification definition but only the first match is used in each system. So careful planning is essential.
 http://db.fqdn:15984/_utils/document.html?system_config/number_manager
@@ -85,16 +87,16 @@ for testing probably use frequent checks and syncs:
 ```
 
 # For production probably set 
- "scan_rate": 60000 -> check for service changes to sync every 60 sec.
-"sync_buffer_period": 600  -> wait 10 min (600 sec) after the last change to an account’s services doc before syncing/updating the service plan (subscription) on braintree
-save the doc
-start services
-sup whapps_controller start_app whistle_services
-add whistle_services to db.myfqdn:15984/_utils/document.html?system_config/whapps_controller
-sync/re-process an account
-good for when a plan changed or configured an account to use a plan.
-sup whistle_services_maintenance sync <account_id>
+* "scan_rate": 60000 -> check for service changes to sync every 60 sec.
+* "sync_buffer_period": 600  -> wait 10 min (600 sec) after the last change to an account’s services doc before  syncing/updating the service plan (subscription) on braintree
+* save the doc
+* start services
+* sup whapps_controller start_app whistle_services
+* add whistle_services to db.myfqdn:15984/_utils/document.html?system_config/whapps_controller
+* sync/re-process an account
+* good for when a plan changed or configured an account to use a plan.
+* sup whistle_services_maintenance sync <account_id>
 
-## Account TOPUP - Add money to account
+## Account TOP UP - Add money to account
 * https://github.com/2600hz/kazoo/blob/master/core/whistle_transactions-1.0.0/doc/top_up.md
 
