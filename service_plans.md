@@ -5,10 +5,13 @@
 ## Check back soon, I will be updating this section as I dig through the code and test..
 ## stormqloud.ca
 
-The information is mostly taken from this link written by "cando" for 3.08 or the 2600hz documents.  
+* The information is mostly taken from this link written by "cando" for 3.08 or the 2600hz documents.  
+  * https://docs.google.com/document/d/1--LCpmRXG4iCYUNcLvMPzt6kQztw12O3BsAoI39jguo/edit
+  * https://2600hz.atlassian.net/wiki/display/Dedicated/Service+Plans
 
-* https://docs.google.com/document/d/1--LCpmRXG4iCYUNcLvMPzt6kQztw12O3BsAoI39jguo/edit
-* https://2600hz.atlassian.net/wiki/display/Dedicated/Service+Plans
+* Other useful links 
+  * https://github.com/2600hz/kazoo/tree/master/core/whistle_services-1.0.0/priv
+  * http://pastebin.com/wSD89nFD
 
 ## Prerequisites
 * Jonny5 (limits) Also called j5
@@ -64,13 +67,17 @@ with "pvt_type": "service_plan"
   * The Plan ID should match the “plan” name used in the braintree section of the kazoo service plan. 
   * From the plan in the example json file ("plan": "SIP_Services") the Plan ID would be "SIP_Services".
 
-##Plan Price. 
+##P lan Price. 
 * I don’t know if kazoo can or does sends the Price of the plan. Test for yourself and update here. :)
 * Assign Add-ons and Discounts to the service plan you just created in your braintree account.
 * SAVE :)
 * User API to create the plan
 
-## Assign Accounts to service plans
+## Assign Service Plan to Account
+* HTTP POST something like this to link the plan and account
+* http://server:8000/v2/accounts/{{ACCOUNT_ID}}/service_plans/{{PLAN_ID}}
+
+
 * db.fqdn:15984/_utils/document.html?services/<customer_account_id>
   * example: /opt/kazoo/core/whistle_services-1.0.0/priv/example_account_services.json
 * for end customers pvt_reseller: false
