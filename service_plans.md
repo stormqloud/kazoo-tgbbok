@@ -15,7 +15,7 @@ The information is mostly taken from this link written by "cando" for 3.08 or th
 * HotOrNot (per-minute rating with rate deck - recommended)
 * BrainTree https://www.braintreepayments.com (Credit card processing)
 
-# Possible code changes needed
+# Possible code changes needed depending on your use case
   * If you add numbers from a carrier not using the buy number method your number will be set as “local” carrier. The erlang code for that carrier definition returns false when requested if the number is billable. So it doesn’t get counted in the services for the account. If you want them billed you just need to make 1 change.
   * In /opt/kazoo/core/whistle_number_manager-1.0.0/src/carriers/wnm_local.erl
   * change
@@ -24,8 +24,11 @@ The information is mostly taken from this link written by "cando" for 3.08 or th
     * is_number_billable(_Number) -> 'true'.
   * re-compile: (cd /opt/kazoo/core/whistle_number_manager-1.0.0/ ; make)
   * restart kz-whistle_apps
+
 # Set account(s) as reseller per your needs.
-As of ver 3.08-3.18 only *1* braintree account for entire system. 
+* There is only ONE Braintree account for entire system.
+  * You cannot have different accoutns or resellers use different Braintree accounts.
+  
 * Road map
   * Abstracted braintree logic to bookkeeper to support other billing connections like quickbooks, freshbooks...
   * resellers can have their own bookkeeper config/account for trickle down. (eg: customer adds money to their per-minute balance and money goes to reseller’s bank account. Reseller per-minute (local) balance is not affected)
