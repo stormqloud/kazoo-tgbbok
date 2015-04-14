@@ -42,26 +42,33 @@ The information is mostly taken from this link written by "cando" for 3.08 or th
 ## Create Reseller service plan(s)
 * Important notes about phone_numbers, IE: inbound assigned DIDs.
 * The identifiers under phone_numbers, ex “did_us”, are derived from the classification of  numbers, the same as what is used for restriction of outbound calls. So be sure classifications cover the numbers you are selling. They are also used for j5 allotments. There can be overlap of classification definition but only the first match is used in each system. So careful planning is essential.
-http://db.fqdn:15984/_utils/document.html?system_config/number_manager
-The reseller (pvt_reseller_id) for an account is found in the doc in the services db with the _id the same as the account_id. db.myfqdn:15984/_utils/document.html?services/<account_ID>
-If pvt_account_id is the same as pvt_reseller_id, they are their own reseller.
-Service plan(s) available for an account go in the reseller’s account DB as a new document
+* http://db.fqdn:15984/_utils/document.html?system_config/number_manager
+* The reseller (pvt_reseller_id) for an account is found in the doc in the services db with the _id the same as the account_id. db.myfqdn:15984/_utils/document.html?services/<account_ID>
+* If pvt_account_id is the same as pvt_reseller_id, they are their own reseller.
+* Service plan(s) available for an account go in the reseller’s account DB as a new document
 with "pvt_type": "service_plan"
-good to make the _id for the doc be descriptive (eg: mycompany_default_plan ) rather than a uuid
-Samples from: /op/kazoo/core/whistle_services-1.0.0/priv/example_service_plan_[12].json
-Set a default service plan for a reseller
-Open the reseller’s services/<reseller_account_id> doc
-add a new field:
-"default_service_plan"
-Set the value to the resellers service plan you want to be assigned to new sub accounts of the reseller.
-Setup Braintree account service plans
-Create Add-ons and discounts for all entries in the kazoo service plan. For example, from the example_service_plan_1.json, under the bookkeepers->braintree section you have phone_numbers->did_us you would create in your braintree account an Add-on with the ID “did_ud” for the “addon”: “did_us” and create in your braintree account a discount with the ID “discount_did_us” for the “discounts”: { “cumulative”: “discount_did_us”}. When you’re creating the Add-on and Discount in your braintree account, the name and description may be seen by the customer may be seen by the billed customer depending on how you configure to bill/charge/notify them but the amount doesn’t matter. Kazoo will send the amount and override the value you put in here.
-Be sure to create Add-ons and Discounts in your Braintree account for every “addon” and “discount” entry in the braintree section of the service plan
-Create a Recurring Billing Plan in your braintree account. The Plan ID should match the “plan” name used in the braintree section of the kazoo service plan. From the plan in the example json file ("plan": "SIP_Services") the Plan ID would be "SIP_Services".
-Plan Price. I don’t know if kazoo can or does sends the Price of the plan. Test for yourself and update here. :)
-Assign Add-ons and Discounts to the service plan you just created in your braintree account.
-SAVE :)
-User API to create the plan
+* good to make the _id for the doc be descriptive (eg: mycompany_default_plan ) rather than a uuid
+* Samples from: /op/kazoo/core/whistle_services-1.0.0/priv/example_service_plan_[12].json
+
+## Set a default service plan for a Reseller
+* Open the reseller’s services/<reseller_account_id> doc
+  * add a new field:
+  * "default_service_plan"
+  * Set the value to the resellers service plan you want to be assigned to new sub accounts of the reseller.
+* Setup Braintree account service plans
+* Create Add-ons and discounts for all entries in the kazoo service plan. 
+  * For example, from the example_service_plan_1.json, under the bookkeepers->braintree section you have phone_numbers->did_us you would create in your braintree account an Add-on with the ID “did_ud” for the “addon”: “did_us” and create in your braintree account a discount with the ID “discount_did_us” for the “discounts”: { “cumulative”: “discount_did_us”}. 
+  * When you’re creating the Add-on and Discount in your braintree account, the name and description may be seen by the customer may be seen by the billed customer depending on how you configure to bill/charge/notify them but the amount doesn’t matter. Kazoo will send the amount and override the value you put in here.
+* Be sure to create Add-ons and Discounts in your Braintree account for every “addon” and “discount” entry in the braintree section of the service plan
+* Create a Recurring Billing Plan in your braintree account. 
+  * The Plan ID should match the “plan” name used in the braintree section of the kazoo service plan. 
+  * From the plan in the example json file ("plan": "SIP_Services") the Plan ID would be "SIP_Services".
+
+##Plan Price. 
+* I don’t know if kazoo can or does sends the Price of the plan. Test for yourself and update here. :)
+* Assign Add-ons and Discounts to the service plan you just created in your braintree account.
+* SAVE :)
+* User API to create the plan
 
 ## Assign Accounts to service plans
 * db.fqdn:15984/_utils/document.html?services/<customer_account_id>
