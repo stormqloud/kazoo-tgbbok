@@ -2,7 +2,7 @@
 * money
 * billing
 * invoicing
-* cdr 
+* cdr
 * etc
 
 * Business type stuff
