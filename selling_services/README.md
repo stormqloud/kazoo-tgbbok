@@ -1,3 +1,8 @@
-# Home for anything related to subjects to do with money, billing, invoicing, cdr etc
+# Home for 
+* money
+* billing
+* invoicing
+* cdr 
+* etc
 
-* Businessy stuff
+* Business type stuff
