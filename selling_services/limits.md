@@ -2,7 +2,9 @@
 
 * Account limits document..
   * make sure jonny5 is running (use sup ..)
-  
+  * Make sure hotornot is running?
+* Schema https://github.com/2600hz/kazoo/blob/master/applications/crossbar/priv/couchdb/schemas/limits.json
+
 * https://2600hz.atlassian.net/wiki/display/Dedicated/Limits
   *  "default_to" email address in system_config/notify.system_alert 
     * example       "default_to": "wlloyd@stormqloud.ca"
