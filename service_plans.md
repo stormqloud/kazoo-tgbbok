@@ -1,5 +1,7 @@
 # Service Plans.
 
+# Reworking in different directory.. 
+
 ## This is not cleaned up yet and getting old.  
 ## Specifically, some new service plan code has been committed to the tree in 3.19+ 
 ## Check back soon, I will be updating this section as I dig through the code and test..
