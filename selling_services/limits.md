@@ -27,7 +27,7 @@
    "pvt_modified": 63584408772,
    "pvt_type": "config"
    }
-   ```
+```
    
   * Set "authz_enabled": 'true' on system_config/ecallmgr
 
