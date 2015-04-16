@@ -250,6 +250,7 @@ All three queries should return the same result if things are setup correctly.
 ## Jonny5
 * sup jonny5_maintenance authz_summary
 * sup jonny5_maintenance limits_summary
+* sup jonny5_maintenance flush
   * Known undocumented variants exist...
 
 ##Carriers
