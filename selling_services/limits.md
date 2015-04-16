@@ -120,3 +120,30 @@ no channels found
 
 
 ```
+
+```
+[root@k6 src]# sup jonny5_maintenance limits_details 35822499eedbed39facb241a2f12ba5b
+Account Info:
+  Account ID             : 35822499eedbed39facb241a2f12ba5b
+  Account DB             : account%2F35%2F82%2F2499eedbed39facb241a2f12ba5b
+  Current Balance        : 0.0
+Configuration:
+  Enabled                : true
+  Prepay Allowed         : true
+  Postpay Allowed        : false
+  Max Postpay Amount     : 0.0
+  Reserve Amount         : 0.5
+  Soft Limit Inbound     : false
+  Soft Limit Outbound    : false
+Limits:
+  Calls Hard Limit       : -1
+  Resources Hard Limit   : -1
+  Inbound Trunks         : 0
+  Bundled Inbound Trunks : 0
+  Outbound Trunks        : 0
+  Bundled Outbound Trunks: 0
+  Twoway Trunks          : -1
+  Bundled Twoway Trunks  : 0
+Allotments:
+  -none-
+```
