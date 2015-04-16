@@ -245,8 +245,12 @@ ok
 * sup hotornot_maintenance rates_for_did 15149072511
 * sup hotornot_maintenance rates_for_did 5149072511
 
-All three queries should return the same result if htings are setup correctly.
+All three queries should return the same result if things are setup correctly.
 
+## Jonny5
+* sup jonny5_maintenance authz_summary
+* sup jonny5_maintenance limits_summary
+  * Known undocumented variants exist...
 
 ##Carriers
 * Manipulate carriers and ACLs
