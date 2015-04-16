@@ -1,6 +1,7 @@
 # Service Plans.
 
 # Reworking in different directory.. 
+# https://github.com/stormqloud/kazoo-tgbbok/tree/master/selling_services
 
 ## This is not cleaned up yet and getting old.  
 ## Specifically, some new service plan code has been committed to the tree in 3.19+ 
