@@ -124,8 +124,8 @@ no channels found
 ```
 [root@k src]# sup jonny5_maintenance limits_details 35822499eedbed49facb241a2f12ba5b
 Account Info:
-  Account ID             : 35822499eedbed39facb241a2f12ba5b
-  Account DB             : account%2F35%2F82%2F2499eedbed39facb241a2f12ba5b
+  Account ID             : 35822499eedbed49facb241a2f12ba5b
+  Account DB             : account%2F35%2F82%2F2499eedbed49facb241a2f12ba5b
   Current Balance        : 0.0
 Configuration:
   Enabled                : true
