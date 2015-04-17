@@ -278,6 +278,9 @@ All three queries should return the same result if things are setup correctly.
 
 All three of these should give the same result.  Just different ways of saying the same thing.
 
+#### Notify..
+* sup notify_account_crawler check 35822499eedbed39facb241a2f12ba5b
+* sup notify_account_crawler low_balance_threshold <<account_id>>
 
 
 ####Secret SUP hiding places, Looking for your own sup commands..
