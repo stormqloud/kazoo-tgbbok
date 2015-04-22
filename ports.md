@@ -10,7 +10,10 @@ This is probably not an exhaustive list.  Remember about TCP/UDP.
 
 Each port really exists twice.
 
-* 25 - SMTP
+
+| Port | World/Private | What it does        |
+|--------------|--------|------------------------------------|
+| 25 | | SMTP
 * 80 - www
 * 443 - HTTPS
 * 2525 - Haproxy to 19025
