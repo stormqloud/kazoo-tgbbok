@@ -14,9 +14,9 @@ Each port really exists twice.
 | Port | World/Private | What it does        |
 |--------------|--------|------------------------------------|
 | 25 | | SMTP
-* 80 - www
-* 443 - HTTPS
-* 2525 - Haproxy to 19025
+| 80 | W | www
+| 443 | W | HTTPS
+| 2525 | P | Haproxy to 19025
 * 4369 - epmd
 * 5060 - Kamailio
 * 5061 - Kamailio TLS
