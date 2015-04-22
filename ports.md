@@ -14,8 +14,8 @@ Each port really exists twice.
 | Port | World/Private | What it does        |
 |--------------|--------|------------------------------------|
 | 25 | | SMTP
-| 80 | W | www
-| 443 | W | HTTPS
+| 80 |  | www
+| 443 |  | HTTPS
 | 2525 | P | Haproxy to 19025
 | 4369 | P | epmd
 | 5060 | | Kamailio (inbound SIP, outbound to handsets)
@@ -32,10 +32,10 @@ Each port really exists twice.
 | 8443 | | Kamailio WebSocket TLS
 | 11000 | | Freeswitch (Kamailio Dispatcher sends to this), outbound to CARRIERS from here
 | 11500 | ? | - BigCouch used for ?
-| 15672 | | RabbitMQ GUI (guest/guest)
-| 15984 | | Haproxy to 5984
-| 15986 | | Haproxy to 5986
-| 19025 | | Email to Fax
+| 15672 | P | RabbitMQ GUI (guest/guest)
+| 15984 | P | Haproxy to 5984
+| 15986 | P | Haproxy to 5986
+| 19025 | P | Email to Fax
 | 22002 | P | HAProxy Stats 
 
 
