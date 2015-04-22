@@ -86,3 +86,15 @@ format_from_uri controls what you send as your outbound header when the call hea
 }
 
 ```
+
+# Send a call to another account carriers (IE reseller)
+```
+  "flow": {
+       "data": {
+           "hunt_account_id": "5555555555"
+       },
+       "module": "resources",
+       "children": {
+       }
+   },
+```
