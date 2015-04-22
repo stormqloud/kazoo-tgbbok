@@ -38,6 +38,13 @@ Each port really exists twice.
 | 19025 | | Email to Fax
 | 22002 | P | HAProxy Stats 
 
-* 10000-60000 UDP for RTP traffic.  That's the audio packets.
-  * You must have this open for a freeswitch server.  Deal with it.
+
+* For RTP traffic.  That's the audio packets.
+  * You must have this range open for RTP audio packets.  Deal with it...
   
+```
+switch.conf.xml:        <param name="rtp-start-port" value="16384"/>
+switch.conf.xml:        <param name="rtp-end-port" value="32768"/>
+```
+
+wlloyd@stormqloud.ca
