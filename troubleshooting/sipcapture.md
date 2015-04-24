@@ -32,4 +32,19 @@
 
 ```
 
+* Kazoo-Freeswitch
+
+```
+# diff -r sofia.conf.xml sofia.conf.xml~
+8d7
+<       <param name="capture-server" value="udp:100.100.100.100:9060"/>
+```
+
+```
+[root sip_profiles]# diff sipinterface_1.xml sipinterface_1.xml~
+189d188
+<             <param name="sip-capture" value="yes"/>
+```
+
+
 SIP trunking stormqloud.ca
