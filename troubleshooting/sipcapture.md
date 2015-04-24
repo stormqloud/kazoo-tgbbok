@@ -32,4 +32,4 @@
 
 ```
 
-SIP truunking stormqloud.ca
+SIP trunking stormqloud.ca
