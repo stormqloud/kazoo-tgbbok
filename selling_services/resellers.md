@@ -15,6 +15,7 @@
 
 * If you want to make a sub account use the resellers carriers do something like this for their "no_match" callflow
   *  This must be done inside couchdb directly.  No idea how to accomplish otherwise.
+  *  The account_id is that of the reseller above the account you are changing.
   *  reload..
 
 ```
