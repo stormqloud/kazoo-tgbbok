@@ -5,7 +5,8 @@
 # Preferred way
 
 * yum -y groupinstall "Development Tools"
-
+* yum install -y libpcap automake expat-devel libtool git libpcap-devel file make
+* follow https://github.com/sipcapture/captagent
 
 # Old way
 * This way is a hassle, requires far more config changes...
