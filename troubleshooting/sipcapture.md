@@ -2,6 +2,16 @@
 
 * You need this the moment you have more then 1 machine for Kazoo.
 
+# Preferred way
+
+* yum -y groupinstall "Development Tools"
+
+
+# Old way
+* This way is a hassle, requires far more config changes...
+  * On the plus side I'm sure it sues less CPU
+  * Less stats, ie no jitter etc
+
 * For Kazoo-Kamaillio 4.2 this is the patch you need
 
 ```
