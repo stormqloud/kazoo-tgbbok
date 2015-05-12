@@ -2,9 +2,10 @@
 
 * You might want to check out the information on "upgrading" as well.
 
-* You should probably aim to install 3.19
-  * 3.20 development/master branch
-  * 3.19 is stable as of March 2015
+* You should probably aim to install 3.20
+  * 3.21 development/master branch
+  * 3.20 as current stable
+  * 3.19 is stable as of March 2015 (being retired as of May 10, 2015)
   * 3.18 was short lived before it 3.19 arrived
   * 3.16 and before are not worth starting a new install
 
