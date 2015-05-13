@@ -87,7 +87,11 @@ format_from_uri controls what you send as your outbound header when the call hea
 
 ```
 
-# Send a call to another account carriers (IE reseller)
+* Send a call to another account carriers (IE reseller)
+   * This is important if you wan to get a subaccount to use the master account carriers
+   * This assumes you want to use reseller carriers and not global carriers.
+   * also confusingly called global resources and local resources.
+    
 ```
   "flow": {
        "data": {
@@ -98,3 +102,5 @@ format_from_uri controls what you send as your outbound header when the call hea
        }
    },
 ```
+
+http://stormqloud.ca
