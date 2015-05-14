@@ -148,6 +148,7 @@ sup whistle_amqp_maintenance broker_summary
 * sup crossbar_maintenance find_account_by_number 5149072508
 * sup crossbar_maintenance running_modules
 * sup crossbar_maintenance allow_account_number_additions `<account_id>`
+* sup crossbar_maintenance init_apps '/var/www/html/monster-ui/apps' 'http://sip.stormqloud.ca:8000/v2'
 
 ##Whapps
 /opt/kazoo/utils/sup/sup whapps_config get whapps_controller whapps
