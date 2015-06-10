@@ -3,7 +3,7 @@
 Why should you be looking at 
 
 * Kazoo
-** vs
+  * vs
 * Asterisk 
 ** vs 
 
