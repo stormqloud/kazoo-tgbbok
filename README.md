@@ -3,13 +3,29 @@ kazoo-tgbbok
 
 The Great Big Book Of Kazoo
 
-These ramblings are here so I can add to them easily.  When I write them, I'm fairly sure where to find it again.  Kazoo is so large that it's easy to forget what you already learned about Kazoo.  At the same time remember, "You don't know, what you don't know".
+These ramblings are here so I can add to them easily (no approvals), and a tiny little bit of Google juice. 
 
-This stuff is not for the absolute beginner.  If you are just starting Kazoo or wanting to install for the first time, this is probably not the best starting point for your adventure.
+When I put it here, I'm fairly sure where to find it again.  
 
-This is mostly for the system admin that gets lost looking for the Kazoo yellow brick road.  I offer you some bricks.
+Kazoo is so large that it's easy to forget what you already learned about Kazoo.  
+
+Remember, "You don't know, what you don't know". (TM some person before lawyers and coryright existed)
+
+This stuff is not for the absolute Kazoo beginner.  If you are just starting Kazoo or wanting to install for the first time, this is probably not the best starting point for your adventure.
+
+If you are a new user, play with the ISO.
+
+If you are lost, you should call the 2600hz folks.  They wrote the software and know it really well!!  2600hz offers a manged hosted platform.
+
+This is mostly for the system admin that gets lost looking for the Kazoo yellow brick road.  
+
+I offer you some yellow bricks.
 
 Think of it as tips and tricks once the platform is installed and you have made a first few calls.
+
+99.99% of the things you find here are the creation of 2600hz or other people.   I'm not the genius behind the code.
+
+This is github is a set of ideas, links etc.
 
 In reality you should already know about the following resources at this point.
 
