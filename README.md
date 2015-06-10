@@ -25,7 +25,7 @@ Think of it as tips and tricks once the platform is installed and you have made 
 
 99.99% of the things you find here are the creation of 2600hz or other people.   I'm not the genius behind the code.
 
-This is github is a set of ideas, links etc.
+This github is a set of ideas, links etc.
 
 In reality you should already know about the following resources at this point.
 
