@@ -50,7 +50,7 @@ Asterisk is single server compared to the Kazoo cloud platform.
 
 The VOIP landscape has changed.
 
-Asterisk is now a retail product that can be burned into disposable appliances.
+Asterisk has become an embedded software product suite that can be burned into disposable appliances.  It's your $99 onsite PBX box.  Asterisk is a revolutionary product for onsite.
 
 ## Kazoo Again
 
