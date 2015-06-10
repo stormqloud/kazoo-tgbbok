@@ -1,10 +1,16 @@
 #Background
 
-Why should you be looking at 
+This is a really really *really* shortlist of some fo the "voip" pbx systems out there.
 
-* Kazoo
-* vs
-   * Asterisk 
-** vs 
+It's not 1984 anymore.  The work is bigger then Norstar Centrex and other crap.   (All of these technologies predate 1984 but are relevant for artistic license and legal purposes).
 
-3cx vs 2cx vs 1cx
+### Have you already worked your way through the list?
+* 1cx, 2cx, 3cx?
+* Asterisk?
+* FreePBX?
+* Elastix?
+* Freeswitch?
+* Norstar BCM?
+* Avaya POS? (that not Point of Retail)
+* Norstar
+* *
