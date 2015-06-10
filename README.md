@@ -33,7 +33,11 @@ In reality you should already know about the following resources at this point.
 * https://2600hz.com/
 * https://github.com/2600hz/kazoo
 * https://github.com/2600hz/kazoo/tree/master/applications/crossbar/doc
+
+##### Altassian is a nightmare IMHO.  However there is a lot of info there and in Jira.
 * https://2600hz.atlassian.net/wiki/display/docs/Overview
+* Make sure to get yourself a jira login.
+* Links to jira from google will not work without a login.
 
 ###Mailing list
 * `https://groups.google.com/forum/#!forum/2600hz-users`
