@@ -1,5 +1,9 @@
 # Provisioning
 
+## If you are from 2600hz.org please consider renting your provisioner as a monthly service.
+## Provisioning is the most commonly frequented page on this blog.  
+## Let people rent the hosted provisioner...
+
 * As of early 2015, "Open Source Provisioning" is so hopelessly complicated as to be unknown in the wild.  
 * 2600hz apparently has provisioning built for master-ui.  This is not an open source product as far as I can find.
 
