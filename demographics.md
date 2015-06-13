@@ -3,7 +3,7 @@
 * Kazoo is not Asterisk
   * Kazoo and Asterisk are apples and Oranges
 
-** You should consider running Kazoo
+### You should consider running Kazoo
   * You manage 50+ FreePBX servers
   * You know what a multi-tennant PBX is
   * You are a *large* call center.
@@ -12,7 +12,7 @@
 
 
 
-** You should not be running Kazoo
+### You should not be running Kazoo
  * you are new to voip
  * what's an ITSP
  * Your 'bidness' is not VOIP
