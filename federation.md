@@ -1,4 +1,4 @@
-# Federation
+# Federation/Zones
 
 ## The Holy Grail.
 
@@ -9,7 +9,7 @@
 
 I searched to fgure out really what this means in Kazoo.
 
-Kazoo uses AMQP and BigCouch so Federation is a mix of what is defined in the other projects.
+Kazoo uses AMQP and BigCouch so Federation/Zones is a mix of what is defined in the other projects.
 
 * https://www.rabbitmq.com/federation-reference.html
 * http://www.erlang-factory.com/upload/presentations/369/Kocoloski-BigCouch-ErlangFactory.pdf
