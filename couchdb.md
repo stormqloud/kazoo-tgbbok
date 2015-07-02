@@ -3,7 +3,13 @@
 * Kazoo runs Bigcouch which is a fork of Couchdb.  (Ie couchdb plus some extra stuff)
 * 2600hz has said (mailing list) they intend to move back to Couchdb at some point in the future
   * most if not all bigcouch improvements have found their way back into mainstream CouchDB.
+  * 
   
+
+* Zones
+  * https://cloudant.com/blog/choosing-zone-configurations-for-bigcouch
+
+
 * Special URLs for bigcouch (appear to be called global handlers)..
 * You might want direct these to port 15984 instead..
 
