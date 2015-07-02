@@ -1,8 +1,9 @@
 # CouchDB things...
 
-* Kazoo runs bigcouch witch is a branch of couchdb.  (Ie couchdb plus some extra stuff)
-* 2600hz has said (mailing list) they intend to move back to couchdb at some point in the future
-
+* Kazoo runs Bigcouch which is a fork of Couchdb.  (Ie couchdb plus some extra stuff)
+* 2600hz has said (mailing list) they intend to move back to Couchdb at some point in the future
+  * most if not all bigcouch improvements have found their way back into mainstream CouchDB.
+  
 * Special URLs for bigcouch (appear to be called global handlers)..
 * You might want direct these to port 15984 instead..
 
