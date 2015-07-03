@@ -11,7 +11,8 @@
     * IE delete is really a soft delete, does not free disk space most of the time
 
 * Things you cannot change after installation..
-  *```
+  *
+```
 [cluster]
 q=1
 r=1
