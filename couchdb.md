@@ -1,10 +1,23 @@
 # CouchDB things...
 
-* Kazoo runs Bigcouch which is a fork of Couchdb.  (Ie couchdb plus some extra stuff)
-* 2600hz has said (mailing list) they intend to move back to Couchdb at some point in the future
+* Kazoo runs Bigcouch which is a fork of CouchDB.  (Ie CouchDB plus some extra stuff)
+* 2600hz has said (mailing list) they intend to move back to CouchDB at some point in the future
   * most if not all bigcouch improvements have found their way back into mainstream CouchDB.
-  * 
+  * Futon has been replaced with Fauxton
   
+
+* CouchDB stuff you should know, or be prepared to learn the hard way
+  * CouchDB databases don't shrink in space.
+    * IE delete is really a soft delete, does not free disk space most of the time
+
+* Things you cannot change after installation..
+  *```
+[cluster]
+q=1
+r=1
+w=1
+n=1
+```
 
 * Zones
   * https://cloudant.com/blog/choosing-zone-configurations-for-bigcouch
