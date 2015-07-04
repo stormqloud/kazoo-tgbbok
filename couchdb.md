@@ -10,7 +10,7 @@
   * CouchDB databases don't shrink in space.
     * IE delete is really a soft delete, does not free disk space most of the time
 
-* Things you cannot change after installation..
+* Things you cannot change easily after installation..
   * Inside ```/etc/kazoo/bigcouch/local.ini``` you will find a section looking something like this.
 ```
 # Kazoo Single server ISO
@@ -29,10 +29,12 @@ n=3
 
 ```
 
-* The paramters of [cluster] section are very hard to change.
-  * Changing the local.ini file is easy..
-  
+* The paramters of [cluster] section are *very* hard to change without losing *many* nights sleep.
+* All BigCouchDB instances that are clustered need to have the *SAME* parameter values at the *SAME* time.
 
+* CloneTools..
+  * https://github.com/2600hz/community-scripts/tree/master/CloneTools
+  * If you need to change the parameters of [cluster]
 * Zones
   * https://cloudant.com/blog/choosing-zone-configurations-for-bigcouch
 
