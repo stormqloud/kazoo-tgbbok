@@ -22,6 +22,7 @@ r=1
 w=1
 n=1
 #z=1 implicit default
+
 # Kazoo single cluster(data center) install
 # IE 3 Bigcouch server machines this is what you use
 [cluster]
@@ -30,6 +31,9 @@ r=2
 w=2
 n=3
 #z=1 implicit default
+
+
+
 ```
 
 * The paramters of [cluster] section are *very* hard to change without losing *many* nights sleep.
