@@ -55,8 +55,10 @@ drwxr-xr-x 2 bigcouch daemon 4096 Jul  4 01:53 00000000-ffffffff
   ```
 
 * Zones
-  *  You already are z=1 if z is undefined
-  *  Appears you can split z=1 into z=2 etc
+  * You already are z=1 if z is undefined
+  * Appears you can split z=1 into z=2 etc
+    * https://groups.google.com/forum/#!topic/bigcouch-user/RtZF2YvXZAQ
+
 
 * CloneTools..
   * https://github.com/2600hz/community-scripts/tree/master/CloneTools
