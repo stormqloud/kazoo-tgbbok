@@ -8,7 +8,8 @@
   *  You will need to signup for an account and pay real money.
   
 * The TTS speech quality from ispeech.org is truely awesome.
-* If you buy the service and try the languages and so forth it works *really* well.  Like scary welcome to the future.
+* If you buy the service and try the languages and so forth it works *really* well.
+  *  Everybody should be impressed with the TTS. 
 
 * Kazoo will cache a copy of the audio stream as a wav file inside of couchdb before you ever hear it.
   * In general you "save money" because each IVR message is only purchased once, but used over and over.
