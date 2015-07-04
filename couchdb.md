@@ -13,12 +13,25 @@
 * Things you cannot change after installation..
   * Inside ```/etc/kazoo/bigcouch/local.ini``` you will find a section looking something like this.
 ```
+# Kazoo Single server ISO
 [cluster]
 q=1
 r=1
 w=1
 n=1
+
+# Kazoo single cluster(data center) install
+[cluster]
+q=3
+r=2
+w=2
+n=3
+
 ```
+
+* The paramters of [cluster] section are very hard to change.
+  * Changing the local.ini file is easy..
+  
 
 * Zones
   * https://cloudant.com/blog/choosing-zone-configurations-for-bigcouch
