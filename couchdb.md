@@ -11,7 +11,7 @@
     * IE delete is really a soft delete, does not free disk space most of the time
 
 * Things you cannot change after installation..
-  *
+  * Inside ```/etc/kazoo/bigcouch/local.ini``` you will find a section looking something like this.
 ```
 [cluster]
 q=1
