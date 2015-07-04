@@ -39,6 +39,11 @@ n=3
   * Clonetools to new cluster (yes you read that right)
   * You need to make a new database and migrate your data over
   * Changing the q value is *NOT* possible.
+  * q represets the static hash onto 1-X directories.
+  * Repeat, you cannot change.  Make a new DB cluster..
+    * Sux..
+
+
   ```
   [admin@bigcouch1 bigcouch]$ ll /srv/db/shards
 total 4
