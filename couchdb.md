@@ -62,7 +62,7 @@ drwxr-xr-x 2 bigcouch daemon 4096 Jul  4 01:53 00000000-ffffffff
   * If you need to change the parameters of [cluster]
 * Zones
   * https://cloudant.com/blog/choosing-zone-configurations-for-bigcouch
-
+   * note: this article is with q=1!
 
 * Special URLs for bigcouch (appear to be called global handlers)..
 * You might want direct these to port 15984 instead..
