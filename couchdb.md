@@ -46,12 +46,21 @@ n=3
   * You need to make a new database and migrate your data over
   * Changing the q value is *NOT* possible.
   * q represets the static hash onto 1-X directories.
-  * Repeat, you cannot change.  Make a new DB cluster..
-    * Sux..
+  * Repeat, you cannot change.  Make a new DB cluster an duse clonetools to move over
+    * See example below.
+    * q=1 vs q=3, maps the dataset onto different number of underlying directories.
+
   ```
   [admin@bigcouch1 bigcouch]$ ll /srv/db/shards
 total 4
 drwxr-xr-x 2 bigcouch daemon 4096 Jul  4 01:53 00000000-ffffffff
+
+[root@k3 ~]# ll /srv/db/shards/
+total 12
+drwxr-xr-x 5 bigcouch daemon 4096 Jun 29 02:36 00000000-55555554
+drwxr-xr-x 5 bigcouch daemon 4096 Jun 29 02:36 55555555-aaaaaaa9
+drwxr-xr-x 5 bigcouch daemon 4096 Jun 29 02:37 aaaaaaaa-ffffffff
+
   ```
 
 * Zones
