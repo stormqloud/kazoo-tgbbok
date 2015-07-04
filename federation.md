@@ -62,5 +62,5 @@ mc_
 but typically people use the datacenter, country, etc as the zone name
 ```
 
-* Information on setting up zones for 3.19
-  * https://groups.google.com/forum/#!topic/2600hz-users/JDy6YHJU0C0
+* Information on setting up zones
+  * https://groups.google.com/forum/#!searchin/2600hz-users/zone/2600hz-users/sclhrzkA1Sw/mPl6eaj2rAMJ
