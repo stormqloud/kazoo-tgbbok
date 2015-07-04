@@ -3,7 +3,7 @@
 * Kazoo runs Bigcouch which is a fork of CouchDB.  (Ie CouchDB plus some extra stuff)
 * 2600hz has said (mailing list) they intend to move back to CouchDB at some point in the future
   * most if not all BigCouchDB improvements have found their way back into mainstream CouchDB.
-    * 
+    * See CouchDB 2.0 https://couchdb.apache.org/developer-preview/2.0/
   * Futon has been replaced with Fauxton
   * BigCouch and CouchDB as terms are used fairly interchangably..
 
