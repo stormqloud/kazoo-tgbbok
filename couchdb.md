@@ -39,7 +39,8 @@ n=3
 * The paramters of [cluster] section are *very* hard to change without losing *many* nights sleep.
 * All BigCouchDB instances that are clustered need to have the *SAME* parameter values at the *SAME* time.
 
-* Look at this for a definition of the paramters http://www.erlang-factory.com/upload/presentations/369/Kocoloski-BigCouch-ErlangFactory.pdf
+* Look at this for a definition of the paramters
+  * http://www.erlang-factory.com/upload/presentations/369/Kocoloski-BigCouch-ErlangFactory.pdf
 
 * Changing q values?
   * Clonetools to new cluster (yes you read that right)
