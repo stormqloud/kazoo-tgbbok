@@ -76,6 +76,12 @@ drwxr-xr-x 5 bigcouch daemon 4096 Jun 29 02:37 aaaaaaaa-ffffffff
   * https://cloudant.com/blog/choosing-zone-configurations-for-bigcouch
    * note: this article is with q=1!
 
+* CouchDB replication
+  * This is unlikely to be that useful for Kazoo
+  * Replication is generally on a database by database basis.
+    * Your Kazoo CouchDB will have HUNDREDS of databsaes
+    * Not that useful for Kazoo cluster
+
 * Special URLs for bigcouch (appear to be called global handlers)..
 * You might want direct these to port 15984 instead..
 
