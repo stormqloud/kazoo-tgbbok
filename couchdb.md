@@ -69,13 +69,13 @@ drwxr-xr-x 5 bigcouch daemon 4096 Jun 29 02:37 aaaaaaaa-ffffffff
   * Appears you can split z=1 into z=2 etc
     * https://groups.google.com/forum/#!topic/bigcouch-user/RtZF2YvXZAQ
   * http://bigcouch.cloudant.com/api
+  * https://cloudant.com/blog/choosing-zone-configurations-for-bigcouch
+   * note: this article is with q=1!
 
 * CloneTools..
   * https://github.com/2600hz/community-scripts/tree/master/CloneTools
   * If you need to change the parameters of [cluster]
-* Zones
-  * https://cloudant.com/blog/choosing-zone-configurations-for-bigcouch
-   * note: this article is with q=1!
+
 
 * CouchDB replication
   * This is unlikely to be that useful for Kazoo
