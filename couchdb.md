@@ -14,7 +14,8 @@
   * CouchDB databases don't shrink in space.
     * Append only (only grows in size..)
     * IE delete is really a soft delete, does not free disk space
-
+  * CouchDB tools work on databases.  Kazoo will have hundreds..
+  
 * Things you cannot change easily after installation..
   * Inside ```/etc/kazoo/bigcouch/local.ini``` you will find a section looking something like this.
 ```
