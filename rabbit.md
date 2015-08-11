@@ -10,4 +10,4 @@
 ** https://www.rabbitmq.com/clustering.html
 
 * My understanding is Rabbit clustering is not used for Kazoo Federation/zones
-** Have been known to be wrong
+  * Have been known to be wrong
