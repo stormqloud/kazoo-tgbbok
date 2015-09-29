@@ -106,6 +106,11 @@ drwxr-xr-x 5 bigcouch daemon 4096 Jun 29 02:37 aaaaaaaa-ffffffff
   * http://kazoocloud.stormqloud.ca:5984/_uuids
 ```
 
+* Fauxton can be install and appears to work as a replacement to Futon
+  * yum install npm
+  * npm install fauxton
+  * fauxton/bin/fauxton -c http://localhost:5984 -p 7999
+  * 
 
 * Things to look into one day..
 
