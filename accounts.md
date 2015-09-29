@@ -1,6 +1,6 @@
 # Account Structure
 
-## These suggestions fall under the category of good Kazo policy.
+## These suggestions fall under the category of good Kazoo policy.
 
 When you start screwing around with Kazoo it's important to understand you need to flush out the system to a *MINIMUM* of 3 levels.
 
