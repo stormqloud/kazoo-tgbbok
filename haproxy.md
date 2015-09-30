@@ -1,7 +1,7 @@
 # HAPROXY
 # Under-appreciated element of the stack.
 
-So when you make a call to port 15984 on a Kazoo box, what's really happening is haproxy is running onthat machine and it will proxy that request to port 5984.
+So when you make a call to port 15984 on a Kazoo box, what's really happening is haproxy is running on that machine and it will proxy that request to port 5984.
 
 HAPROXY will often proxy your request to a different server then you made the call to.  That's the *HA* part.  High Availability.
 
