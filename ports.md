@@ -2,6 +2,10 @@
 
 The following ports are involved in a running Kazoo setup.
 
+This assumes a one server system.
+
+If you run a 6/7/8/etc cluster the same ports are at play.  It's just you may want to lock down traffic even more.
+
 You should firewall ACL these appropriately at your border router.
 
 Specifically you should by default deny all public traffic to your Kazoo machines.  Open up ports below as required.
@@ -23,9 +27,9 @@ Each port really exists twice.
 | 5672 | P | amqp 
 | 5984 | P | CouchDB Data
 | 5986 | P | CouchDB Mgr
-| 7000 | ? | Kamailio ALG SIP
-| 7001 | ? | Kamailio ALG TLS SIP
-| 8000 |  | Cowboy (API into Kazoo), KazooUI uses this..
+| 7000 |  | Kamailio ALG SIP
+| 7001 |  | Kamailio ALG TLS SIP
+| 8000 |  | Cowboy (API into Kazoo), Kazoo-UI uses this..
 | 8021 | P | Freeswtich Event socket
 | 8080 | | Kamailio websocket
 | 8031 | ? | Freeswitch
