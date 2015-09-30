@@ -1,12 +1,13 @@
-# Monster-ui
+# Monster-UI
 
-## Monster-ui replaces Kazoo-ui 
- * Monster-ui looks awesome
- * Monster-ui is a great product
- * It's different then Kazoo-ui and makes more assumptions.
- 
- * Kazoo-ui has more features and has a "lower level" interface.
- * Monster-ui is missing some critical apps/features in open source
+## Monster-UI replaces Kazoo-UI 
+ * Monster-UI looks awesome
+ * Monster-UI is a great product
+ * It's different then Kazoo-UI and makes more assumptions.
+  * "thats a good thing" TM
+  
+ * Kazoo-UI has more features and has a "lower level" interface.
+ * Monster-UI is missing some critical apps/features in open source
   * callflows
  * Moster is missing some useful apps as well 
   * blacklists
