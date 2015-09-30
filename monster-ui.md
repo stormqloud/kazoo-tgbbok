@@ -1,11 +1,14 @@
 # Monster-UI
 
+### tl;dr: Monster-UI is an awesome product.  Until callflows editor is available, it's not production.  Use Kazoo-UI.
+
 ## Monster-UI replaces Kazoo-UI 
  * Monster-UI looks awesome
  * Monster-UI is a great product
  * It's different then Kazoo-UI and makes more assumptions.
   * "thats a good thing" TM
   
+## If you are new to Kazoo.
  * Kazoo-UI has more features and has a "lower level" interface.
  * Monster-UI is missing some critical apps/features in open source
   * callflows
