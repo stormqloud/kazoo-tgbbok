@@ -4,13 +4,16 @@
 * I've tried to list as many SUP commands as I can casually find onto on this page.
 * You need to understand what the SUP command does..
 
+Here is the master list if you want just that..
+ * https://github.com/stormqloud/kazoo-tgbbok/blob/master/sup_commands
 There are too many sup commands listed in too many places so far...  The super ingenius will know how to scan the Erlang source code to sniff out their own sup commands.
 
 It is almost impossible to define all the sup commands.  The best way would be to write a script to parse the Erlang source.
 
 * Update: Somebody made such a script..
   * https://github.com/2600hz/kazoo/pull/1062
-  
+  * 
+
 Read below for discovering your own sup command and you should understand why.
 
 This list is for the mere mortals but mostly me.  Things may appear multiple times under different categories.
