@@ -7,7 +7,7 @@ These ramblings are here so I can add to them easily (no approvals), and a tiny 
 
 When I put it here, I'm fairly sure where to find it again.  
 
-Kazoo is so large that it's easy to forget what you already learned about Kazoo.  
+Kazoo is so large that it's easy to forget what you already learned about Kazoo.
 
 Remember, "You don't know, what you don't know". (TM some person before lawyers and coryright existed)
 
