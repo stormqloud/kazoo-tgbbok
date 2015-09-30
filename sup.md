@@ -2,7 +2,7 @@
 
 ## Help
 * I've tried to list as many SUP commands as I can casually find onto on this page.
-* You need to understand what the SUP commnd does..
+* You need to understand what the SUP command does..
 
 There are too many sup commands listed in too many places so far...  The super ingenius will know how to scan the Erlang source code to sniff out their own sup commands.
 
