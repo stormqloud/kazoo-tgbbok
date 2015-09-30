@@ -4,7 +4,7 @@ The following ports are involved in a running Kazoo setup.
 
 This assumes a one server system.
 
-If you run a 6/7/8/etc cluster the same ports are at play.  It's just you may want to lock down traffic even more.
+If you run a 6/7/8/etc server cluster the same ports are at play.  It's just you may want to lock down traffic even more.
 
 You should firewall ACL these appropriately at your border router.
 
