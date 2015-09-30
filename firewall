@@ -1,5 +1,5 @@
 #!/bin/bash 
-# Ver 0.01
+# Ver 0.02
 #
 # Standing on the shoulders of others.
 # https://2600hz.atlassian.net/wiki/display/Dedicated/Setting+up+IPTABLES
@@ -9,18 +9,27 @@
 # flush all existing rules and chains
 iptables -F
 iptables -X
+
 # allow inbound ssh connection on external/public interface
 # you probably want to remap this from port 22 to port blabla
 iptables -A INPUT -p tcp --dport 22 --sport 1024:65535 -m state --state NEW,ESTABLISHED -j ACCEPT
+
 # set default policies (allow any outbound, block inbound, restrict forwarding between interfaces)
 iptables -P INPUT DROP
 iptables -P FORWARD DROP
 iptables -P OUTPUT ACCEPT
+
 # Allow TCP 80 and 443 for apache if you installed KAZOO-UI
 iptables -A INPUT -p tcp --dport 80 -j ACCEPT
 iptables -A INPUT -p tcp --dport 443 -j ACCEPT
+
+# Allow TCP 8000 for crossbar/cowboy (API back end for Kazoo-UI/Monster-UI)
+iptables -A INPUT -p tcp --dport 8000 -j ACCEPT
+iptables -A INPUT -p tcp --dport 8443 -j ACCEPT
+
 # Allow RTP traffic
 iptables -A INPUT -p udp --dport 16384:32768 -j ACCEPT
+
 # Allow KAMAILIO traffic
 # regular ports plus 
 # SIP ALG avoidance ports..
@@ -66,13 +75,9 @@ iptables -A INPUT -s "XXX.XXX.XXX.XXX" -j ACCEPT # - BIGCOUCH-DB  LOCATION-2 SER
 iptables -A INPUT -s "XXX.XXX.XXX.XXX" -j ACCEPT # - WHAPPS/KAZOO LOCATION-1 SERVER-1
 iptables -A INPUT -s "XXX.XXX.XXX.XXX" -j ACCEPT # - WHAPPS/KAZOO LOCATION-2 SERVER-1
 
-# block traffic coming into db unless ACCEPTED in INPUT above which 8server setup IP's are placed in with home/office IP's above.
+# block traffic coming into db unless ACCEPTED in INPUT above which server setup IP's are placed in with home/office IP's above.
 iptables -A INPUT -p tcp --dport 15984 -j DROP
 iptables -A INPUT -p tcp --dport 15986 -j DROP
-
-# Allow TCP 8000 and 8443 for Crossbar
-iptables -A INPUT -p tcp --dport 8000 -j ACCEPT
-iptables -A INPUT -p tcp --dport 8443 -j ACCEPT
 
 # allow inbound traffic for established connections on external/public interface
 iptables -A INPUT -m state --state ESTABLISHED,RELATED -j ACCEPT
