@@ -1,7 +1,10 @@
-#WTF is Kazoo-ui
+#WTF is Kazoo-UI
   Production UI
+
+#WTF is Monster-UI
+  Up and coming UI https://github.com/stormqloud/kazoo-tgbbok/blob/master/monster.md
   
-## Kazoo-ui tweaks
+## Kazoo-UI tweaks
 * Extend logout 
   * Edit ```/var/www/html/kazoo-ui/config/config.js```
     * Add ```        logout_timer: '360',```
