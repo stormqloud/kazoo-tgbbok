@@ -50,6 +50,8 @@ From https://github.com/2600hz/kazoo
 From https://github.com/2600hz/kazoo
  * [new tag]         3.21.32    -> 3.21.32
 [root@k9 kazoo-master]# 
+[root@k9 kazoo-master]# git merge upstream/master
+Already up-to-date.
 
 
 ```
