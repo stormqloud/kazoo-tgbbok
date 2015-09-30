@@ -22,4 +22,12 @@ cat .git/config
 [remote "upstream"]
         url = https://github.com/2600hz/kazoo
         fetch = +refs/heads/*:refs/remotes/upstream/*
+        
+
+[root@k9 kazoo-master]# git status
+# On branch master
+# Your branch is ahead of 'origin/master' by 18 commits.
+#
+nothing to commit (working directory clean)
+
 ```
