@@ -2,19 +2,20 @@
 
 ## If you are from 2600hz.org please consider renting your provisioner as a monthly service.
 ## Provisioning is the most commonly frequented page on this blog.  
-## Let people rent the hosted provisioner...
 
 * As of early 2015, "Open Source Provisioning" is so hopelessly complicated as to be unknown in the wild.  
-* 2600hz apparently has provisioning built for master-ui.  This is not an open source product as far as I can find.
+* 2600hz apparently has provisioning built for monster-ui.  This is not an open source product as far as I can find.  It does appear it wil ever be.
 
 * https://groups.google.com/forum/#!searchin/2600hz-dev/provisioner/2600hz-dev/573YWxdxz9E/b6okNxauIqQJ
   * "The provisioner is in a state of flux. The old one is completely unstable so we’re not really encouraging people to use that at this point." 
 
 # To the reader: you have two options to get Provisioning working ;-)  
 
-* Buy support from 2600hz.com (good idea ;-)
+* Buy support from 2600hz.com or move to their hosted platform ( good idea ;-) )
 
 * Research and rewrite the old unreliable provisioning yourself and send me (stormqloud.ca) the instructions ;-)
+
+# Kazoo-ui and Monster-ui appear to have slightly different provisioning.  If you are to implement things yourself you need to pick one..
 
 # What's in the Kazoo source tree?
 * There are currently 4 versions of provisiong in the Kazoo backend.  It's unclear how different or similar these are to each other.  Based on the dates things were checked into the source tree, it would appear that provisioner_v5 is the newest.  Newest doesn;t mean the best working however!
