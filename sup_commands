@@ -1,5 +1,7 @@
 # Vaguely current as of Sept 29, 2015
 # wlloyd@stormqloud.ca
+# this comes from the output of..
+# ./sup-build-autocomplete.escript sup.complete /opt/kazoo > /root/sup_commands
 
 sup whistle_maintenance console_level Level
 sup whistle_maintenance error_level Level
