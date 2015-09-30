@@ -2,6 +2,8 @@
 
 The following ports are involved in a running Kazoo setup.
 
+You may want to check out https://github.com/stormqloud/kazoo-tgbbok/blob/master/firewall
+
 This assumes a one server system.
 
 If you run a 6/7/8/etc server cluster the same ports are at play.  It's just you may want to lock down traffic even more.
