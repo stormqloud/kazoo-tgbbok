@@ -1,0 +1,496 @@
+# Vaguely current as of Sept 29, 2015
+# wlloyd@stormqloud.ca
+
+sup whistle_maintenance console_level Level
+sup whistle_maintenance error_level Level
+sup whistle_maintenance etop 
+sup whistle_maintenance gc_all 
+sup whistle_maintenance gc_pids Ps
+sup whistle_maintenance gc_top_mem_consumers 
+sup whistle_maintenance gc_top_mem_consumers N
+sup whistle_maintenance hotload Module
+sup whistle_maintenance hotload_app App
+sup whistle_maintenance ibrowse_cleanup 
+sup whistle_maintenance nodes 
+sup whistle_maintenance syslog_level Level
+sup whistle_maintenance top_mem_consumers 
+sup whistle_maintenance top_mem_consumers Len
+sup kazoo_ips_maintenance add 
+sup kazoo_ips_maintenance add IPAddress Zone Host
+sup kazoo_ips_maintenance assign 
+sup kazoo_ips_maintenance assign IP Account
+sup kazoo_ips_maintenance delete 
+sup kazoo_ips_maintenance delete IP
+sup kazoo_ips_maintenance refresh 
+sup kazoo_ips_maintenance release 
+sup kazoo_ips_maintenance release IP
+sup kazoo_ips_maintenance summary 
+sup kazoo_ips_maintenance summary Host
+sup whistle_couch_maintenance archive Db
+sup whistle_couch_maintenance archive Db Filename
+sup whistle_couch_maintenance cancel_compaction_job 
+sup whistle_couch_maintenance cancel_compaction_jobs 
+sup whistle_couch_maintenance change_api_url AppName ApiUrl
+sup whistle_couch_maintenance change_api_url AppName ApiUrl Account
+sup whistle_couch_maintenance compact_all 
+sup whistle_couch_maintenance compact_db Db
+sup whistle_couch_maintenance compact_db Node Db
+sup whistle_couch_maintenance compact_node Node
+sup whistle_couch_maintenance compaction_status 
+sup whistle_couch_maintenance flush 
+sup whistle_couch_maintenance flush Account
+sup whistle_couch_maintenance flush Account DocId
+sup whistle_couch_maintenance start_auto_compaction 
+sup whistle_couch_maintenance stop_auto_compaction 
+sup whistle_couch_maintenance test_admin_connection 
+sup whistle_couch_maintenance test_connection 
+sup kazoo_modb_maintenance archive_modbs 
+sup kazoo_modb_maintenance archive_modbs AccountId
+sup kazoo_modb_maintenance delete_modbs Period
+sup kazoo_modb_maintenance fix_rollup Account
+sup kazoo_modb_maintenance rollup_account Account
+sup kazoo_modb_maintenance rollup_account AccountId Balance
+sup kazoo_modb_maintenance rollup_accounts 
+sup kazoo_modb_maintenance verify_rollups 
+sup kazoo_modb_maintenance verify_rollups Account
+sup whistle_amqp_maintenance add_broker Broker
+sup whistle_amqp_maintenance add_broker Broker Zone
+sup whistle_amqp_maintenance add_connection Broker
+sup whistle_amqp_maintenance add_connection Broker Zone
+sup whistle_amqp_maintenance broker_summary 
+sup whistle_amqp_maintenance channel_summary 
+sup whistle_amqp_maintenance connection_summary 
+sup whistle_amqp_maintenance consumer_details 
+sup whistle_amqp_maintenance consumer_details ProcessUpper
+sup whistle_amqp_maintenance consumer_details NodeNumber ProcessUpper ProcessLower
+sup whistle_amqp_maintenance primary_broker 
+sup whistle_amqp_maintenance remove_broker Broker
+sup whistle_amqp_maintenance validate_assignments 
+sup whistle_media_maintenance import_prompt Path
+sup whistle_media_maintenance import_prompt Path Lang
+sup whistle_media_maintenance import_prompts Path
+sup whistle_media_maintenance import_prompts Path Lang
+sup whistle_media_maintenance migrate 
+sup whistle_media_maintenance migrate_prompts 
+sup whistle_media_maintenance refresh 
+sup whistle_media_maintenance remove_empty_media_docs AccountId
+sup whistle_media_maintenance set_account_language Account Language
+sup whistle_number_manager_maintenance activate_phone_number Number
+sup whistle_number_manager_maintenance activate_phone_number Number AccountId
+sup whistle_number_manager_maintenance cleanup_phone_numbers 
+sup whistle_number_manager_maintenance cleanup_phone_numbers Account
+sup whistle_number_manager_maintenance create_and_activate_phone_number Number AccountId
+sup whistle_number_manager_maintenance create_phone_number Number
+sup whistle_number_manager_maintenance create_phone_number Number AccountId
+sup whistle_number_manager_maintenance reconcile 
+sup whistle_number_manager_maintenance reconcile Arg
+sup whistle_number_manager_maintenance reconcile_accounts 
+sup whistle_number_manager_maintenance reconcile_accounts 'all'
+sup whistle_number_manager_maintenance reconcile_accounts AccountId
+sup whistle_number_manager_maintenance reconcile_numbers 
+sup whistle_number_manager_maintenance reconcile_numbers 'all'
+sup whistle_number_manager_maintenance reconcile_numbers NumberDb
+sup whistle_number_manager_maintenance reconcile_providers 
+sup whistle_number_manager_maintenance refresh 
+sup whapps_maintenance blocking_refresh 
+sup whapps_maintenance blocking_refresh Pause
+sup whapps_maintenance call_id_status CallId
+sup whapps_maintenance call_id_status CallId Verbose
+sup whapps_maintenance cleanup_aggregated_account Account
+sup whapps_maintenance cleanup_aggregated_accounts 
+sup whapps_maintenance cleanup_aggregated_device DocId
+sup whapps_maintenance cleanup_aggregated_devices 
+sup whapps_maintenance cleanup_orphan_modbs 
+sup whapps_maintenance cleanup_voicemail_media Account
+sup whapps_maintenance delete_system_media_references 
+sup whapps_maintenance ensure_aggregate_device Account
+sup whapps_maintenance ensure_aggregate_devices 
+sup whapps_maintenance find_invalid_acccount_dbs 
+sup whapps_maintenance get_all_account_views 
+sup whapps_maintenance migrate 
+sup whapps_maintenance migrate Pause
+sup whapps_maintenance migrate_limits 
+sup whapps_maintenance migrate_limits Account
+sup whapps_maintenance migrate_media 
+sup whapps_maintenance migrate_media Account
+sup whapps_maintenance purge_doc_type Type Account
+sup whapps_maintenance purge_doc_type [Type|Types] Account
+sup whapps_maintenance purge_doc_type [] _Account
+sup whapps_maintenance purge_doc_type Type Account ChunkSize
+sup whapps_maintenance rebuild_token_auth 
+sup whapps_maintenance rebuild_token_auth Pause
+sup whapps_maintenance refresh 
+sup whapps_maintenance refresh "accounts"
+sup whapps_maintenance refresh "acdc"
+sup whapps_maintenance refresh "anonymous_cdrs"
+sup whapps_maintenance refresh "cccps"
+sup whapps_maintenance refresh "dedicated_ips"
+sup whapps_maintenance refresh "faxes"
+sup whapps_maintenance refresh "oauth"
+sup whapps_maintenance refresh "offnet"
+sup whapps_maintenance refresh "port_requests"
+sup whapps_maintenance refresh "ratedeck"
+sup whapps_maintenance refresh "services"
+sup whapps_maintenance refresh "sip_auth"
+sup whapps_maintenance refresh "system_config"
+sup whapps_maintenance refresh "system_media"
+sup whapps_maintenance refresh "system_schemas"
+sup whapps_maintenance refresh "token_auth"
+sup whapps_maintenance refresh "webhooks"
+sup whapps_maintenance refresh Database
+sup whapps_maintenance refresh_account_db Database
+sup whapps_maintenance remove_aggregated_account Account
+sup whapps_maintenance remove_depreciated_databases 
+sup kazoo_oauth_maintenance register_common_providers 
+sup kazoo_oauth_maintenance register_oauth_app AccountId OAuthId EMail Secret Provider
+sup whistle_transactions_maintenance disable_top_up 
+sup whistle_transactions_maintenance enable_top_up 
+sup whistle_services_maintenance cascade_reseller_id Reseller Account
+sup whistle_services_maintenance credit AccountId Amount
+sup whistle_services_maintenance debit AccountId Amount
+sup whistle_services_maintenance demote_reseller Account
+sup whistle_services_maintenance make_reseller Account
+sup whistle_services_maintenance reconcile 
+sup whistle_services_maintenance reconcile 'all'
+sup whistle_services_maintenance reconcile Account
+sup whistle_services_maintenance refresh 
+sup whistle_services_maintenance set_reseller_id Reseller Account
+sup whistle_services_maintenance sync Account
+sup konami_maintenance add_default_account_metaflow AccountId
+sup konami_maintenance add_default_metaflow 
+sup konami_maintenance is_running 
+sup notify_maintenance check_initial_call Account
+sup notify_maintenance check_initial_registration Account
+sup notify_maintenance configure_smtp_auth Value
+sup notify_maintenance configure_smtp_password Value
+sup notify_maintenance configure_smtp_port Value
+sup notify_maintenance configure_smtp_relay Value
+sup notify_maintenance configure_smtp_username Value
+sup notify_maintenance refresh 
+sup notify_maintenance refresh_template 
+sup notify_maintenance reload_smtp_configs 
+sup registrar_maintenance device_by_ip IP
+sup registrar_maintenance set_listeners Count
+sup crossbar_maintenance allow_account_number_additions AccountId
+sup crossbar_maintenance create_account Context
+sup crossbar_maintenance create_account AccountName Realm Username Password
+sup crossbar_maintenance demote_account AccountId
+sup crossbar_maintenance descendants_count 
+sup crossbar_maintenance descendants_count AccountId
+sup crossbar_maintenance disable_account AccountId
+sup crossbar_maintenance disallow_account_number_additions AccountId
+sup crossbar_maintenance enable_account AccountId
+sup crossbar_maintenance find_account_by_name Name
+sup crossbar_maintenance find_account_by_number Number
+sup crossbar_maintenance find_account_by_realm Realm
+sup crossbar_maintenance flush 
+sup crossbar_maintenance init_app AppPath AppUrl
+sup crossbar_maintenance migrate 
+sup crossbar_maintenance migrate Accounts
+sup crossbar_maintenance migrate_account_data Account
+sup crossbar_maintenance migrate_accounts_data 
+sup crossbar_maintenance migrate_ring_group_callflow Account
+sup crossbar_maintenance move_account Account ToAccount
+sup crossbar_maintenance promote_account AccountId
+sup crossbar_maintenance refresh 
+sup crossbar_maintenance refresh Value
+sup crossbar_maintenance running_modules 
+sup crossbar_maintenance start_module Module
+sup crossbar_maintenance stop_module Module
+sup jonny5_maintenance authz_details AccountId
+sup jonny5_maintenance authz_details [Channel|Channels]
+sup jonny5_maintenance authz_details []
+sup jonny5_maintenance authz_summary 
+sup jonny5_maintenance flush 
+sup jonny5_maintenance limits_details Account
+sup jonny5_maintenance limits_summary 
+sup jonny5_maintenance limits_summary AccountId
+sup jonny5_maintenance limits_summary [Limit|Limits]
+sup jonny5_maintenance limits_summary []
+sup jonny5_maintenance remove_callid CallId
+sup webhooks_maintenance enable_account_hooks AccountId
+sup webhooks_maintenance enable_descendant_hooks AccountId
+sup webhooks_maintenance failure_status 
+sup webhooks_maintenance failure_status Account
+sup webhooks_maintenance hooks_configured 
+sup webhooks_maintenance hooks_configured AccountId
+sup webhooks_maintenance set_disable_threshold Count
+sup webhooks_maintenance set_disable_threshold Account Count
+sup webhooks_maintenance set_failure_expiry Expires
+sup webhooks_maintenance set_failure_expiry Account Expires
+sup pusher_maintenance add_apple_app AppId Certfile
+sup pusher_maintenance add_google_app AppId Secret
+sup conference_maintenance blocking_refresh 
+sup conference_maintenance refresh 
+sup conference_maintenance refresh Account
+sup acdc_agent_maintenance acct_restart AcctId
+sup acdc_agent_maintenance acct_status AcctId
+sup acdc_agent_maintenance agent_restart AcctId AgentId
+sup acdc_agent_maintenance agent_status AcctId AgentId
+sup acdc_agent_maintenance status 
+sup acdc_maintenance agent_detail AcctId AgentId
+sup acdc_maintenance agent_login AcctId AgentId
+sup acdc_maintenance agent_logout AcctId AgentId
+sup acdc_maintenance agent_pause AcctId AgentId
+sup acdc_maintenance agent_pause AcctId AgentId Timeout
+sup acdc_maintenance agent_presence_id AccountId AgentId
+sup acdc_maintenance agent_queue_login AcctId AgentId QueueId
+sup acdc_maintenance agent_queue_logout AcctId AgentId QueueId
+sup acdc_maintenance agent_resume AcctId AgentId
+sup acdc_maintenance agent_summary AcctId AgentId
+sup acdc_maintenance agents_detail 
+sup acdc_maintenance agents_detail AcctId
+sup acdc_maintenance agents_summary 
+sup acdc_maintenance agents_summary AcctId
+sup acdc_maintenance current_agents AccountId
+sup acdc_maintenance current_calls AccountId
+sup acdc_maintenance current_calls AccountId Props
+sup acdc_maintenance current_calls AccountId QueueId
+sup acdc_maintenance current_queues AccountId
+sup acdc_maintenance current_statuses AccountId
+sup acdc_maintenance flush_call_stat CallId
+sup acdc_maintenance logout_agent AccountId AgentId
+sup acdc_maintenance logout_agents AccountId
+sup acdc_maintenance migrate 
+sup acdc_maintenance migrate_to_acdc_db 
+sup acdc_maintenance queue_detail AcctId QueueId
+sup acdc_maintenance queue_restart AcctId QueueId
+sup acdc_maintenance queue_summary AcctId QueueId
+sup acdc_maintenance queues_detail 
+sup acdc_maintenance queues_detail AcctId
+sup acdc_maintenance queues_restart AcctId
+sup acdc_maintenance queues_summary 
+sup acdc_maintenance queues_summary AcctId
+sup acdc_maintenance refresh 
+sup acdc_maintenance refresh_account Acct
+sup hotornot_maintenance local_summary 
+sup hotornot_maintenance rates_between Pre Post
+sup hotornot_maintenance rates_for_did DID
+sup hotornot_maintenance rates_for_did DID Direction Opt
+sup hotornot_maintenance rates_for_did DID Direction RouteOptions
+sup ecallmgr_maintenance acl_summary 
+sup ecallmgr_maintenance acl_summary 'false'
+sup ecallmgr_maintenance acl_summary 'true'
+sup ecallmgr_maintenance acl_summary AsDefault
+sup ecallmgr_maintenance add_fs_node FSNode
+sup ecallmgr_maintenance add_fs_node FSNode 'false'
+sup ecallmgr_maintenance add_fs_node FSNode 'true'
+sup ecallmgr_maintenance add_fs_node FSNode AsDefault
+sup ecallmgr_maintenance allow_carrier Name IP
+sup ecallmgr_maintenance allow_carrier Name IP 'false'
+sup ecallmgr_maintenance allow_carrier Name IP 'true'
+sup ecallmgr_maintenance allow_carrier Name IP AsDefault
+sup ecallmgr_maintenance allow_sbc Name IP
+sup ecallmgr_maintenance allow_sbc Name IP 'false'
+sup ecallmgr_maintenance allow_sbc Name IP 'true'
+sup ecallmgr_maintenance allow_sbc Name IP AsDefault
+sup ecallmgr_maintenance carrier_acls 
+sup ecallmgr_maintenance carrier_acls 'false'
+sup ecallmgr_maintenance carrier_acls 'true'
+sup ecallmgr_maintenance carrier_acls AsDefault
+sup ecallmgr_maintenance channel_details 
+sup ecallmgr_maintenance channel_details UUID
+sup ecallmgr_maintenance channel_summary 
+sup ecallmgr_maintenance channel_summary Node
+sup ecallmgr_maintenance check_sync Username Realm
+sup ecallmgr_maintenance conference_details 
+sup ecallmgr_maintenance conference_details UUID
+sup ecallmgr_maintenance conference_summary 
+sup ecallmgr_maintenance conference_summary Node
+sup ecallmgr_maintenance deny_carrier Name IP
+sup ecallmgr_maintenance deny_carrier Name IP 'false'
+sup ecallmgr_maintenance deny_carrier Name IP 'true'
+sup ecallmgr_maintenance deny_carrier Name IP AsDefault
+sup ecallmgr_maintenance deny_sbc Name IP
+sup ecallmgr_maintenance deny_sbc Name IP 'false'
+sup ecallmgr_maintenance deny_sbc Name IP 'true'
+sup ecallmgr_maintenance deny_sbc Name IP AsDefault
+sup ecallmgr_maintenance disable_authz 
+sup ecallmgr_maintenance disable_local_resource_authz 
+sup ecallmgr_maintenance enable_authz 
+sup ecallmgr_maintenance enable_local_resource_authz 
+sup ecallmgr_maintenance flush_acls 
+sup ecallmgr_maintenance flush_authn 
+sup ecallmgr_maintenance flush_node_channels Node
+sup ecallmgr_maintenance flush_node_conferences Node
+sup ecallmgr_maintenance flush_registrar 
+sup ecallmgr_maintenance flush_registrar Realm
+sup ecallmgr_maintenance flush_registrar Username Realm
+sup ecallmgr_maintenance flush_util 
+sup ecallmgr_maintenance get_fs_nodes 
+sup ecallmgr_maintenance hangup_long_running_channels 
+sup ecallmgr_maintenance hangup_long_running_channels MaxAge
+sup ecallmgr_maintenance limit_channel_uptime MaxAge
+sup ecallmgr_maintenance limit_channel_uptime MaxAge AsDefault
+sup ecallmgr_maintenance list_fs_nodes 
+sup ecallmgr_maintenance node_details 
+sup ecallmgr_maintenance node_details NodeName
+sup ecallmgr_maintenance node_summary 
+sup ecallmgr_maintenance registrar_details 
+sup ecallmgr_maintenance registrar_details Realm
+sup ecallmgr_maintenance registrar_details Username Realm
+sup ecallmgr_maintenance registrar_summary 
+sup ecallmgr_maintenance registrar_summary Realm
+sup ecallmgr_maintenance reload_acls 
+sup ecallmgr_maintenance remove_acl Name
+sup ecallmgr_maintenance remove_acl Name 'false'
+sup ecallmgr_maintenance remove_acl Name 'true'
+sup ecallmgr_maintenance remove_acl Name AsDefault
+sup ecallmgr_maintenance remove_fs_node FSNode
+sup ecallmgr_maintenance remove_fs_node FSNode 'false'
+sup ecallmgr_maintenance remove_fs_node FSNode 'true'
+sup ecallmgr_maintenance remove_fs_node FSNode AsDefault
+sup ecallmgr_maintenance sbc_acls 
+sup ecallmgr_maintenance sbc_acls 'false'
+sup ecallmgr_maintenance sbc_acls 'true'
+sup ecallmgr_maintenance sbc_acls AsDefault
+sup ecallmgr_maintenance show_calls 
+sup ecallmgr_maintenance show_channels 
+sup ecallmgr_maintenance sync_channels 
+sup ecallmgr_maintenance sync_channels Node
+sup ecallmgr_maintenance sync_conferences 
+sup ecallmgr_maintenance sync_conferences Node
+sup ecallmgr_maintenance test_carrier_ip IP
+sup ecallmgr_maintenance test_carrier_ip IP Node
+sup ecallmgr_maintenance test_carrier_ip IP [Node|Nodes]
+sup ecallmgr_maintenance test_carrier_ip _ []
+sup ecallmgr_maintenance test_sbc_ip IP
+sup ecallmgr_maintenance test_sbc_ip IP Node
+sup ecallmgr_maintenance test_sbc_ip IP [Node|Nodes]
+sup ecallmgr_maintenance test_sbc_ip _ []
+sup trunkstore_maintenance classifier_deny Classifier UserR
+sup trunkstore_maintenance classifier_inherit Classifier UserR
+sup trunkstore_maintenance clear_old_calls 
+sup trunkstore_maintenance flush 
+sup trunkstore_maintenance flush Account
+sup trunkstore_maintenance i_understand_migrate 
+sup trunkstore_maintenance migrate 
+sup cdr_maintenance flush 
+sup frontier_maintenance lookup_acls Entity
+sup frontier_maintenance lookup_rate_limits Entity
+sup frontier_maintenance update_system_default Path Value
+sup stepswitch_maintenance cnam_flush 
+sup stepswitch_maintenance flush 
+sup stepswitch_maintenance lookup_number Number
+sup stepswitch_maintenance number_tree DID
+sup stepswitch_maintenance process_number Number
+sup stepswitch_maintenance process_number Number 'undefined'
+sup stepswitch_maintenance process_number Number AccountId
+sup stepswitch_maintenance refresh 
+sup stepswitch_maintenance reload_resources 
+sup stepswitch_maintenance reload_resources Account
+sup stepswitch_maintenance resources 
+sup stepswitch_maintenance reverse_lookup Thing
+sup media_mgr_maintenance prompt_url PromptId
+sup media_mgr_maintenance prompt_url PromptId AccountId
+sup media_mgr_maintenance prompt_url PromptId AccountId Language
+sup doodle_maintenance check_pending_sms_for_delivery AccountId
+sup doodle_maintenance check_pending_sms_for_outbound_delivery AccountId
+sup doodle_maintenance check_sms_by_device_id AccountId DeviceId
+sup doodle_maintenance check_sms_by_device_id _AccountId 'undefined'
+sup doodle_maintenance check_sms_by_owner_id AccountId OwnerId
+sup doodle_maintenance check_sms_by_owner_id _AccountId 'undefined'
+sup doodle_maintenance flush 
+sup doodle_maintenance send_outbound_sms To Msg
+sup doodle_maintenance send_outbound_sms To Msg Times
+sup doodle_maintenance send_outbound_sms To From RouteId Msg
+sup doodle_maintenance send_outbound_sms To From RouteId Msg Times
+sup doodle_maintenance start_check_sms_by_account AccountId JObj
+sup doodle_maintenance start_check_sms_by_device_id AccountId DeviceId
+sup doodle_maintenance start_check_sms_by_owner_id AccountId OwnerId
+sup hangups_maintenance account_summary AccountId
+sup hangups_maintenance activate_monitor AccountId HangupCause
+sup hangups_maintenance activate_monitors AccountId ThresholdOneMinute
+sup hangups_maintenance hangup_summary HangupCause
+sup hangups_maintenance hangup_summary HangupCause AccountId
+sup hangups_maintenance hangups_summary 
+sup hangups_maintenance set_monitor_threshold HangupCause TOM
+sup hangups_maintenance set_monitor_threshold HangupCause ThresholdName T
+sup teletype_maintenance receipts 
+sup fax_maintenance account_jobs AccountId
+sup fax_maintenance account_jobs AccountId State
+sup fax_maintenance active_jobs 
+sup fax_maintenance faxbox_jobs FaxboxId
+sup fax_maintenance faxbox_jobs FaxboxId State
+sup fax_maintenance flush 
+sup fax_maintenance migrate 
+sup fax_maintenance migrate "override_existing_documents"
+sup fax_maintenance migrate Account
+sup fax_maintenance migrate [Account|Accounts]
+sup fax_maintenance migrate []
+sup fax_maintenance migrate Account Options
+sup fax_maintenance migrate Accounts "override_existing_documents"
+sup fax_maintenance migrate Accounts Option
+sup fax_maintenance migrate [Account|Accounts] Options
+sup fax_maintenance migrate [] _
+sup fax_maintenance pending_jobs 
+sup fax_maintenance restart_job JobID
+sup fax_maintenance update_job JobID State
+sup call_inspector_maintenance callid_details CallId
+sup call_inspector_maintenance flush 
+sup call_inspector_maintenance flush CallId
+sup call_inspector_maintenance list_active_parsers 
+sup call_inspector_maintenance start_freeswitch_parser Filename LogIP LogPort
+sup call_inspector_maintenance start_hep_parser IP Port
+sup hangups_maintenance activate_monitor AccountId HangupCause
+sup hangups_maintenance activate_monitors AccountId ThresholdOneMinute
+sup hangups_maintenance hangup_summary HangupCause
+sup hangups_maintenance hangup_summary HangupCause AccountId
+sup hangups_maintenance hangups_summary 
+sup hangups_maintenance set_monitor_threshold HangupCause TOM
+sup hangups_maintenance set_monitor_threshold HangupCause ThresholdName T
+sup teletype_maintenance receipts 
+sup fax_maintenance account_jobs AccountId
+sup fax_maintenance account_jobs AccountId State
+sup fax_maintenance active_jobs 
+sup fax_maintenance faxbox_jobs FaxboxId
+sup fax_maintenance faxbox_jobs FaxboxId State
+sup fax_maintenance flush 
+sup fax_maintenance migrate 
+sup fax_maintenance migrate "override_existing_documents"
+sup fax_maintenance migrate Account
+sup fax_maintenance migrate [Account|Accounts]
+sup fax_maintenance migrate []
+sup fax_maintenance migrate Account Options
+sup fax_maintenance migrate Accounts "override_existing_documents"
+sup fax_maintenance migrate Accounts Option
+sup fax_maintenance migrate [Account|Accounts] Options
+sup fax_maintenance migrate [] _
+sup fax_maintenance pending_jobs 
+sup fax_maintenance restart_job JobID
+sup fax_maintenance update_job JobID State
+sup call_inspector_maintenance callid_details CallId
+sup call_inspector_maintenance flush 
+sup call_inspector_maintenance flush CallId
+sup call_inspector_maintenance list_active_parsers 
+sup call_inspector_maintenance start_freeswitch_parser Filename LogIP LogPort
+sup call_inspector_maintenance start_hep_parser IP Port
+sup call_inspector_maintenance start_kamailio_parser Filename LogIP LogPort
+sup call_inspector_maintenance stop_active_parser Id
+sup callflow_maintenance account_set_classifier_deny Classifier Account
+sup callflow_maintenance account_set_classifier_inherit Classifier Account
+sup callflow_maintenance all_accounts_set_classifier_deny Classifier
+sup callflow_maintenance all_accounts_set_classifier_inherit Classifier
+sup callflow_maintenance blocking_refresh 
+sup callflow_maintenance device_classifier_deny Classifier Uri
+sup callflow_maintenance device_classifier_inherit Classifier Uri
+sup callflow_maintenance flush 
+sup callflow_maintenance list_account_restrictions Account
+sup callflow_maintenance lookup_endpoint URI
+sup callflow_maintenance lookup_endpoint Username Realm
+sup callflow_maintenance migrate_menus 
+sup callflow_maintenance migrate_menus Account
+sup callflow_maintenance migrate_recorded_name Db
+sup callflow_maintenance migrate_recorded_names 
+sup callflow_maintenance refresh 
+sup callflow_maintenance refresh Account
+sup callflow_maintenance show_calls 
+sup callflow_maintenance update_feature_codes 
+sup callflow_maintenance update_feature_codes Account
+sup omnipresence_maintenance count_current_subscriptions 
+sup omnipresence_maintenance current_subscriptions 
+sup omnipresence_maintenance current_subscriptions Realm
+sup omnipresence_maintenance current_subscriptions Realm User
+sup omnipresence_maintenance list_terminated_callids 
+sup omnipresence_maintenance send_mwi_update User New Waiting
+sup omnipresence_maintenance subscribe Realm User
