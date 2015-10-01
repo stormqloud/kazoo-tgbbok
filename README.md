@@ -48,7 +48,7 @@ In reality you should already know about the following resources at this point.
 
 ## Background
 
-Asterisk is single server compared to the Kazoo cloud(drink) platform.
+Asterisk is single server compared to the Kazoo cloud(drink http://www.beadaptive.ca/cloud-drinking-game/) platform.
 
 The VOIP landscape has changed since Asterisk was the only open source project.
 
