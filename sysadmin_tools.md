@@ -13,5 +13,7 @@
 ## wireshark
   * If you are doing VOIP you should already be using this product.  VOIP is about the SIP RFC standards.  
   Nothing better then seeing them on the wire.
+ * you might have this installed on your Kamaillio and FreeSwitch machines
+  *  and enough resources to run it!
 
 http://stormqloud.ca
