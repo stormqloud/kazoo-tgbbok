@@ -2,9 +2,9 @@
 
 * Lets face it, you were hoping to escape learning this.  This description resembles myself..
 
-## The more you read about Erlang the scarier it gets.
+## Erlang syntax is part of the mystery.
 
-* Some resources to learn language
+* Some resources to help cope with ELS (Erlang Learning Syndrome).
   * http://learnyousomeerlang.com/content
   * http://opensource.erlang-solutions.com/erlang-handbook/
   * http://erldocs.com/
