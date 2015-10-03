@@ -1,5 +1,6 @@
-# Kazoo
+# Kazoo Glossary
 
+# 
 ## shit you need to know when people use names..
 
 * Kazoo => the erlang core
