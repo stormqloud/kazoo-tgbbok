@@ -8,6 +8,4 @@
   * Erlang cookie..
   *  ```<param name="cookie" value="your_erlang_cookie_goes_here" />```
 * ```sup -n ecallmgr ecallmgr_maintenance add_fs_node freeswitch@$FQDN ```
-  *  ```sup whapps_config flush```
-  *  ```sup -n ecallmgr ecallmgr_config flush```
-  *  
+ * command will auto flush it seems.
