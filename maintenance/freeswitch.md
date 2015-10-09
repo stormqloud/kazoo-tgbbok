@@ -14,3 +14,13 @@
 * you do not need to change the "acls" section in ecallmg config doc.
   * Specifically ```"network-list-name": "authoritative",``` is for Kamaillio no Freeswitch.
  
+* language packs.. /usr/share/freeswitch/sounds
+  * make sure you have all your languages.
+    * ``` [root@yulfs01 sounds]# ls -la  /usr/share/freeswitch/sounds
+total 20
+drwxr-xr-x 4 freeswitch daemon 4096 Oct  9 19:32 .
+drwxr-xr-x 6 root       root   4096 Apr 24 04:13 ..
+drwxr-xr-x 3 freeswitch daemon 4096 Jul 17 21:26 en
+drwxr-xr-x 3 freeswitch daemon 4096 Jul 17 21:26 music
+-rw-r--r-- 1 freeswitch daemon  125 Jul 17 21:26 VERSION
+```
