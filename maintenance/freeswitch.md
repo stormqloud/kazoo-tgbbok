@@ -1,5 +1,7 @@
 # Growing Freeswitch in the cluster.
 
+* install and config ntp and ntpdate
+  * timezone is GMT no matter where you are in t he world for Kazoo.  Timezones are changed in accounts.
 * install freeswitch kazoo package
 * install kazoo configs package
 * no need to install haproxy if not already there
