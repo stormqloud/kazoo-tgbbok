@@ -11,3 +11,6 @@
  * command will auto flush it seems.
 *  ```fs_cli -x 'erlang status'```
   * should show that ecallmgr is connecting to freeswitch 
+* you do not need to change the "acls" section in ecallmg config doc.
+  * Specifically ```"network-list-name": "authoritative",``` is for Kamaillio no Freeswitch.
+ 
