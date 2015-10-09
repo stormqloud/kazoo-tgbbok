@@ -6,4 +6,4 @@
 * ```chkconfig haproxy on --level 2345```
 * edit /etc/kazoo/freeswitch/autoload_configs/kazoo.conf.xml
   * Erlang cookie..
-  *         <param name="cookie" value="your_erlang_cookie_goes_here" />-->
+  *  ```<param name="cookie" value="your_erlang_cookie_goes_here" />```
