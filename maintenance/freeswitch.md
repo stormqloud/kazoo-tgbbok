@@ -16,7 +16,10 @@
  
 * language packs.. /usr/share/freeswitch/sounds
   * make sure you have all your languages.
-    * ``` [root@yulfs01 sounds]# ls -la  /usr/share/freeswitch/sounds
+    * 
+    * 
+``` 
+[root@yulfs01 sounds]# ls -la  /usr/share/freeswitch/sounds
 total 20
 drwxr-xr-x 4 freeswitch daemon 4096 Oct  9 19:32 .
 drwxr-xr-x 6 root       root   4096 Apr 24 04:13 ..
