@@ -9,3 +9,5 @@
   *  ```<param name="cookie" value="your_erlang_cookie_goes_here" />```
 * ```sup -n ecallmgr ecallmgr_maintenance add_fs_node freeswitch@$FQDN ```
  * command will auto flush it seems.
+*  ```fs_cli -x 'erlang status'```
+  * should show that ecallmgr is connecting to freeswitch 
