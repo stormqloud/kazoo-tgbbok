@@ -2,10 +2,11 @@
 
 * install and config ntp and ntpdate
   * timezone is GMT no matter where you are in t he world for Kazoo.  Timezones are changed in accounts.
+* iptables firewall
 * install freeswitch kazoo package
 * install kazoo configs package
 * no need to install haproxy if not already there
-* ```chkconfig haproxy on --level 2345```
+* ```chkconfig haproxy off --level 2345```
 * edit /etc/kazoo/freeswitch/autoload_configs/kazoo.conf.xml
   * Erlang cookie..
   *  ```<param name="cookie" value="your_erlang_cookie_goes_here" />```
