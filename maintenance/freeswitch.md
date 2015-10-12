@@ -1,5 +1,8 @@
 # Growing Freeswitch in the cluster.
 
+* Understand that EcallManager connects to Freeswtich not the other way around.
+  * Ecallmanager and stepswitch are Freeswtich conenction to RabbitMQ etc.
+  * SIP/RTP too obviously
 * install and config ntp and ntpdate
   * timezone is GMT no matter where you are in t he world for Kazoo.  Timezones are changed in accounts.
 * iptables firewall
