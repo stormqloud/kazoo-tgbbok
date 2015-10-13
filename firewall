@@ -79,8 +79,8 @@ iptables -A INPUT -s $bc11 -j ACCEPT # - BIGCOUCH-DB  LOCATION-1 SERVER 001
 iptables -A INPUT -s $bc12 -j ACCEPT # - BIGCOUCH-DB  LOCATION-1 SERVER 002
 iptables -A INPUT -s $bc13 -j ACCEPT # - BIGCOUCH-DB  LOCATION-1 SERVER 003
 
-iptables -A INPUT -s "XXX.XXX.XXX.XXX" -j ACCEPT # - WHAPPS/KAZOO LOCATION-1 SERVER-1
-iptables -A INPUT -s "XXX.XXX.XXX.XXX" -j ACCEPT # - WHAPPS/KAZOO LOCATION-2 SERVER-1
+iptables -A INPUT -s $apps11 -j ACCEPT # - WHAPPS/KAZOO LOCATION-1 SERVER-1
+iptables -A INPUT -s $apps12 -j ACCEPT # - WHAPPS/KAZOO LOCATION-1 SERVER-2
 
 # block traffic coming into db unless ACCEPTED in INPUT above which server setup IP's are placed in with home/office IP's above.
 iptables -A INPUT -p tcp --dport 15984 -j DROP
