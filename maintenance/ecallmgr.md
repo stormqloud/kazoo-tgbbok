@@ -1,1 +1,0 @@
-# Adding ecallmgr server.
