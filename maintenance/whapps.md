@@ -6,8 +6,8 @@
 * Install
   * haproxy
     * configure to "haproxy" to your bigcouch servers
-  * kazoo-configs
-  * kazoo itself
-  * kazoo librabbitmq
-    * chkconfig rabbitmq-server on
+* kazoo-configs
+* kazoo itself
+* kazoo librabbitmq
+  * chkconfig rabbitmq-server on
 
