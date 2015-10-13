@@ -1,5 +1,5 @@
 #!/bin/bash 
-# Ver 0.02
+# Ver 0.03
 #
 # Standing on the shoulders of others.
 # https://2600hz.atlassian.net/wiki/display/Dedicated/Setting+up+IPTABLES
@@ -22,6 +22,9 @@ iptables -P OUTPUT ACCEPT
 # Allow TCP 80 and 443 for apache if you installed KAZOO-UI
 iptables -A INPUT -p tcp --dport 80 -j ACCEPT
 iptables -A INPUT -p tcp --dport 443 -j ACCEPT
+
+# Allow SNMP
+iptables -A INPUT -p udp -m udp --dport 161 -j ACCEPT
 
 # Allow TCP 8000 for crossbar/cowboy (API back end for Kazoo-UI/Monster-UI)
 iptables -A INPUT -p tcp --dport 8000 -j ACCEPT
