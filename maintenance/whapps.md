@@ -16,3 +16,6 @@
 * kazoo librabbitmq
   * chkconfig rabbitmq-server on
 
+* Rabbit 
+  * rabbitmqctl list_bindings
+  * 
