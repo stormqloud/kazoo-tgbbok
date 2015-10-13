@@ -8,4 +8,5 @@
   * kazoo-configs
   * kazoo itself
   * kazoo librabbitmq
- 
+    * chkconfig rabbitmq-server on
+
