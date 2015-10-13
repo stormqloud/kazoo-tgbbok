@@ -1,11 +1,24 @@
 #!/bin/bash 
-# Ver 0.03
+# Ver 0.04
 #
 # Standing on the shoulders of others.
 # https://2600hz.atlassian.net/wiki/display/Dedicated/Setting+up+IPTABLES
 #
 # cwd=/etc/sysconfig/
 #
+
+# - BIGCOUCH-DB  ZONE-1 SERVER 001
+bc11=10.200.255.110 
+# - BIGCOUCH-DB  ZONE-1 SERVER 002
+bc12=10.200.255.111 
+# - BIGCOUCH-DB  ZONE-1 SERVER 003
+bc13=10.200.255.112 
+
+fs11=10.200.255.115 
+fs12=10.200.255.116
+
+apps11=10.200.255.115
+apps12=10.200.255.116
 # flush all existing rules and chains
 iptables -F
 iptables -X
@@ -59,22 +72,13 @@ iptables -A INPUT -s "XXX.XXX.XXX.XXX" -j ACCEPT # YOUR STATIC IP
 
 #iptables -A INPUT -s "" -j ACCEPT #  whatever IP u want if u want someone else to see the db
 #PUBLIC IP ADDRESSES OF YOUR SERVERS - REPLACE X'S
-iptables -A INPUT -s "XXX.XXX.XXX.XXX" -j ACCEPT # - FREESWITCH LOCATION-1 SERVER-1
-iptables -A INPUT -s "XXX.XXX.XXX.XXX" -j ACCEPT # - FREESWITCH LOCATION-2 SERVER-1
-iptables -A INPUT -s "XXX.XXX.XXX.XXX" -j ACCEPT # - BIGCOUCH-DB  LOCATION-1 SERVER 001
-iptables -A INPUT -s "XXX.XXX.XXX.XXX" -j ACCEPT # - BIGCOUCH-DB  LOCATION-1 SERVER 002
-iptables -A INPUT -s "XXX.XXX.XXX.XXX" -j ACCEPT # - BIGCOUCH-DB  LOCATION-2 SERVER 001
-iptables -A INPUT -s "XXX.XXX.XXX.XXX" -j ACCEPT # - BIGCOUCH-DB  LOCATION-2 SERVER 002
-iptables -A INPUT -s "XXX.XXX.XXX.XXX" -j ACCEPT # - WHAPPS/KAZOO LOCATION-1 SERVER-1
-iptables -A INPUT -s "XXX.XXX.XXX.XXX" -j ACCEPT # - WHAPPS/KAZOO LOCATION-2 SERVER-1
+iptables -A INPUT -s $fs11 -j ACCEPT # - FREESWITCH ZONE-1 SERVER-1
+iptables -A INPUT -s $fs12 -j ACCEPT # - FREESWITCH ZONE-1 SERVER-2
 
-#INTERNET / PRIVATE NETWORK IP ADDRESSES OF YOUR SERVERS
-iptables -A INPUT -s "XXX.XXX.XXX.XXX" -j ACCEPT # - FREESWITCH LOCATION-1 SERVER-1
-iptables -A INPUT -s "XXX.XXX.XXX.XXX" -j ACCEPT # - FREESWITCH LOCATION-2 SERVER-1
-iptables -A INPUT -s "XXX.XXX.XXX.XXX" -j ACCEPT # - BIGCOUCH-DB  LOCATION-1 SERVER 001
-iptables -A INPUT -s "XXX.XXX.XXX.XXX" -j ACCEPT # - BIGCOUCH-DB  LOCATION-1 SERVER 002
-iptables -A INPUT -s "XXX.XXX.XXX.XXX" -j ACCEPT # - BIGCOUCH-DB  LOCATION-2 SERVER 001
-iptables -A INPUT -s "XXX.XXX.XXX.XXX" -j ACCEPT # - BIGCOUCH-DB  LOCATION-2 SERVER 002
+iptables -A INPUT -s $bc11 -j ACCEPT # - BIGCOUCH-DB  LOCATION-1 SERVER 001
+iptables -A INPUT -s $bc12 -j ACCEPT # - BIGCOUCH-DB  LOCATION-1 SERVER 002
+iptables -A INPUT -s $bc13 -j ACCEPT # - BIGCOUCH-DB  LOCATION-1 SERVER 003
+
 iptables -A INPUT -s "XXX.XXX.XXX.XXX" -j ACCEPT # - WHAPPS/KAZOO LOCATION-1 SERVER-1
 iptables -A INPUT -s "XXX.XXX.XXX.XXX" -j ACCEPT # - WHAPPS/KAZOO LOCATION-2 SERVER-1
 
@@ -96,7 +100,7 @@ iptables -A INPUT -s 169.254.0.0/16 -j DROP
 iptables -A INPUT -s 127.0.0.0/8 -j DROP
 
 # ICMP
-iptables -A INPUT -p icmp --icmp-type echo-request -m limit --limit 1/sec -j ACCEPT
+#iptables -A INPUT -p icmp --icmp-type echo-request -m limit --limit 1/sec -j ACCEPT
 
 # SYN flood limiter
 iptables -A INPUT -p tcp --syn -m limit --limit 5/s -j ACCEPT
