@@ -17,7 +17,7 @@ This is probably not an exhaustive list.  Remember about TCP/UDP.
 Each port really exists twice.
 
 
-| Port | World/Private | What it does        |
+| Port | World/Private(ie FW) | What it does        |
 |--------------|--------|------------------------------------|
 | 25 | | SMTP
 | 80 |  | www
@@ -26,7 +26,7 @@ Each port really exists twice.
 | 4369 | P | epmd
 | 5060 | | Kamailio (inbound SIP, outbound to handsets)
 | 5061 | | Kamailio TLS
-| 5672 | P | amqp 
+| 5672 | P | RabbitMQ amqp main port
 | 5984 | P | CouchDB Data
 | 5986 | P | CouchDB Mgr
 | 7000 |  | Kamailio ALG SIP
@@ -54,3 +54,5 @@ switch.conf.xml:        <param name="rtp-end-port" value="32768"/>
 ```
 
 wlloyd@stormqloud.ca
+http://www.stormqloud.ca
+
