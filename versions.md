@@ -2,6 +2,20 @@
 
 * You might want to check out the information on "upgrading" as well.
 
+* 3.22 composite files
+```
+kazoo-bigcouch-R15B-0.4.x-1.el6.x86_64
+kazoo-json-c-master-0.el6.x86_64
+kazoo-prompts-3.22-0.el6.noarch
+kazoo-kamailio-4.3.1-5.el6.x86_64
+kazoo-configs-3.22-0.el6.noarch
+kazoo-freeswitch-R15B-1.4.23-0.el6.x86_64
+kazoo-R15B-3.22-0.el6.x86_64
+kazoo-librabbitmq-master-1.el6.x86_64
+
+
+```
+
 * 3.21 composite files..
 ```
 kazoo-bigcouch-R15B-0.4.x-1.el6.x86_64
