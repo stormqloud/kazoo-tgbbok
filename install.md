@@ -10,7 +10,7 @@
  * Plan to install each major version for ISO as a test enviroment.
 
 * If you are a long time user looking to expand you cluster then you should dig in    
-** https://github.com/stormqloud/kazoo-tgbbok/blob/master/install.md
+  * https://github.com/stormqloud/kazoo-tgbbok/tree/master/maintenance
  
 Just a few links to keep track of...
 
