@@ -33,6 +33,7 @@ In reality you should already know about the following resources at this point.
 
 ####Websites:
 * https://2600hz.com/
+* http://www.kazoocon.com/
 * https://github.com/2600hz/kazoo
 * https://github.com/2600hz/kazoo/tree/master/applications/crossbar/doc
 
