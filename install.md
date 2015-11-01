@@ -2,10 +2,16 @@
 
 * Kazoo is a big project.
 
+* It's not a question of what version I'm running at the moment.
+  *  It's a question of how many Kazoo versions you have running at the same time. 
+
 * If you are a first time user, do a single ISO single server install.  
  * Use stable if promted.
  * Plan to install each major version for ISO as a test enviroment.
 
+* If you are a long time user looking to expand you cluster then you should dig in    
+** https://github.com/stormqloud/kazoo-tgbbok/blob/master/install.md
+ 
 Just a few links to keep track of...
 
 * random guy instructions 
