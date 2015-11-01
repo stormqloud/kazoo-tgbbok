@@ -1,9 +1,10 @@
 # ASR - Automatic Speech Recognition
 
-New updates.
+New updates Fall 2015
  
 ## The other direction is TTS 
   * https://github.com/stormqloud/kazoo-tgbbok/blob/master/tts.md
+
 * Option 1: OpenSource
  * If you are an academic or other dreamer, this might be for you.  
  * Anyone that can demonstrate a working system please contact me.
@@ -11,9 +12,13 @@ New updates.
  * Works in theory.
 
 * Option 2: ispeech.org
-  * Kazoo to isppech.org for ASR appears broken.
-  * ispeech.org changed it's API and kazoo is not updated for it.
-  * there is no other 3rd party support integrated at this point.
+  * Kazoo to isppech.org for ASR has been fixed.
+  * Voxter announced at Kazoocon 2015
+  * I've not tested but I'm sure Voxter fixed the API
+    * voice recognition is hard
+
+* Option 3:
+  *  There is no option 3 
 
 ASR costs per word recognized.
 
