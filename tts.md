@@ -1,7 +1,7 @@
 # TTS - Text to Speech
 
 * Good TTS (in multiple languages, multipe voices) is not free.
-* 
+ 
 ## Option 1:
   * Open source
   * There are open source options.   
