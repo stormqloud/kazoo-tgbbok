@@ -16,6 +16,7 @@ New updates Fall 2015
   * Voxter announced at Kazoocon 2015
   * I've not tested but I'm sure Voxter fixed the API
     * voice recognition is hard
+    * Just because the voice recording hits ispeech API doesn;t mean they can recogniez it!
 
 * Option 3:
   *  There is no option 3 
