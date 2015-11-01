@@ -31,10 +31,10 @@ This github is a set of ideas, links etc.
 
 In reality you should already know about the following resources at this point.
 
-####Websites:
+#### Websites:
 * https://2600hz.com/
 * http://www.kazoocon.com/
-* https://github.com/2600hz/kazoo
+* `https://github.com/2600hz/kazoo`
 * https://github.com/2600hz/kazoo/tree/master/applications/crossbar/doc
 
 ##### Atlassian is a nightmare IMHO.  However there is a lot of info there and in Jira.
@@ -49,7 +49,7 @@ In reality you should already know about the following resources at this point.
 
 ## Background
 
-Asterisk is single server compared to the Kazoo cloud(http://www.beadaptive.ca/cloud-drinking-game/) platform.
+Asterisk is single server compared to the Kazoo cloud (http://www.beadaptive.ca/cloud-drinking-game/) platform.
 
 The VOIP landscape has changed since Asterisk was the only open source project.
 
