@@ -13,7 +13,7 @@ Remember, "You don't know, what you don't know". (TM some person before lawyers 
 
 This stuff is not for the absolute Kazoo beginner.  If you are just starting Kazoo or wanting to install for the first time, this is probably not the best starting point for your adventure.
 
-I'm adding some links to here if you must know.. `https://github.com/stormqloud/kazoo-tgbbok/blob/master/install.md`
+I'm adding some links to here if you must know.. https://github.com/stormqloud/kazoo-tgbbok/blob/master/install.md
 
 If you are a new user, play with the ISO.
 
@@ -36,7 +36,7 @@ In reality you should already know about the following resources at this point.
 #### Websites:
 * https://2600hz.com/
 * http://www.kazoocon.com/
-* `https://github.com/2600hz/kazoo`
+* https://github.com/2600hz/kazoo
 * https://github.com/2600hz/kazoo/tree/master/applications/crossbar/doc
 
 ##### Atlassian is a nightmare IMHO.  However there is a lot of info there and in Jira.
