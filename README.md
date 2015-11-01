@@ -13,6 +13,8 @@ Remember, "You don't know, what you don't know". (TM some person before lawyers 
 
 This stuff is not for the absolute Kazoo beginner.  If you are just starting Kazoo or wanting to install for the first time, this is probably not the best starting point for your adventure.
 
+I'm adding some links to here if you must know.. `https://github.com/stormqloud/kazoo-tgbbok/blob/master/install.md`
+
 If you are a new user, play with the ISO.
 
 If you are lost, you should call the 2600hz folks.  They wrote the software and know it really well!!  2600hz offers a manged hosted platform.
