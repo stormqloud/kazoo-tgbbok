@@ -1,9 +1,11 @@
 # TTS - Text to Speech
 
+## Option 1:
 * Good TTS (in multiple languages, multipe voices) is not free.
   *  There are open source options in this area.   I've dozens of hours testing them and the results are not good.  
   *  Super un plus double un good.
 
+## Option 2:
 * Kazoo uses an external API service [ispeech.org] when the functionality is called for.
   *  You will need to signup for an account and pay real money.
   
