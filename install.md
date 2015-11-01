@@ -1,4 +1,4 @@
-# The Install but Not install instructions.
+# The Install but Not Install instructions.
 
 * Kazoo is a big project.
 
