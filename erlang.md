@@ -2,6 +2,8 @@
 
 * Lets face it, you were hoping to escape learning this.  This description resembles myself..
 
+* http://www.erlang.org/download/armstrong_thesis_2003.pdf
+
 ## Erlang syntax is part of the mystery.
 
 * Some resources to help cope with ELS (Erlang Learning Syndrome).
