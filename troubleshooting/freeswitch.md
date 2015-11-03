@@ -28,4 +28,8 @@ true
 
 * If this fails you can also try `fs_cli -x "reloadacl"` and test again.
 
+* HAPROXY must be running on Freeswitch servers
+  *  Freeswitch pulls the needed audio files from couchdb by way of haproxy on 127.0.0.1
+    * IVR messages, voicemails, system prompts etc
+     
 stormqloud.ca
