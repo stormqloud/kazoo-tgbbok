@@ -18,7 +18,14 @@ ecallmgr@yul01.stormqloud.com (192.100.252.110)
 ecallmgr@yul02.stormqloud.com (192.100.252.111)
 ```
 
-* Check 
+* Check that your Kamailio IP is currently in the ACL on this server..
+* Freeswitch gets the ACL's from Ecallmgr which get tehm from couchdb->system_config->ecallmgr doc
 
+```
+[root@stormqloud_fs02 ~]# fs_cli -x "acl 192.100.252.99 authoritative"
+true
+```
+
+* If this fails you can also try `fs_cli -x "reloadacl"` and test again.
 
 stormqloud.ca
