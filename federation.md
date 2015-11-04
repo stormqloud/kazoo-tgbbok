@@ -64,3 +64,5 @@ but typically people use the datacenter, country, etc as the zone name
 
 * Information on setting up zones
   * https://groups.google.com/forum/#!searchin/2600hz-users/zone/2600hz-users/sclhrzkA1Sw/mPl6eaj2rAMJ
+  * 
+  * https://github.com/2600hz/kazoo/blob/305053c762795ba279028c82c5e83b25f4d8901e/doc/installation.md
