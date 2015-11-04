@@ -17,6 +17,9 @@ Just a few links to keep track of...
 * random guy instructions 
   * http://www.powerpbx.org/content/kazoo-v3-single-or-multiple-server-voip-telephony-platform-install-guide-v1
 
+* 2600hz version of random guy page
+  * https://github.com/2600hz/kazoo/blob/305053c762795ba279028c82c5e83b25f4d8901e/doc/installation.md
+
 * ln -s /usr/share/zoneinfo/America/Montreal /etc/localtime
 * comm -3 k6 yul01 
  
