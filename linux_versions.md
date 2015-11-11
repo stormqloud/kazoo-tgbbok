@@ -10,6 +10,8 @@
 * The answer used to be simple Centos 6
   * 2600hz distributes Centos 6 RPM's for everything..
 
+* Centos 6 and Freeswitch do not "play nice"
+* 
 ## ```</flame retardant suit>```
 
 http://stormqloud.ca
