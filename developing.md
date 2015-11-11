@@ -55,3 +55,26 @@ Already up-to-date.
 
 
 ```
+
+```
+ 1032  git config --global user.name "wlloyd"
+ 1033  git config --global user.email "wlloyd@stormqloud.ca"
+ 1034  git clone git@github.com:stormqloud/community-scripts.git
+ 1039  git remote add upstream https://github.com/community-scripts.git
+ 1040  git status -v
+ 1042  git remotes
+ 1043  git remote
+ 1044  git remote -v
+ 1045  git branch
+ 1046  git branch pgcdr
+ 1047  git checkout pgcdr
+ 1048  git pull upstream pgcdr
+ 1049  git remote -v
+ 1050  git pull upstream
+ 1051  git remote set-url upstream https://github.com/2600hz/community-scripts.git
+ 1052  git pull upstream pgcdr
+ 1053  git remote -v
+ 1054  git pull upstream
+ 1055  git branch
+ 1057  git pull upstream master
+```
