@@ -77,4 +77,15 @@ Already up-to-date.
  1054  git pull upstream
  1055  git branch
  1057  git pull upstream master
+ 1062  git add PostgreSQL-CDR/
+ 1063  git commit -m "new PostgreSQL to CDR stuff"
+ 1066  git add .
+ 1067  git commit -m "new PostgreSQL to CDR stuff"
+ 1068  git push origin pgsql
+ 1069  git push origin 
+ 1070  git branch
+ 1071  git push origin ?
+ 1072  git push origin master
+ 1073  git push origin pgcdr
+
 ```
