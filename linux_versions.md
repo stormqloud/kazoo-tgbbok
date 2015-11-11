@@ -3,7 +3,7 @@
 ## ```<flame retardant suit>```
 
 * What version of Linux should you use for Kazoo?
-  * You should use FreeBSD
+  * You should only use FreeBSD
     * Just kidding
     * I love FreeBSD, but there is little Kazoo support at this time
 
