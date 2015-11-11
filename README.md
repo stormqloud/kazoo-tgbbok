@@ -3,6 +3,8 @@ kazoo-tgbbok
 
 The Great Big Book Of Kazoo (2600hz open source platform)
 
+Kazoo Wiki when you read it online?
+
 These ramblings are here so I can add to them easily (no approvals), and a tiny little bit of Google juice. 
 
 When I put it here, I'm fairly sure where to find it again.  
