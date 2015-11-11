@@ -15,6 +15,7 @@
   * 2600hz distributes Centos 6 RPM's for everything..
 
 * Centos 6 and Freeswitch (1.6+) do not "play nice"
+  * dependancies..
 
 * Kazoo 4.0 will likely require Debian for Freeswitch   
   * This is a Freeswitch recommendation/requirement more then 2600hz
