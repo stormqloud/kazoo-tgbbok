@@ -14,4 +14,5 @@ curl -i  -H "Accept: text/csv" -H "Content-Type: application/json" -H "X-Auth-To
 * Another Option..  
   *  duplicate CDR into PostgreSQL
     *  https://github.com/stormqloud/community-scripts/tree/pgcdr/PostgreSQL-CDR 
+  
 http://stormqloud.ca
