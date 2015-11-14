@@ -11,4 +11,7 @@ curl -i  -H "Accept: text/csv" -H "Content-Type: application/json" -H "X-Auth-To
 * CDR to SQL or Radius direct from AMQP packets..
   * https://github.com/2600hz/community-scripts/blob/master/RadiusCDR/cdr_radius.rb
 
+* Another Option..  
+  *  duplicate CDR into PostgreSQL
+    *  https://github.com/stormqloud/community-scripts/tree/pgcdr/PostgreSQL-CDR 
 http://stormqloud.ca
