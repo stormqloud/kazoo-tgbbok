@@ -16,6 +16,10 @@ http://192.168.100.128/admin/resync?http://www.prodosec.com/spa504g/$MA.cfg
 ($SWVER lt 7.5.2b) ? http://prov.blabla.net/spa/spa50x-30x-7-5-2b.bin | http://prov.blabla.net/spa/spa50x-30x-7-5-5.bin
 
 ```
-
+  * ``` <Upgrade_Rule group="Provisioning/Firmware_Upgrade">
+($SWVER lt 7.5.2b) ? http://prov.vygr.net/spa/spa50x-30x-7-5-2b.bin | http://prov.vygr.net/spa/spa50x-30x-7-5-5.bin
+</Upgrade_Rule>
+ ```
+ 
 
 http://www.stormloud.ca
