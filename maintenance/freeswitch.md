@@ -18,11 +18,11 @@
 *  ```fs_cli -x 'erlang status'```
   * should show that ecallmgr is connecting to freeswitch 
 * you do not need to change the "acls" section in ecallmg config doc.
-  * Specifically ```"network-list-name": "authoritative",``` is for Kamaillio no Freeswitch.
- 
+  * Specifically ```"network-list-name": "authoritative",``` is for Kamaillio NOT Freeswitch.
+  * "TRUSTED" is for your carriers IP
+
 * language packs.. /usr/share/freeswitch/sounds
   * make sure you have all your languages.
-    * 
     * 
 ``` 
 [root@fs01 sounds]# ls -la  /usr/share/freeswitch/sounds
@@ -33,3 +33,8 @@ drwxr-xr-x 3 freeswitch daemon 4096 Jul 17 21:26 en
 drwxr-xr-x 3 freeswitch daemon 4096 Jul 17 21:26 music
 -rw-r--r-- 1 freeswitch daemon  125 Jul 17 21:26 VERSION
 ```
+
+* sup -necallmgr ecallmgr_maintenance reload_acls
+* 
+
+sip trunks from www.stormqloud.ca
