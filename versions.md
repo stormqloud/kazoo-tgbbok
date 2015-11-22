@@ -28,6 +28,19 @@ kazoo-freeswitch-R15B-1.4.15-3.el6.x86_64
 kazoo-kamailio-4.2.3-16.el6.x86_64
 ```
 
+* 3.20 composite files
+```
+kazoo-bigcouch-R15B-0.4.x-1.el6.x86_64
+kazoo-json-c-master-0.el6.x86_64
+kazoo-prompts-3.20-0.el6.noarch
+kazoo-configs-3.20-3.el6.noarch
+kazoo-R15B-3.20-12.el6.x86_64
+kazoo-librabbitmq-master-1.el6.x86_64
+kazoo-freeswitch-R15B-1.4.7-11.el6.x86_64
+kazoo-kamailio-4.2.3-16.el6.x86_64
+
+```
+
 * You should probably aim to install 3.21
   * 3.21 (fall 2015)
   * 3.20 (summer 2015)
