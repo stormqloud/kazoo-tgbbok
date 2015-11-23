@@ -2,6 +2,10 @@
 
 * CDR will go into BigCouch by default.
 
+* New parallel CDR
+  * https://github.com/stormqloud/community-scripts/tree/pgcdr/PostgreSQL-CDR
+  * Kazoo CDR Bigcouch unaffected
+  * Parallel insert into Postres 
 * CDR export as a CSV
   * https://github.com/2600hz/kazoo/blob/master/applications/crossbar/doc/cdrs.md
 ```
@@ -11,8 +15,4 @@ curl -i  -H "Accept: text/csv" -H "Content-Type: application/json" -H "X-Auth-To
 * CDR to SQL or Radius direct from AMQP packets..
   * https://github.com/2600hz/community-scripts/blob/master/RadiusCDR/cdr_radius.rb
 
-* Another Option..  
-  *  duplicate CDR into PostgreSQL
-    *  https://github.com/stormqloud/community-scripts/tree/pgcdr/PostgreSQL-CDR 
-  
 http://stormqloud.ca
