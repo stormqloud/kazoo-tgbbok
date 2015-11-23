@@ -1,6 +1,10 @@
 ### Random Phone handset Vendor info
 ### Kazoo compatability
 
+### Anybody that wants me to test their phones please send them in..
+
+#### The cost of phones is low enough that "broken" handsets should just be swapped out.  
+
 * Yealink
    * 2600hz really like Yealink.
    * use Yealink for the best Kazoo experience
@@ -19,11 +23,12 @@
 * Grandstream
 * Snom
   * Avoid.
-    * Offer free Yealink replacement phones
+    * Offer free replacement phones
 * Aastra
   * Avoid.
-    * Offer free Yealink replacement phones
-    
+    * Offer free replacement phones
+* Mitel
+  * Offer free replacement phones 
 * There isn't much in this section..
 
 stormqloud.ca
