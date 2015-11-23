@@ -7,13 +7,20 @@
 
 * Polycom
   * Enterprise vendor
+  * Everybody need to support Polycom
+  * Kazoo like Polycom
 * Cisco
+  * Sipura/Linksys 
+    * SPA504G 
+      * Widely used with Kazoo 
 * Grandstream
 * Snom
-* Aastrra
-* 
-
+  * Avoid.
+    * Offer free Yealink replacement phones
+* Aastra
+  * Avoid.
+    * Offer free Yealink replacement phones
+    
 * There isn't much in this section..
 
-Polycom stormqloud
-Cisco Siprua stoqmqloud
+stormqloud.ca
