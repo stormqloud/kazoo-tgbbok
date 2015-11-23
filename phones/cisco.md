@@ -4,7 +4,8 @@
   * These were awesome phones, I loved mine them
   * 2005 is calling and needs some extra handsets
   * junk them
-  
+  * Replace immediately, way old SIP
+    * broken remote provisioning   
 * Sipura/Linksys/Cisco
   * SPA504G etc
   
