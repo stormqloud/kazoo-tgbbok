@@ -3,8 +3,8 @@
 * CDR will go into BigCouch by default.
 
 * New parallel CDR
- * https://github.com/stormqloud/community-scripts/tree/pgcdr/PostgreSQL-CDR
- * Kazoo CDR Bigcouch unaffected
+  * https://github.com/stormqloud/community-scripts/tree/pgcdr/PostgreSQL-CDR
+  * Kazoo CDR Bigcouch unaffected
  * Parallel insert into Postres 
 * CDR export as a CSV
   * https://github.com/2600hz/kazoo/blob/master/applications/crossbar/doc/cdrs.md
