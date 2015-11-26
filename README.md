@@ -1,9 +1,7 @@
 kazoo-tgbbok
 ============
 
-The Great Big Book Of Kazoo (2600hz open source platform)
-
-Existential question: Is the Big Book of Kazoo really a Wiki when you read it online?
+The Great Big Book Of Kazoo (2600hz Open Source platform)
 
 These ramblings are here so I can add to them easily (no approvals), and a tiny little bit of Google juice. 
 
@@ -68,7 +66,7 @@ Please never say that Kazoo doesn;t have some feature because you can't find it 
 
 The best documentation is the source code.
 
-wlloyd@stormqloud.ca (alias _wlloyd_@_prodosec_._com_)
+wlloyd@stormqloud.ca (sometime known as _wlloyd_@_prodosec_._com_)
 
 tx
 
