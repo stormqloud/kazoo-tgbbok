@@ -28,6 +28,66 @@ sup kazoo_ips_maintenance release
 sup kazoo_ips_maintenance release IP
 sup kazoo_ips_maintenance summary 
 sup kazoo_ips_maintenance summary Host
+sup couch_compactor_fsm cancel_all_jobs 
+sup couch_compactor_fsm cancel_current_job 
+sup couch_compactor_fsm cancel_current_shard 
+sup couch_compactor_fsm code_change _OldVsn StateName State _Extra
+sup couch_compactor_fsm compact 
+sup couch_compactor_fsm compact 'compact' PLACEHOLDER
+sup couch_compactor_fsm compact PLACEHOLDER PLACEHOLDER
+sup couch_compactor_fsm compact PLACEHOLDER State
+sup couch_compactor_fsm compact _Msg State
+sup couch_compactor_fsm compact 'cancel_all_jobs' _ PLACEHOLDER
+sup couch_compactor_fsm compact 'cancel_current_job' _ PLACEHOLDER
+sup couch_compactor_fsm compact 'cancel_current_shard' _ PLACEHOLDER
+sup couch_compactor_fsm compact 'status' _ PLACEHOLDER
+sup couch_compactor_fsm compact Msg PLACEHOLDER PLACEHOLDER
+sup couch_compactor_fsm compact_automatically 
+sup couch_compactor_fsm compact_automatically Boolean
+sup couch_compactor_fsm compact_db Db
+sup couch_compactor_fsm compact_db Node Db
+sup couch_compactor_fsm compact_db Node Db Opts
+sup couch_compactor_fsm compact_node Node
+sup couch_compactor_fsm compact_node Node Opts
+sup couch_compactor_fsm compact_shard Conn AdminConn S DDs
+sup couch_compactor_fsm current 
+sup couch_compactor_fsm current_db 
+sup couch_compactor_fsm current_node 
+sup couch_compactor_fsm dbs_left 
+sup couch_compactor_fsm handle_event _Event StateName State
+sup couch_compactor_fsm handle_info '$maybe_start_auto_compaction_job' CurrentState State
+sup couch_compactor_fsm handle_info '$maybe_start_auto_compaction_job' PLACEHOLDER State
+sup couch_compactor_fsm handle_info PLACEHOLDER _StateName PLACEHOLDER
+sup couch_compactor_fsm handle_info _Info StateName PLACEHOLDER
+sup couch_compactor_fsm handle_sync_event 'current' _ StateName PLACEHOLDER
+sup couch_compactor_fsm handle_sync_event 'dbs_left' _ StateName PLACEHOLDER
+sup couch_compactor_fsm handle_sync_event 'nodes_left' _ StateName PLACEHOLDER
+sup couch_compactor_fsm handle_sync_event _Event _From StateName State
+sup couch_compactor_fsm init []
+sup couch_compactor_fsm is_compactor_running 
+sup couch_compactor_fsm nodes_left 
+sup couch_compactor_fsm ready 'compact' State
+sup couch_compactor_fsm ready 'next_job' PLACEHOLDER
+sup couch_compactor_fsm ready PLACEHOLDER State
+sup couch_compactor_fsm ready _Msg State
+sup couch_compactor_fsm ready 'cancel_all_jobs' _ PLACEHOLDER
+sup couch_compactor_fsm ready 'cancel_current_job' _ State
+sup couch_compactor_fsm ready 'cancel_current_shard' _ State
+sup couch_compactor_fsm ready 'status' _ PLACEHOLDER
+sup couch_compactor_fsm ready Msg PLACEHOLDER PLACEHOLDER
+sup couch_compactor_fsm rebuild_design_docs Conn D DDs
+sup couch_compactor_fsm start_auto_compaction 
+sup couch_compactor_fsm start_link 
+sup couch_compactor_fsm status 
+sup couch_compactor_fsm stop_auto_compaction 
+sup couch_compactor_fsm terminate _Reason _StateName _State
+sup couch_compactor_fsm wait PLACEHOLDER PLACEHOLDER
+sup couch_compactor_fsm wait _Msg State
+sup couch_compactor_fsm wait 'cancel_all_jobs' _ PLACEHOLDER
+sup couch_compactor_fsm wait 'cancel_current_job' _ PLACEHOLDER
+sup couch_compactor_fsm wait 'cancel_current_shard' _ State
+sup couch_compactor_fsm wait 'status' _ PLACEHOLDER
+sup couch_compactor_fsm wait Msg PLACEHOLDER PLACEHOLDER
 sup whistle_couch_maintenance archive Db
 sup whistle_couch_maintenance archive Db Filename
 sup whistle_couch_maintenance cancel_compaction_job 
@@ -42,6 +102,7 @@ sup whistle_couch_maintenance compaction_status
 sup whistle_couch_maintenance flush 
 sup whistle_couch_maintenance flush Account
 sup whistle_couch_maintenance flush Account DocId
+sup whistle_couch_maintenance run_replication Host AdminPort Port TargetHost TargetPort
 sup whistle_couch_maintenance start_auto_compaction 
 sup whistle_couch_maintenance stop_auto_compaction 
 sup whistle_couch_maintenance test_admin_connection 
@@ -77,6 +138,49 @@ sup whistle_media_maintenance migrate_prompts
 sup whistle_media_maintenance refresh 
 sup whistle_media_maintenance remove_empty_media_docs AccountId
 sup whistle_media_maintenance set_account_language Account Language
+sup wnm_util are_jobjs_identical 'undefined' 'undefined'
+sup wnm_util are_jobjs_identical 'undefined' _
+sup wnm_util are_jobjs_identical JObj1 JObj2
+sup wnm_util are_jobjs_identical _ 'undefined'
+sup wnm_util available_classifiers 
+sup wnm_util available_classifiers 'undefined'
+sup wnm_util available_classifiers AccountId
+sup wnm_util classify_number Number
+sup wnm_util classify_number Num PLACEHOLDER
+sup wnm_util classify_number Num [PLACEHOLDER|Classifiers]
+sup wnm_util classify_number Num []
+sup wnm_util emergency_services_configured Number PhoneNumbersJObj
+sup wnm_util find_account_id JObj
+sup wnm_util get_all_number_dbs 
+sup wnm_util get_carrier_module JObj
+sup wnm_util is_1npan DID
+sup wnm_util is_dash_e911_configured Number PhoneNumbersJObj
+sup wnm_util is_e164 DID
+sup wnm_util is_e164 DID AccountId
+sup wnm_util is_npan DID
+sup wnm_util is_reconcilable "id"
+sup wnm_util is_reconcilable Number
+sup wnm_util is_reconcilable Number AccountId
+sup wnm_util is_vitelity_e911_configured Number PhoneNumbersJObj
+sup wnm_util list_carrier_modules 
+sup wnm_util normalize_number Number
+sup wnm_util normalize_number Number 'undefined'
+sup wnm_util normalize_number Number AccountId
+sup wnm_util number_to_db_name PLACEHOLDER
+sup wnm_util number_to_db_name _
+sup wnm_util pretty_print Number
+sup wnm_util pretty_print Format Number
+sup wnm_util to_1npan Number
+sup wnm_util to_e164 Number
+sup wnm_util to_e164 PLACEHOLDER
+sup wnm_util to_e164 Number 'undefined'
+sup wnm_util to_e164 Number PLACEHOLDER
+sup wnm_util to_e164 PLACEHOLDER _
+sup wnm_util to_e164 Number 'undefined' _
+sup wnm_util to_e164 Number AccountId 'undefined'
+sup wnm_util to_e164 Number AccountId DialPlan
+sup wnm_util to_e164 PLACEHOLDER _ _
+sup wnm_util to_npan Number
 sup whistle_number_manager_maintenance activate_phone_number Number
 sup whistle_number_manager_maintenance activate_phone_number Number AccountId
 sup whistle_number_manager_maintenance cleanup_phone_numbers 
@@ -94,6 +198,14 @@ sup whistle_number_manager_maintenance reconcile_numbers 'all'
 sup whistle_number_manager_maintenance reconcile_numbers NumberDb
 sup whistle_number_manager_maintenance reconcile_providers 
 sup whistle_number_manager_maintenance refresh 
+sup whapps_controller list_apps 
+sup whapps_controller restart_app App
+sup whapps_controller running_apps 
+sup whapps_controller running_apps Verbose
+sup whapps_controller start_app App
+sup whapps_controller start_default_apps 
+sup whapps_controller start_link 
+sup whapps_controller stop_app App
 sup whapps_maintenance blocking_refresh 
 sup whapps_maintenance blocking_refresh Pause
 sup whapps_maintenance call_id_status CallId
@@ -145,6 +257,61 @@ sup whapps_maintenance remove_aggregated_account Account
 sup whapps_maintenance remove_depreciated_databases 
 sup kazoo_oauth_maintenance register_common_providers 
 sup kazoo_oauth_maintenance register_oauth_app AccountId OAuthId EMail Secret Provider
+sup whapps_account_config flush Account
+sup whapps_account_config flush Account Config
+sup whapps_account_config get Account Config
+sup whapps_account_config get Account Config Key
+sup whapps_account_config get Account Config Key Default
+sup whapps_account_config get_global Account Category Key
+sup whapps_account_config get_global Account Category Key Default
+sup whapps_account_config set Account Config Key Value
+sup whapps_account_config set_global Account Category Key Value
+sup whapps_config flush 
+sup whapps_config flush Category
+sup whapps_config flush Category Key
+sup whapps_config flush Category Key 'undefined'
+sup whapps_config flush Category Key Node
+sup whapps_config flush Category Keys Node
+sup whapps_config get Category Key
+sup whapps_config get Category Key Default
+sup whapps_config get Category Key Default 'undefined'
+sup whapps_config get Category Key Default Node
+sup whapps_config get Category Keys Default Node
+sup whapps_config get_all_kvs Category
+sup whapps_config get_atom Category Key
+sup whapps_config get_atom Category Key Default
+sup whapps_config get_atom Category Key Default Node
+sup whapps_config get_binary Category Key
+sup whapps_config get_binary Category Key Default
+sup whapps_config get_binary Category Key Default Node
+sup whapps_config get_float Category Key
+sup whapps_config get_float Category Key Default
+sup whapps_config get_float Category Key Default Node
+sup whapps_config get_integer Category Key
+sup whapps_config get_integer Category Key Default
+sup whapps_config get_integer Category Key Default Node
+sup whapps_config get_is_false Category Key
+sup whapps_config get_is_false Category Key Default
+sup whapps_config get_is_false Category Key Default Node
+sup whapps_config get_is_true Category Key
+sup whapps_config get_is_true Category Key Default
+sup whapps_config get_is_true Category Key Default Node
+sup whapps_config get_ne_binary Category Key
+sup whapps_config get_ne_binary Category Key Default
+sup whapps_config get_ne_binary Category Key Default Node
+sup whapps_config get_non_empty Category Key
+sup whapps_config get_non_empty Category Key Default
+sup whapps_config get_non_empty Category Key Default Node
+sup whapps_config get_string Category Key
+sup whapps_config get_string Category Key Default
+sup whapps_config get_string Category Key Default Node
+sup whapps_config set Category Key Value
+sup whapps_config set Category Key Value Node
+sup whapps_config set_default Category Key Value
+sup whapps_config set_node Category Key Value Node
+sup whapps_config set_node Category _ _ 'undefined'
+sup whapps_config update_default Category Key Value
+sup whapps_config update_default Category Key Value Options
 sup whistle_transactions_maintenance disable_top_up 
 sup whistle_transactions_maintenance enable_top_up 
 sup whistle_services_maintenance cascade_reseller_id Reseller Account
@@ -161,6 +328,18 @@ sup whistle_services_maintenance sync Account
 sup konami_maintenance add_default_account_metaflow AccountId
 sup konami_maintenance add_default_metaflow 
 sup konami_maintenance is_running 
+sup notify_account_crawler check Account
+sup notify_account_crawler code_change _OldVsn State _Extra
+sup notify_account_crawler handle_call _Request _From State
+sup notify_account_crawler handle_cast _Msg State
+sup notify_account_crawler handle_info 'crawl_accounts' _
+sup notify_account_crawler handle_info 'next_account' [Account|Accounts]
+sup notify_account_crawler handle_info 'next_account' []
+sup notify_account_crawler handle_info _Info State
+sup notify_account_crawler init []
+sup notify_account_crawler low_balance_threshold Account
+sup notify_account_crawler start_link 
+sup notify_account_crawler terminate _Reason _State
 sup notify_maintenance check_initial_call Account
 sup notify_maintenance check_initial_registration Account
 sup notify_maintenance configure_smtp_auth Value
@@ -182,11 +361,13 @@ sup crossbar_maintenance descendants_count AccountId
 sup crossbar_maintenance disable_account AccountId
 sup crossbar_maintenance disallow_account_number_additions AccountId
 sup crossbar_maintenance enable_account AccountId
+sup crossbar_maintenance find_account_by_id Id
 sup crossbar_maintenance find_account_by_name Name
 sup crossbar_maintenance find_account_by_number Number
 sup crossbar_maintenance find_account_by_realm Realm
 sup crossbar_maintenance flush 
 sup crossbar_maintenance init_app AppPath AppUrl
+sup crossbar_maintenance init_apps AppsPath AppUrl
 sup crossbar_maintenance migrate 
 sup crossbar_maintenance migrate Accounts
 sup crossbar_maintenance migrate_account_data Account
@@ -199,10 +380,29 @@ sup crossbar_maintenance refresh Value
 sup crossbar_maintenance running_modules 
 sup crossbar_maintenance start_module Module
 sup crossbar_maintenance stop_module Module
+sup crossbar_bindings all Res
+sup crossbar_bindings any Res
+sup crossbar_bindings bind Binding Module Fun
+sup crossbar_bindings bind PLACEHOLDER Module Fun
+sup crossbar_bindings failed Res
+sup crossbar_bindings flush 
+sup crossbar_bindings flush Binding
+sup crossbar_bindings flush_mod CBMod
+sup crossbar_bindings fold Routing Payload
+sup crossbar_bindings init 
+sup crossbar_bindings map Routing Payload
+sup crossbar_bindings matches [R|Restrictions] Tokens
+sup crossbar_bindings matches [] _
+sup crossbar_bindings modules_loaded 
+sup crossbar_bindings succeeded Res
+sup cb_apps_maintenance migrate Account
 sup jonny5_maintenance authz_details AccountId
 sup jonny5_maintenance authz_details [Channel|Channels]
 sup jonny5_maintenance authz_details []
 sup jonny5_maintenance authz_summary 
+sup jonny5_maintenance authz_summary PLACEHOLDER
+sup jonny5_maintenance authz_summary [AccountId|AccountIds]
+sup jonny5_maintenance authz_summary []
 sup jonny5_maintenance flush 
 sup jonny5_maintenance limits_details Account
 sup jonny5_maintenance limits_summary 
@@ -214,8 +414,11 @@ sup webhooks_maintenance enable_account_hooks AccountId
 sup webhooks_maintenance enable_descendant_hooks AccountId
 sup webhooks_maintenance failure_status 
 sup webhooks_maintenance failure_status Account
+sup webhooks_maintenance flush_account_failures AccountId
+sup webhooks_maintenance flush_hook_failures AccountId HookId
 sup webhooks_maintenance hooks_configured 
 sup webhooks_maintenance hooks_configured AccountId
+sup webhooks_maintenance reset_webhooks_list 
 sup webhooks_maintenance set_disable_threshold Count
 sup webhooks_maintenance set_disable_threshold Account Count
 sup webhooks_maintenance set_failure_expiry Expires
@@ -360,6 +563,37 @@ sup ecallmgr_maintenance test_sbc_ip IP
 sup ecallmgr_maintenance test_sbc_ip IP Node
 sup ecallmgr_maintenance test_sbc_ip IP [Node|Nodes]
 sup ecallmgr_maintenance test_sbc_ip _ []
+sup ecallmgr_config fetch Key
+sup ecallmgr_config fetch Key Default
+sup ecallmgr_config fetch Key Default 'undefined'
+sup ecallmgr_config fetch Key Default Node
+sup ecallmgr_config fetch Key Default PLACEHOLDER
+sup ecallmgr_config fetch Key Default Timeout
+sup ecallmgr_config fetch Key Default Node RequestTimeout
+sup ecallmgr_config flush 
+sup ecallmgr_config flush Key
+sup ecallmgr_config flush Key 'undefined'
+sup ecallmgr_config flush Key Node
+sup ecallmgr_config flush_default 
+sup ecallmgr_config flush_default Key
+sup ecallmgr_config get Key
+sup ecallmgr_config get Key Default
+sup ecallmgr_config get Key Default 'undefined'
+sup ecallmgr_config get Key Default Node
+sup ecallmgr_config get_boolean Key
+sup ecallmgr_config get_boolean Key Default
+sup ecallmgr_config get_boolean Key Default Node
+sup ecallmgr_config get_default Key
+sup ecallmgr_config get_default Key Default
+sup ecallmgr_config get_integer Key
+sup ecallmgr_config get_integer Key Default
+sup ecallmgr_config get_integer Key Default Node
+sup ecallmgr_config is_true Key
+sup ecallmgr_config is_true Key Default
+sup ecallmgr_config is_true Key Default Node
+sup ecallmgr_config set Key Value
+sup ecallmgr_config set_default Key Value
+sup ecallmgr_config set_node Key Value
 sup trunkstore_maintenance classifier_deny Classifier UserR
 sup trunkstore_maintenance classifier_inherit Classifier UserR
 sup trunkstore_maintenance clear_old_calls 
@@ -434,39 +668,6 @@ sup call_inspector_maintenance flush CallId
 sup call_inspector_maintenance list_active_parsers 
 sup call_inspector_maintenance start_freeswitch_parser Filename LogIP LogPort
 sup call_inspector_maintenance start_hep_parser IP Port
-sup hangups_maintenance activate_monitor AccountId HangupCause
-sup hangups_maintenance activate_monitors AccountId ThresholdOneMinute
-sup hangups_maintenance hangup_summary HangupCause
-sup hangups_maintenance hangup_summary HangupCause AccountId
-sup hangups_maintenance hangups_summary 
-sup hangups_maintenance set_monitor_threshold HangupCause TOM
-sup hangups_maintenance set_monitor_threshold HangupCause ThresholdName T
-sup teletype_maintenance receipts 
-sup fax_maintenance account_jobs AccountId
-sup fax_maintenance account_jobs AccountId State
-sup fax_maintenance active_jobs 
-sup fax_maintenance faxbox_jobs FaxboxId
-sup fax_maintenance faxbox_jobs FaxboxId State
-sup fax_maintenance flush 
-sup fax_maintenance migrate 
-sup fax_maintenance migrate "override_existing_documents"
-sup fax_maintenance migrate Account
-sup fax_maintenance migrate [Account|Accounts]
-sup fax_maintenance migrate []
-sup fax_maintenance migrate Account Options
-sup fax_maintenance migrate Accounts "override_existing_documents"
-sup fax_maintenance migrate Accounts Option
-sup fax_maintenance migrate [Account|Accounts] Options
-sup fax_maintenance migrate [] _
-sup fax_maintenance pending_jobs 
-sup fax_maintenance restart_job JobID
-sup fax_maintenance update_job JobID State
-sup call_inspector_maintenance callid_details CallId
-sup call_inspector_maintenance flush 
-sup call_inspector_maintenance flush CallId
-sup call_inspector_maintenance list_active_parsers 
-sup call_inspector_maintenance start_freeswitch_parser Filename LogIP LogPort
-sup call_inspector_maintenance start_hep_parser IP Port
 sup call_inspector_maintenance start_kamailio_parser Filename LogIP LogPort
 sup call_inspector_maintenance stop_active_parser Id
 sup callflow_maintenance account_set_classifier_deny Classifier Account
@@ -494,5 +695,5 @@ sup omnipresence_maintenance current_subscriptions
 sup omnipresence_maintenance current_subscriptions Realm
 sup omnipresence_maintenance current_subscriptions Realm User
 sup omnipresence_maintenance list_terminated_callids 
-sup omnipresence_maintenance send_mwi_update User New Waiting
+sup omnipresence_maintenance send_mwi_update User New Saved
 sup omnipresence_maintenance subscribe Realm User
