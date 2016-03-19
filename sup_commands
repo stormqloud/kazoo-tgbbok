@@ -305,6 +305,11 @@ sup whapps_config get_non_empty Category Key Default Node
 sup whapps_config get_string Category Key
 sup whapps_config get_string Category Key Default
 sup whapps_config get_string Category Key Default Node
+sup whapps_config is_locked 
+sup whapps_config lock_db 
+sup whapps_config lock_db 'false'
+sup whapps_config lock_db 'true'
+sup whapps_config lock_db Value
 sup whapps_config set Category Key Value
 sup whapps_config set Category Key Value Node
 sup whapps_config set_default Category Key Value
@@ -404,12 +409,12 @@ sup jonny5_maintenance authz_summary PLACEHOLDER
 sup jonny5_maintenance authz_summary [AccountId|AccountIds]
 sup jonny5_maintenance authz_summary []
 sup jonny5_maintenance flush 
+sup jonny5_maintenance flush_channels 
 sup jonny5_maintenance limits_details Account
 sup jonny5_maintenance limits_summary 
 sup jonny5_maintenance limits_summary AccountId
 sup jonny5_maintenance limits_summary [Limit|Limits]
 sup jonny5_maintenance limits_summary []
-sup jonny5_maintenance remove_callid CallId
 sup webhooks_maintenance enable_account_hooks AccountId
 sup webhooks_maintenance enable_descendant_hooks AccountId
 sup webhooks_maintenance failure_status 
@@ -695,5 +700,9 @@ sup omnipresence_maintenance current_subscriptions
 sup omnipresence_maintenance current_subscriptions Realm
 sup omnipresence_maintenance current_subscriptions Realm User
 sup omnipresence_maintenance list_terminated_callids 
+sup omnipresence_maintenance reset_subscriber User
+sup omnipresence_maintenance reset_subscriber User Realm
+sup omnipresence_maintenance reset_subscription User
+sup omnipresence_maintenance reset_subscription User Realm
 sup omnipresence_maintenance send_mwi_update User New Saved
 sup omnipresence_maintenance subscribe Realm User
