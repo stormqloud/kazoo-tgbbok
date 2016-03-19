@@ -2,7 +2,8 @@
 
 * You might want to check out the information on "upgrading" as well.
 
-* You should probably aim to install 3.21
+* You should probably aim to install 3.22
+  * 3.22 Spring 2016
   * 3.21 (fall 2015)
   * 3.20 (summer 2015)
   * 3.19 March 2015 (being retired as of May 10, 2015)
@@ -25,7 +26,7 @@
  * No reason to maintain local changes unless you are a developer
 
 
-* 3.22 composite files
+* 3.22-0 composite files
 ```
 kazoo-bigcouch-R15B-0.4.x-1.el6.x86_64
 kazoo-json-c-master-0.el6.x86_64
@@ -40,26 +41,28 @@ kazoo-R15B-3.22-0.el6.x86_64
 
 * 3.22-5 composite files
 ```
-kazoo-R15B-3.22-5.el6.x86_64
 kazoo-bigcouch-R15B-0.4.x-1.el6.x86_64
 kazoo-json-c-master-0.el6.x86_64
+kazoo-librabbitmq-master-1.el6.x86_64
+
 kazoo-prompts-3.22-0.el6.noarch
 kazoo-kamailio-4.3.1-5.el6.x86_64
 kazoo-freeswitch-R15B-1.4.23-0.el6.x86_64
 kazoo-configs-3.22-2.el6.noarch
-kazoo-librabbitmq-master-1.el6.x86_64
+kazoo-R15B-3.22-5.el6.x86_64
 ```
 
 * 3.22-50
 ```
 kazoo-bigcouch-R15B-0.4.x-1.el6.x86_64
 kazoo-json-c-master-0.el6.x86_64
+kazoo-librabbitmq-master-1.el6.x86_64
+
 kazoo-prompts-3.22-0.el6.noarch
 kazoo-configs-3.22-15.el6.noarch
 kazoo-kamailio-4.3.4-8.el6.x86_64
 kazoo-freeswitch-R15B-1.4.26-0.el6.x86_64
 kazoo-R15B-3.22-50.el6.x86_64
-kazoo-librabbitmq-master-1.el6.x86_64
 ```
 
 
