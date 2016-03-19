@@ -1,4 +1,4 @@
-# Vaguely current as of Dec 2015
+# Vaguely current as of Mar 2016
 # wlloyd@stormqloud.ca
 # this comes from the output of..
 # ./sup-build-autocomplete.escript sup.complete /opt/kazoo > /root/sup_commands
