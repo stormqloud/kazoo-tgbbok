@@ -89,3 +89,33 @@ Already up-to-date.
  1073  git push origin pgcdr
 
 ```
+
+```
+
+[root@kz532 kazoo]# /opt/kazoo/scripts/conn-to-apps.sh 
+Erlang R15B03 (erts-5.9.3.1) [source] [64-bit] [smp:4:4] [async-threads:0] [hipe] [kernel-poll:false]
+
+Eshell V5.9.3.1  (abort with ^G)
+(whistl...@kz532.onnet.su)1> l(kazoo_modb_maintenance).
+{module,kazoo_modb_maintenance}
+(whistl...@kz532.onnet.su)2> 
+
+
+And you are OK:
+
+
+root@kz532 kazoo]# /opt/kazoo/scripts/conn-to-apps.sh 
+Erlang R15B03 (erts-5.9.3.1) [source] [64-bit] [smp:4:4] [async-threads:0] [hipe] [kernel-poll:false]
+
+Eshell V5.9.3.1  (abort with ^G)
+(whistl...@kz532.onnet.su)1> l(kazoo_modb_maintenance).
+{module,kazoo_modb_maintenance}
+(whistl...@kz532.onnet.su)2> 
+BREAK: (a)bort (c)ontinue (p)roc info (i)nfo (l)oaded
+       (v)ersion (k)ill (D)b-tables (d)istribution
+^C[root@kz532 kazoo]sup kazoo_modb_maintenance delete_modbs 201505
+deleting all MODBs equal to or older than 2015/5
+archiving to /tmp/account%2F00%2Fdf%2Ff804b9b8a3696bc8bc2271cef711-201505.json
+    archived 30 docs
+    deleted: true
+```
