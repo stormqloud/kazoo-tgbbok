@@ -13,3 +13,9 @@
   * pre 3.20 language was mostly in couchdb accounts/xxxxxxx/media_master
   * Now language support is kept inside the account doc for the account.
   
+
+* Use 
+  * 'en-US'
+  * 'fr-FR'
+  * 'fr-CA'
+ 
