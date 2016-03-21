@@ -1,5 +1,5 @@
 #!/bin/sh
-# Version 0.03
+# Version 0.04
 
 # To backup BigCouchDB to Google Cloud Storage
 # stormqloud (wlloyd@prodosec.com)
@@ -52,3 +52,4 @@ cd /
 tar -czf ${f} srv
 gsutil -q cp -c ${f} gs://kazoo-backups/couchdb/
 rm ${f}
+
