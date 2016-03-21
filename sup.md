@@ -1,10 +1,15 @@
 #SUP
 
-## Help
-* I've tried to list as many SUP commands as I can casually find onto on this page.
-* You need to understand what the SUP command does..
+* The "SUP" command is used to interact with the Erlang server at a very low level for Kazoo.
+* Most of the functions you want are in the HTTP REST API [ie not here]  
 
+## Help
+* You need to understand what the SUP command does..
+  * The sup command allows you to call Erlang (procedures?) from the unix cli
+  * You can interact with running code like POST/GET to the REST API with sup
+ 
 * Here is the master list if you want just that..
+ * This is not complete 
  * https://github.com/stormqloud/kazoo-tgbbok/blob/master/sup_commands
 
 There are too many sup commands listed in too many places so far...  The super ingenius will know how to scan the Erlang source code to sniff out their own sup commands.
