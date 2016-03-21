@@ -1,14 +1,15 @@
 #!/bin/sh
-# Version 0.02
+# Version 0.03
 
-# To backup BigCouch to Google Cloud Storage
+# To backup BigCouchDB to Google Cloud Storage
 # stormqloud (wlloyd@prodosec.com)
 
 # Ideally for Kazoo from 2600hz.com!
 
-# This can use d from a daily cronjob oneach bigcouch server.
+# Run this daily on each BigCouchDB server.
 
 # Signup for Google Compute Account.  You get 90 days free.
+# This contains storage.  
 
 # Under permissions, create a service account
 # You will get a json or pk12 (choose json)
