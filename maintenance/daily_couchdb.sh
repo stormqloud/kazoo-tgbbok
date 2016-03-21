@@ -21,6 +21,11 @@
 # bucket in this is calles kazoo-backups
 # couchdb is a directory in the bucket that you create with the web interface (or remote it)
 
+# Centos6 you need 
+# yum install gcc openssl-devel python-devel python-setuptools libffi-devel
+# yum install python-pip
+# pip install gsutil
+
 # gcloud auth activate-service-account --key-file service-account.json
 
 # If you are on CentOS 6 this will help remove this nag.
