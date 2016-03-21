@@ -22,6 +22,22 @@
 
 # gcloud auth activate-service-account --key-file service-account.json
 
+# If you are on CentOS 6 this will help remove this nag.
+#diff /usr/lib/python2.6/site-packages/cryptography-1.1.2-py2.6-linux-x86_64.egg/cryptography/__init__.py /usr/lib/python2.6/site-packages/cryptography-1.1.2-py2.6-linux-x86_64.egg/cryptography/__init__.py~ 21,26c21,26
+#< #if sys.version_info[:2] == (2, 6):
+#< #    warnings.warn(
+#< #        "Python 2.6 is no longer supported by the Python core team, please "
+#< #        "upgrade your Python.",
+#< #        DeprecationWarning
+#< #    )
+#---
+#> if sys.version_info[:2] == (2, 6):
+#>     warnings.warn(
+#>         "Python 2.6 is no longer supported by the Python core team, please "
+#>         "upgrade your Python.",
+#>         DeprecationWarning
+#>     )
+
 d=`date +%Y%m%d-%H%M`
 h=`hostname`
 f="/tmp/couchdb_${h}_${d}.tgz"
