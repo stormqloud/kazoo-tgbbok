@@ -25,6 +25,7 @@
 # yum install gcc openssl-devel python-devel python-setuptools libffi-devel
 # yum install python-pip
 # pip install gsutil
+# curl https://sdk.cloud.google.com | bash
 
 # gcloud auth activate-service-account --key-file service-account.json
 
