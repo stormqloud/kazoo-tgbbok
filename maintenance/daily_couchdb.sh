@@ -1,5 +1,5 @@
 #!/bin/sh
-# Version 0.05
+# Version 0.06
 
 # To backup BigCouchDB to Google Cloud Storage
 # stormqloud (wlloyd@prodosec.com)
@@ -55,7 +55,7 @@ f="/tmp/couchdb_${h}_${d}.tgz"
 #echo $f
 cd /
 tar -czf ${f} srv
-gcloud auth activate-service-account --key-file /root/service-account.json
-gsutil -q cp -c ${f} gs://kazoo-backups/couchdb/
+/root/google-cloud-sdk/bin/gcloud auth activate-service-account --key-file /root/service-account.json
+/root/google-cloud-sdk/bin/gsutil -q cp -c ${f} gs://kazoo-backups/couchdb/
 rm ${f}
 
