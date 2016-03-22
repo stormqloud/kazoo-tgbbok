@@ -1,5 +1,5 @@
 #!/bin/sh
-# Version 0.04
+# Version 0.05
 
 # To backup BigCouchDB to Google Cloud Storage
 # stormqloud (wlloyd@prodosec.com)
@@ -7,6 +7,8 @@
 # Ideally for Kazoo from 2600hz.com!
 
 # Run this daily on each BigCouchDB server.
+# Like this in cron..
+# 0 8 * * * /bin/sh /root/daily_couchdb.sh
 
 # Signup for Google Compute Account.  You get 90 days free.
 # This contains storage.  
@@ -20,6 +22,8 @@
 
 # bucket in this is calles kazoo-backups
 # couchdb is a directory in the bucket that you create with the web interface (or remote it)
+
+# Per BigcouchDB server
 
 # Centos6 you need 
 # yum install gcc openssl-devel python-devel python-setuptools libffi-devel
@@ -51,6 +55,7 @@ f="/tmp/couchdb_${h}_${d}.tgz"
 #echo $f
 cd /
 tar -czf ${f} srv
+gcloud auth activate-service-account --key-file /root/service-account.json
 gsutil -q cp -c ${f} gs://kazoo-backups/couchdb/
 rm ${f}
 
