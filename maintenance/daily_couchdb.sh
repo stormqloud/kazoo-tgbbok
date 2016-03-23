@@ -15,7 +15,7 @@
 
 # Under permissions, create a service account
 # You will get a json or pk12 (choose json)
-# rename it service-account.json
+# rename it service-account.json and save it in /root on your CouchDB server
 
 # enable google storage api
 # under storage tab, create bucket 
