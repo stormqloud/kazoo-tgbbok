@@ -86,9 +86,9 @@ format_from_uri controls what you send as your outbound header when the call hea
 }
 
 ```
-
+* Use your reseller carrier settings!
 * Send a call to another account carriers (IE reseller)
-   * This is important if you wan to get a subaccount to use the master account carriers
+   * This is important if you want to get a subaccount to use the master account carriers
    * This assumes you want to use reseller carriers and not global carriers.
    * also confusingly called global resources and local resources.
     
