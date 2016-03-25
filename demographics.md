@@ -23,4 +23,6 @@
 
 #### Summary
 
-If you are planning on using Kazoo, it's the best platform for what it's designed for.  A successfull Kazoo production enviroment involves somewhere around a dozen servers in a couple of data centers.  Managing and running and beign knowledgable about Kazoo system is a _FULL TIME JOB_.
+* If you are planning on using Kazoo, it's the best platform for what it's designed for.  
+* A successfull Kazoo production enviroment involves somewhere around a dozen servers in a couple of data centers.  
+* Managing and running and beign knowledgable about Kazoo system is a _FULL TIME JOB_.
