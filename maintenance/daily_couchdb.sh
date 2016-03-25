@@ -63,3 +63,6 @@ tar -cJf ${f} srv
 /root/google-cloud-sdk/bin/gsutil -q cp -c ${f} gs://kazoo-backups/couchdb/
 rm ${f}
 
+# Do a little cleanup while in the vicinity..
+sup kazoo_modb_maintenance archive_modbs
+
