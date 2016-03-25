@@ -12,7 +12,7 @@ New updates Fall 2015
  * Works in theory.
 
 * Option 2: ispeech.org
-  * Kazoo to isppech.org for ASR has been fixed.
+  * Kazoo to isppech.org for ASR has been fixed (ya Voxter)
   * Voxter announced at Kazoocon 2015
   * I've not tested but I'm sure Voxter fixed the API
     * voice recognition is hard
