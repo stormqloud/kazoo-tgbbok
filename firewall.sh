@@ -1,6 +1,8 @@
 #!/bin/bash 
 # Ver 0.04
 #
+# wlloyd@stormqloud.ca
+
 # Standing on the shoulders of others.
 # https://2600hz.atlassian.net/wiki/display/Dedicated/Setting+up+IPTABLES
 #
