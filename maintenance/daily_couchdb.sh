@@ -1,5 +1,5 @@
 #!/bin/sh
-# Version 0.07
+# Version 0.08
 
 # To backup BigCouchDB to Google Cloud Storage
 # stormqloud (wlloyd@prodosec.com)
@@ -9,9 +9,11 @@
 # Run this daily on each BigCouchDB server.
 # Like this in cron..
 # 0 8 * * * /bin/sh /root/daily_couchdb.sh
+# FYI, your big couch server should be setup for GMT(insert PC name) timezone.
 
 # Signup for Google Compute Account.  You get 90 days free.
-# This contains storage.  
+# This login contains storage space.
+# "Nearline" is like $0.01 per GB per month.
 
 # Under permissions, create a service account
 # You will get a json or pk12 (choose json)
