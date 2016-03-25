@@ -18,8 +18,11 @@ New updates Fall 2015
     * voice recognition is hard
     * Just because the voice recording hits ispeech API doesn;t mean they can recogniez it!
 
-* Option 3:
-  *  There is no option 3 
+* Option 3: google speech rec API
+  * No known integration but google is doing free ASR for the moment.  Pricing to be announced after people get hooked on it.  Otherwise it will get cancelled and everybody will be screwed.
+
+* Option 4:
+  *  There is no option 4 
 
 ASR costs per word recognized.
 
