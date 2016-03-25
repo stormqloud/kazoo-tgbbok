@@ -1,8 +1,13 @@
 #!/bin/sh
-# Version 0.08
+# Version 0.09
+# kazoo-tgbbok
+# stormqloud (wlloyd@prodosec.com)
 
 # To backup BigCouchDB to Google Cloud Storage
-# stormqloud (wlloyd@prodosec.com)
+# and do a little MODB cleanup.
+# IE prune your couchdb database after the backup if it's the end of the month
+# and things are over 6 months.
+
 
 # Ideally for Kazoo from 2600hz.com!
 
@@ -54,6 +59,7 @@
 # the actual magic is short...
 
 d=`date +%Y%m%d-%H%M`
+kd=`date +%Y%m`
 h=`hostname`
 f="/tmp/couchdb_${h}_${d}.tar.bz2"
 #echo $f
@@ -65,4 +71,5 @@ rm ${f}
 
 # Do a little cleanup while in the vicinity..
 sup kazoo_modb_maintenance archive_modbs
+sup kazoo_modb_maintenance delete_modbs ${kd}
 
