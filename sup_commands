@@ -1,7 +1,10 @@
 # Vaguely current as of Mar 2016
+# kazoo-tgbbok
 # wlloyd@stormqloud.ca
 # this comes from the output of..
 # ./sup-build-autocomplete.escript sup.complete /opt/kazoo > /root/sup_commands
+
+# remember this is not the exhaustive list..
 
 sup whistle_maintenance console_level Level
 sup whistle_maintenance error_level Level
