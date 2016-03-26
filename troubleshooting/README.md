@@ -2,7 +2,7 @@
 
 * http://www.gliffy.com/publish/2853965/
 
-* If you want to oursource your troubles and for some bizzare reason you don;t use 2600hz, you can contact me at stormqloud.ca about consulting.
+* If you want to oursource your troubles and for some bizzare reason you don't use 2600hz, you can contact me at stormqloud.ca about consulting.
 
 * You can check some of the files in this directory for other issues I have run into and documented.
 
