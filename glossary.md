@@ -3,6 +3,8 @@
 # 
 ## shit you need to know when people use names..
 
+# Check the glossary section also.
+
 * core kazoo => Erlang core that sup, crossbar, stepswitch, freeswitch use
 * kazoo => same as "core Kkazoo"
 * crossbar => http API that translates HTTP functions into "Core Kazoo" Erlang calls
