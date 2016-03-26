@@ -3,7 +3,9 @@
 * Kazoo has the option of using a different conference server as an URL.
   * You can always setup a simple callflow to another server also
   * If you are doing 50 people in a conference bridge you should setup a 
-    * dedicated Asterisk (hearsay, your name is Asterisk)
+    * dedicated Asterisk
+    * Everybody runs Asterisk somewhere for something.
+      * You don't have to be ashamed.  You are among friends.
 
 # Confernece options inside Kazoo for the moderator
 
