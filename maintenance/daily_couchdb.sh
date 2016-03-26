@@ -68,7 +68,7 @@ cd /
 tar -cJf ${f} srv
 echo 'password' | gpg -vvv --symmetric --batch --passphrase-fd 0 --output ${f}.gpg -c ${f}
 /root/google-cloud-sdk/bin/gcloud auth activate-service-account --key-file /root/service-account.json
-#/root/google-cloud-sdk/bin/gsutil -q cp -c ${f}.gpg gs://kazoo-backups/couchdb/
+/root/google-cloud-sdk/bin/gsutil -q cp -c ${f}.gpg gs://kazoo-backups/couchdb/
 rm ${f}
 
 # Do a little cleanup while in the vicinity..
