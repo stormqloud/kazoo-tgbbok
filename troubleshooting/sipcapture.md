@@ -10,9 +10,10 @@
 
 # Old way
 * This way is a hassle, requires far more config changes...
-  * On the plus side I'm sure it sues less CPU
+  * On the plus side I'm sure it uses less CPU
   * Less stats, ie no jitter etc
-
+  * Pollutes the regulat tcpdump when you use it
+ 
 * For Kazoo-Kamaillio 4.2 this is the patch you need
 
 ```
