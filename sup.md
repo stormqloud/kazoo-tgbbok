@@ -7,6 +7,8 @@
 * You need to understand what the SUP command does..
   * The sup command allows you to call Erlang (procedures?) from the unix cli
   * You can interact with running code like POST/GET to the REST API with sup
+   * SUP lets you bypass the "crossbar" level for simple calls.
+   * crossbar among other things converts HTTP REST calls to Erlang calls. 
  
 * Here is the master list if you want just that..
  * This is not complete 
