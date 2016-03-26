@@ -1,3 +1,10 @@
+# Conference
+
+* Kazoo has the option of using a different conference server as an URL.
+  * You can always setup a simple callflow to another server also
+  * If you are doing 50 people in a conference bridge you should setup a 
+    * dedicated Asterisk (hearsay, your name is Asterisk)
+
 # Confernece options inside Kazoo for the moderator
 
 * Option volume talk down press 1
@@ -12,3 +19,5 @@
 * Option mute press 0
 * Option deaf mute press *
 * Option hangup press #
+
+wlloyd@prodosec.com
