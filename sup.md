@@ -3,8 +3,10 @@ kazoo-tgbbok
 wlloyd@stormqloud.ca
 
 * The "SUP" command is used to interact with the Erlang server at a very low level for Kazoo.
-* Most of the functions you want are in the HTTP REST API [ie not here]  
-
+* 99% of the functions you want are available in the HTTP REST API [ie not here]  
+  * The REST API makes the Erlang calls for you.
+  * The REST to API process is "Crossbar".
+ 
 ## Help
 * You need to understand what the SUP command does..
   * The sup command allows you to call Erlang (procedures?) from the unix cli
