@@ -4,6 +4,7 @@
 ### Anybody that wants me to test their phones please send them in..
 
 #### The cost of phones is low enough that "broken" handsets should just be swapped out.  
+#### Just because a handset supports SIP vs a proprietary protocol does not mean it provides a good user experience!
 
 * Yealink
    * 2600hz really like Yealink.
