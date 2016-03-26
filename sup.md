@@ -1,6 +1,6 @@
 #SUP
-   * kazoo-tgbbok
-   * wlloyd@stormqloud.ca
+kazoo-tgbbok
+wlloyd@stormqloud.ca
 
 * The "SUP" command is used to interact with the Erlang server at a very low level for Kazoo.
 * Most of the functions you want are in the HTTP REST API [ie not here]  
