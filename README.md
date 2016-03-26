@@ -9,14 +9,14 @@ When I put it here, I'm fairly sure where to find it again.
 
 Kazoo is so large that it's easy to forget what you already learned about Kazoo.
 
-Remember, "You don't know, what you don't know". (TM some person before lawyers and coryright existed)
+Remember, "You don't know, what you don't know". (TM some person before lawyers and Coryright existed)
 
 If you are just starting Kazoo or wanting to install for the first time...
 https://github.com/stormqloud/kazoo-tgbbok/blob/master/install.md
 
 If you are a new user, play with the single sever ISO.  Install it multiple times.
 
-If you are lost, you should call/email the 2600hz folks.  They wrote the software and know it really well!!  2600hz offers a manged hosted platform.
+If you are lost, you should call/email the 2600hz folks.  They wrote the software and know it really well!!  2600hz offers a managed hosted platform.
 
 For programmers/admin/techs and others that are trying to justify their jobs by doing themselves what 2600hz can already do better, you might find some useful things here.
 
@@ -43,7 +43,7 @@ In reality you should already know about the following resources at this point.
 * Make sure to get yourself a jira login.
 * Links to jira from google will not work without a login.
 
-###Mailing list
+### Mailing list
 * `https://groups.google.com/forum/#!forum/2600hz-users`
 * Dev mailing list is not for setup questions..
 * `https://groups.google.com/forum/#!forum/2600hz-dev`
@@ -55,6 +55,10 @@ Asterisk is single server compared to the Kazoo cloud (http://www.beadaptive.ca/
 The VOIP landscape has changed since Asterisk was the only open source project.
 
 Asterisk strong point has become an embedded software suite that can be burned into disposable appliances.  It's your $99 onsite PBX box.  Asterisk is a revolutionary product for onsite.
+
+Everybody runs Asterisk already in some form, for some purpose.
+
+When you embrace Kazoo you will not be giving up Asterisk anytime soon, if ever.  Everything has it's place!
 
 ## Kazoo Again
 
