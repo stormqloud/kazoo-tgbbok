@@ -1,5 +1,5 @@
 #!/bin/sh
-# Version 0.09
+# Version 0.10
 # kazoo-tgbbok
 # stormqloud (wlloyd@prodosec.com)
 
@@ -7,7 +7,6 @@
 # and do a little MODB cleanup.
 # IE prune your couchdb database after the backup if it's the end of the month
 # and things are over 6 months.
-
 
 # Ideally for Kazoo from 2600hz.com!
 
@@ -57,19 +56,30 @@
 #>     )
 
 # the actual magic is short...
+# Tjhis will encrypt the files with password as below
 
-d=`date +%Y%m%d-%H%M`
-kd=`date +%Y%m`
+d=`date +%Y%m%d%H`
+kd=`date --date "7 months ago" +%Y%m`
+
 h=`hostname`
 f="/tmp/couchdb_${h}_${d}.tar.bz2"
 #echo $f
 cd /
 tar -cJf ${f} srv
+echo 'password' | gpg -vvv --symmetric --batch --passphrase-fd 0 --output ${f}.gpg -c ${f}
 /root/google-cloud-sdk/bin/gcloud auth activate-service-account --key-file /root/service-account.json
-/root/google-cloud-sdk/bin/gsutil -q cp -c ${f} gs://kazoo-backups/couchdb/
+#/root/google-cloud-sdk/bin/gsutil -q cp -c ${f}.gpg gs://kazoo-backups/couchdb/
 rm ${f}
 
 # Do a little cleanup while in the vicinity..
+echo 'sup kazoo_modb_maintenance archive_modbs'
 sup kazoo_modb_maintenance archive_modbs
+echo 'sup kazoo_modb_maintenance delete_modbs' ${kd}
 sup kazoo_modb_maintenance delete_modbs ${kd}
 
+# When you want to restore a copy
+# cd /tmp
+# echo 'password' | gpg --batch -q -o /tmp/couchdb_restore.tar.bz2 --passphrase-fd 0 --decrypt /tmp/file.tgz.gpg
+# mkdir /tmp/couchdb_restore
+# tar vxJf couchdb_restore.tar.bz2 --directory /tmp/couchdb_restore 
+# Now if you want to copy to /srv that's your own decision..
