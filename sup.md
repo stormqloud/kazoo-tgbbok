@@ -4,7 +4,7 @@ wlloyd@stormqloud.ca
 
 * The "SUP" command is used to interact with the Erlang server at a very low level for Kazoo.
 * 99% of the functions you want are available in the HTTP REST API [ie not here]  
-  * The REST API makes the Erlang calls for you.
+  * The REST API makes mutilple Erlang calls for each HTTP transactation..
   * The REST to API process is "Crossbar".
   * Ok, you probably missed it,
     * This is "long tail" enformation, you probably are looking for
