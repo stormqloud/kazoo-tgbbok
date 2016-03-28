@@ -6,6 +6,7 @@ wlloyd@stormqloud.ca
 * 99% of the functions you want are available in the HTTP REST API [ie not here]  
   * The REST API makes the Erlang calls for you.
   * The REST to API process is "Crossbar".
+  * https://github.com/2600hz/kazoo/tree/master/applications/crossbar/doc
  
 ## Help
 * You need to understand what the SUP command does..
