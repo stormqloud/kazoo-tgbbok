@@ -1,7 +1,7 @@
 # Growing Freeswitch in the cluster.
 
 * Freeswitch for Kazoo requires the following packages to operate
-  * kazoo-configs
+  * kazoo-configs (/etc/kazoo/freeswitch)
   * kazoo-prompts
   * kazoo-freeswitch
 
