@@ -1,5 +1,10 @@
 # Growing Freeswitch in the cluster.
 
+* Freeswitch for Kazoo requires the following packages to operate
+  * kazoo-configs
+  * kazoo-prompts
+  * kazoo-freeswitch
+
 * Understand that EcallManager connects to Freeswtich not the other way around.
   * Ecallmanager and stepswitch are Freeswtich conenction to RabbitMQ etc.
   * SIP/RTP too obviously
