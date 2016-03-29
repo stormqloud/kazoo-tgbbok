@@ -13,8 +13,12 @@
 * iptables firewall
 * install freeswitch kazoo package
 * install kazoo configs package
-* no need to install haproxy if not already there
-* ```chkconfig haproxy off --level 2345```
+
+* install haproxy if not already there
+  *  Freeswitch can use haproxy to read media files from CouchDB.
+  *  It will not fail on startup if not exist.
+  *  Occasional media might not work..
+
 * edit /etc/kazoo/freeswitch/autoload_configs/kazoo.conf.xml
   * Erlang cookie..
   *  ```<param name="cookie" value="your_erlang_cookie_goes_here" />```
