@@ -1,5 +1,5 @@
 #!/bin/bash 
-# Ver 0.04
+# Ver 0.05
 #
 # wlloyd@stormqloud.ca
 
@@ -53,17 +53,23 @@ iptables -A INPUT -p udp --dport 16384:32768 -j ACCEPT
 # SIP ALG avoidance ports..
 iptables -A INPUT -p tcp --dport 5060 -j ACCEPT
 iptables -A INPUT -p tcp --dport 5061 -j ACCEPT
+# 5064 replaces 8080
+iptables -A INPUT -p tcp --dport 5064 -j ACCEPT 
+# 5065 replaces 8443
+iptables -A INPUT -p tcp --dport 5065 -j ACCEPT 
 iptables -A INPUT -p tcp --dport 7000 -j ACCEPT
 iptables -A INPUT -p tcp --dport 7001 -j ACCEPT
-iptables -A INPUT -p tcp --dport 8080 -j ACCEPT
-iptables -A INPUT -p tcp --dport 8443 -j ACCEPT
+#iptables -A INPUT -p tcp --dport 8080 -j ACCEPT
+#iptables -A INPUT -p tcp --dport 8443 -j ACCEPT
 
 iptables -A INPUT -p udp --dport 5060 -j ACCEPT
 iptables -A INPUT -p udp --dport 5061 -j ACCEPT
+iptables -A INPUT -p udp --dport 5064 -j ACCEPT
+iptables -A INPUT -p udp --dport 5065 -j ACCEPT
 iptables -A INPUT -p udp --dport 7000 -j ACCEPT
 iptables -A INPUT -p udp --dport 7001 -j ACCEPT
-iptables -A INPUT -p udp --dport 8080 -j ACCEPT
-iptables -A INPUT -p udp --dport 8443 -j ACCEPT
+#iptables -A INPUT -p udp --dport 8080 -j ACCEPT
+#iptables -A INPUT -p udp --dport 8443 -j ACCEPT
 
 # allow all inbound traffic coming in on loopback and the internal/private interfaces
 #iptables -A INPUT -i eth0 -j ACCEPT
