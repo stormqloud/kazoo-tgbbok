@@ -1,6 +1,6 @@
 # ASR - Automatic Speech Recognition
 
-New updates Fall 2015
+New updates Spring 2016
  
 ## The other direction is TTS 
   * https://github.com/stormqloud/kazoo-tgbbok/blob/master/tts.md
