@@ -11,7 +11,11 @@
   * Kamailio is what Kazoo uses.
     * It is *key* part of the system.
 
-
+* Kamailio handles..
+  *  WebRTC (convert to SIP)
+  *  UDP SIP
+  *  TCP SIP
+  *  failover
 
 
 
