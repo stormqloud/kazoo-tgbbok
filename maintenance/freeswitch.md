@@ -8,8 +8,10 @@
 * Understand that EcallManager connects to Freeswtich not the other way around.
   * Ecallmanager and stepswitch are Freeswtich conenction to RabbitMQ etc.
   * SIP/RTP too obviously
+
 * install and config ntp and ntpdate
   * timezone is set to GMT no matter where you are in the world.  Timezones are changed in accounts.
+
 * iptables firewall
 * install freeswitch kazoo package
 * install kazoo configs package
