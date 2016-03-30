@@ -5,15 +5,18 @@
   * Bigcouch itself is very stable.  This is one part of Kazoo system stack that ALMOST NEVER gets updated (there are no updates).  
   *  The JSON files inside BigCouch get updated, the software itself, not so much
 
-* 2600hz has said (mailing list) they intend to move back to CouchDB at some point in the future
+* 2600hz has said they intend to move back to CouchDB possibly for Kazoo 4.x
   * most if not all BigCouch improvements have found their way back into mainstream CouchDB.
     * See CouchDB 2.0 https://couchdb.apache.org/developer-preview/2.0/
   * Futon has been replaced with Fauxton
   * BigCouch and CouchDB as terms are used fairly interchangably..
   * BigCouch is time tested at this point.  
-    * I doubt 2600hz will adopt CouchDB2 in 2015.
-    * high risk, low reward.
-  
+  * IBM has announced a Cloudant beta of CouchDB 2.0 with all BigCouch features
+    * https://developer.ibm.com/clouddataservices/2016/03/18/cloudant-couchdb2dot0-sandbox/
+    * The work continues!
+    * There is no upgrade path current from Bigcouch to CouchDB
+      *  CouchDB 2.0 is only for developers not production! 
+
 * CouchDB stuff you should know, or be prepared to learn the hard way
   * CouchDB databases don't shrink in space.
     * Append only (only grows in size..)
