@@ -26,6 +26,8 @@ Each port really exists twice.
 | 4369 | P | epmd
 | 5060 | | Kamailio (inbound SIP, outbound to handsets)
 | 5061 | | Kamailio TLS
+| 5064 | | Kamailio WebRTC
+| 5065 | | Kamailio WebRTC SSL
 | 5672 | P | RabbitMQ amqp main port
 | 5984 | P | CouchDB Data
 | 5986 | P | CouchDB Mgr
@@ -33,9 +35,9 @@ Each port really exists twice.
 | 7001 |  | Kamailio ALG TLS SIP
 | 8000 |  | Cowboy (API into Kazoo), Kazoo-UI uses this..
 | 8021 | P | Freeswtich Event socket
-| 8080 | | Kamailio websocket
+| 8080 | depreciated | Kamailio websocket
 | 8031 | ? | Freeswitch
-| 8443 | | Kamailio WebSocket TLS
+| 8443 | depreciated | Kamailio WebSocket TLS
 | 11000 | | Freeswitch (Kamailio Dispatcher sends to this), outbound to CARRIERS from here
 | 11500 | ? | - BigCouch used for ?
 | 15672 | P | RabbitMQ GUI (guest/guest)
