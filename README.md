@@ -92,6 +92,8 @@ REPEAT:  I still often (moves/adds/changes) extensions.conf
 
 Kazoo has emerged as the successive technology for ISP, Carriers, Service providers of all kinds.
 
+Multi-Tennant PBX (Remember these?)
+
 There is a cost however.  The Kazoo learning curve cannot be understated! 
 
 Please never say that Kazoo does not have some feature because you can't find it documented online here.  The things here are mostly personally tested under various configurations by You Know Who.
