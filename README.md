@@ -53,7 +53,7 @@ Think of it as tips and tricks once the platform is installed and you have made 
 
 This github is a set of ideas, links etc.
 
-In reality you should already know about the following resources at this point.
+You should already be familiar with the following resources at this point.
 
 #### Websites:
 * https://2600hz.com/
@@ -64,24 +64,29 @@ In reality you should already know about the following resources at this point.
 ##### Atlassian is a nightmare IMHO.  However there is a lot of info there and in Jira.
 * https://2600hz.atlassian.net/wiki/display/docs/Overview
 * Make sure to get yourself a jira login.
-* Links to jira from google will not work without a login.
+* Links to Jira from Google will not work without a login.
 
 ### Mailing list
 * `https://groups.google.com/forum/#!forum/2600hz-users`
-* Dev mailing list is not for setup questions..
+  * How do I setup? How do I turn on reseller?
 * `https://groups.google.com/forum/#!forum/2600hz-dev`
+  * Dev mailing list is not for setup questions..
 
 ## Background
 
 Asterisk is single server compared to the Kazoo cloud (http://www.beadaptive.ca/cloud-drinking-game/) platform.
 
-The VOIP landscape has changed since Asterisk was the only open source project.
+The VOIP landscape has changed since Asterisk was the only Open Source VOIP project.
 
-Asterisk strong point has become an embedded software suite that can be burned into disposable appliances.  It's your $99 onsite PBX box.  Asterisk is a revolutionary product for onsite.
+Asterisk strong point, an embedded core platorm with various gui stapled to the side, that can be burned into disposable appliances.  It's your $99 onsite PBX box.  It's the Swiss Army Knife for SIP (IAX die die die) and VOIP.
 
-Everybody runs Asterisk already in some form, for some purpose.
+Asterisk is a revolutionary product.
+
+Everybody runs Asterisk already in some form, for some purpose.  Stop thinking of Asterisk and Kazoo competing.  They are complementary products in many ways.
 
 When you embrace Kazoo you will not be giving up Asterisk anytime soon, if ever.  Everything has it's place!
+
+REPEAT:  I still often (moves/adds/changes) extensions.conf 
 
 ## Kazoo Again
 
@@ -89,7 +94,7 @@ Kazoo has emerged as the successive technology for ISP, Carriers, Service provid
 
 There is a cost however.  The Kazoo learning curve cannot be understated! 
 
-Please never say that Kazoo doesn;t have some feature because you can't find it online here.  This is documenting some features that I have personally tested under various configurations.
+Please never say that Kazoo does not have some feature because you can't find it documented online here.  The things here are mostly personally tested under various configurations by You Know Who.
 
 The best documentation is the source code.
 
