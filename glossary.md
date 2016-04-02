@@ -10,7 +10,7 @@
 * crossbar => http API that translates HTTP functions into "Core Kazoo" Erlang calls
 * kazoo-ui => web application that uses crossbar v1 API calls to control core kazoo
 * monster-ui => web app 2.0, that uses crossbar v2(v1 fallback) API calls to control core kazoo
-
+* MODB => Month Only DataBase.  IE 1 month data for 1 client.
 
 * application names can also be dound on one of my other pages...
 * 
