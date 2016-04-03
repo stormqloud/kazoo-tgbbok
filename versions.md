@@ -53,6 +53,7 @@ kazoo-freeswitch-R15B-1.4.23-0.el6.x86_64
 kazoo-configs-3.22-2.el6.noarch
 kazoo-R15B-3.22-5.el6.x86_64
 ```
+
 * 3.21-44 composite files
 ```
 kazoo-bigcouch-R15B-0.4.x-1.el6.x86_64
@@ -89,6 +90,20 @@ kazoo-prompts-3.21-1.el6.noarch
 kazoo-configs-3.21-3.el6.noarch
 kazoo-R15B-3.21-33.el6.x86_64
 kazoo-freeswitch-R15B-1.4.15-3.el6.x86_64
+kazoo-kamailio-4.2.3-16.el6.x86_64
+```
+
+* 3.20-35 composite files
+```
+kazoo-bigcouch-R15B-0.4.x-1.el6.x86_64
+kazoo-json-c-master-0.el6.x86_64
+kazoo-librabbitmq-master-1.el6.x86_64
+
+kazoo-prompts-3.20-0.el6.noarch
+kazoo-configs-3.20-4.el6.noarch
+
+kazoo-R15B-3.20-35.el6.x86_64
+kazoo-freeswitch-R15B-1.4.7-11.el6.x86_64
 kazoo-kamailio-4.2.3-16.el6.x86_64
 ```
 
