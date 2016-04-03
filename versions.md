@@ -2,7 +2,7 @@
 
 * You might want to check out the information on "upgrading" as well.
 
-* You aim to install 3.22
+*  Install 3.22 at this point
   * 3.22 Spring 2016
   * 3.21 (fall 2015)
   * 3.20 (summer 2015)
