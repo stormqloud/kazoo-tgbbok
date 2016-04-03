@@ -16,7 +16,7 @@
     * 15B is stable/running 
     * 16B is broken
     * 17.5 skip
-    * 18+ is the next target Erlang relese for Kazoo
+    * 18+ is the next target Erlang relese for Kazoo 4.0
 
 * Kamaillio 4.0 vs 4.2
  * Kamaillio flipped from 4.0 to 4.2 in the 3.18 to 3.19 version bump
