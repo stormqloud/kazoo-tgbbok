@@ -4,8 +4,9 @@
 
 # https://github.com/stormqloud/kazoo-tgbbok/blob/master/sup.md
 
-# below here comes from the output of..
-# ./sup-build-autocomplete.escript sup.complete /opt/kazoo > /root/sup_commands
+# below here comes from the output of.
+# This also sets you up for bash autocompletion.
+# ./sup-build-autocomplete.escript /etc/bash_completion.d/sup.bash /opt/kazoo > /root/sup_commands
 
 # remember this is not the exhaustive list..
 
