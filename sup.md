@@ -18,6 +18,7 @@
  
 * Here is the master list if you want just that..
  * This is not complete 
+ * Also installs for you bash autocomplete for these commands.
  * https://github.com/stormqloud/kazoo-tgbbok/blob/master/sup_commands
 
 There are too many sup commands listed in too many places so far...  The super ingenius will know how to scan the Erlang source code to sniff out their own sup commands.
