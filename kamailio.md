@@ -17,6 +17,7 @@
   *  TCP SIP
   *  failover
 
-
+ kamctl ul show --brief
+ 
 
  ##### wlloyd@prodosec.com
