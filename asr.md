@@ -12,11 +12,12 @@ New updates Spring 2016
  * Works in theory.
 
 * Option 2: ispeech.org
-  * Kazoo to isppech.org for ASR has been fixed (ya Voxter)
+  * Kazoo to ispeech.org for ASR has been fixed (yay Voxter)
   * Voxter announced at Kazoocon 2015
-  * I've not tested but I'm sure Voxter fixed the API
+  * I've not tested it on Kazoo, however
     * voice recognition is hard
-    * Just because the voice recording hits ispeech API doesn;t mean they can recogniez it!
+    * That's nothing to do with 2600hz or Kazoo.
+    * Just because the voice recording hits the ispeech API doesn't mean they can recognize it!
 
 * Option 3: google speech rec API
   * No known integration but google is doing free ASR for the moment.  Pricing to be announced after people get hooked on it.  Otherwise it will get cancelled and everybody will be screwed.
