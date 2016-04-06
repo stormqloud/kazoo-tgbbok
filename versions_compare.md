@@ -4,8 +4,10 @@
 
 * About the only thing this is useful for is to compare RPM's of kazoo-configs
   * Comparing binaries is not as useful (possibly not at all)
-  * Unlike most other things to compare RPM's on the interwebs this strategy diff's INSIDE the RPM files, not just the file name exists or not.
+  * Unlike most other things to compare RPM's on the interwebs this strategy diff's INSIDE the RPM files, not just the file name exists or not, changed yes/no.
+  * This is useful if you want to see what a new version of Kazoo RPM will do to your current install.
   
+
 ```
 wget http://repo.2600hz.com/Packages/Kazoo-Configs/CentOS_6/noarch/3.20/kazoo-configs-3.20-3.el6.noarch.rpm
 wget http://repo.2600hz.com/Packages/Kazoo-Configs/CentOS_6/noarch/3.20/kazoo-configs-3.20-4.el6.noarch.rpm
