@@ -35,7 +35,7 @@ Kazoo is so large that it's easy to forget what you already learned about Kazoo.
 Remember, "You don't know, what you don't know". (TM some person before lawyers and Coryright existed)
 
 * If you are just starting Kazoo or wanting to install for the first time...
-  * https://github.com/stormqloud/kazoo-tgbbok/blob/master/127.0.0.1.md
+  * https://github.com/stormqloud/kazoo-tgbbok/blob/master/127.0.0.1
 
 If you are a new user, play with the single sever ISO.  Install it multiple times.
 
