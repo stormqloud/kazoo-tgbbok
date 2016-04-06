@@ -1,6 +1,6 @@
 # Your Journey with Kazoo
 
-#### It's not the destination, it's the journey.
+> It's not the destination, it's the journey.
 ### True, but let's try this again.
 #### You plant a Kazoo seed, and the damn thing needs water..
 ### Lies, damn lies
