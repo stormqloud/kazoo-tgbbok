@@ -2,7 +2,9 @@
 
 * Adventures with Calling Card Callback Platform
   * This module can do callback and dialthrough despite the name.
-
+  * DISA and dialthrought are the same thing.
+  * DISA is also available as a callflow action.
+  
 * CouchDB
   * CCCP seems to store things in a couple of spots in couchdb if you want to go looking
     * Inside a new CouchDB database called cccps
