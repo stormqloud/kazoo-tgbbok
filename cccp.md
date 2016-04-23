@@ -8,6 +8,7 @@
     * Inside a new CouchDB database called cccp
     * Docs are also created inside the account of the user using cccp.
   * You NEED to go looking inside system_config/cccp (which you need to create)
+    * Modify below to your information...
 
 ```
 {
