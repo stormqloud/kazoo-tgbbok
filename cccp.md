@@ -6,10 +6,14 @@
   * DISA is also available as a callflow action.
     *  DISA callflow is not as secure or full featured. 
   
+
+## Kazoo Cluster CCCP Setup
+
 * CouchDB and cccp
   * cccp seems to store things in a couple of spots in couchdb where you want to go looking
     * Inside a new CouchDB database called cccps
     * Docs are also created inside the account of the user using cccp.
+
   * You NEED to go looking inside system_config/cccp (which you need to create)
     * Modify below to your information...
 
@@ -19,6 +23,7 @@
 * cccp_cb_number <- this is the DID to use for CALLBACK servier for all Kazoo accounts and users!
 * cccp_cc_number <- this is the DID to use for DIALTHROUGH for all Kazoo accounts and users!
   * You CANNOT user the same number for both services.
+
 * ensure_valid_caller_id <- Will try to check that the caller ID wanted for outbound is "allowed"
 * default_caller_id_number <- whenever outbound caller_id selection has an issue, it will grab this
   * This is a Kazoo cluster wide value not account level information
@@ -45,17 +50,29 @@
 
 ```
 
-
-
 * this will enable the modules you need.
 * Make a config first.
 ```
 sup whistle_maintenance hotload cccp
 sup crossbar_maintenance start_module cb_cccps
 ```
-  
 
+## Account Level CCCP Setup
 
+* Consult the original source for more information https://github.com/onnet/cccp/blob/master/doc/usage.md
+
+```
+curl -X PUT -H X-Auth-Token:{AUTH_TOKEN} https://{SERVER}:8443/v1/accounts/{ACCOUNT_ID}/cccps -d \
+'{"data":{"pin":"150674729083", \
+"outbound_cid":"+78122404700", \
+"user_id":"e6da57c768533ebf0d349845394ccf26", "active":true}}'
+
+curl -X PUT -H X-Auth-Token:{AUTH_TOKEN} http://{SERVER}:8000/v1/accounts/{ACCOUNT_ID}/cccps -d \
+'{"data":{"pin":"150674729083", \
+"outbound_cid":"+78122404700", \
+"user_id":"e6da57c768533ebf0d349845394ccf26", "active":true}}'
+
+```
 
 
 # Callflows DISA module..
