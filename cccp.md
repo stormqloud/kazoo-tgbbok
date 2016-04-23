@@ -22,6 +22,7 @@
   * This module can do callback and dialthrough despite the name.
   * DISA and dialthrough are the same thing.
   * DISA is also available as a callflow action.
+    *  DISA callflow and CCCP are 100% independant of each other.
     *  DISA callflow is not as secure or full featured. 
   
 
