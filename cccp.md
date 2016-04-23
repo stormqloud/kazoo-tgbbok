@@ -2,7 +2,7 @@
 
 * Adventures with Calling Card Callback Platform
   * This module can do callback and dialthrough despite the name.
-  * DISA and dialthrought are the same thing.
+  * DISA and dialthrough are the same thing.
   * DISA is also available as a callflow action.
   
 * CouchDB
@@ -12,6 +12,9 @@
   * You NEED to go looking inside system_config/cccp (which you need to create)
     * Modify below to your information...
 
+  * The system_config/cccp doc contains the "link into the DID" to watch for.
+  * In cccp a DID is not owned by anyones callflow.
+  
 ```
 {
    "_id": "cccp",
