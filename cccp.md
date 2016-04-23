@@ -4,9 +4,10 @@
   * This module can do callback and dialthrough despite the name.
   * DISA and dialthrough are the same thing.
   * DISA is also available as a callflow action.
+    *  DISA callflow is not as secure or full featured. 
   
-* CouchDB
-  * CCCP seems to store things in a couple of spots in couchdb if you want to go looking
+* CouchDB and cccp
+  * cccp seems to store things in a couple of spots in couchdb where you want to go looking
     * Inside a new CouchDB database called cccps
     * Docs are also created inside the account of the user using cccp.
   * You NEED to go looking inside system_config/cccp (which you need to create)
@@ -15,12 +16,19 @@
   * The system_config/cccp doc contains the "link into the DID" to watch for.
   * In cccp a DID is not owned by anyones callflow.
   
+* cccp_cb_number <- this is the DID to use for CALLBACK servier for all Kazoo accounts and users!
+* cccp_cc_number <- this is the DID to use for DIALTHROUGH for all Kazoo accounts and users!
+  * You CANNOT user the same number for both services.
+* ensure_valid_caller_id <- Will try to check that the caller ID wanted for outbound is "allowed"
+* default_caller_id_number <- whenever outbound caller_id selection has an issue, it will grab this
+  * This is a Kazoo cluster wide value not account level information
+
 ```
 {
    "_id": "cccp",
    "default": {
        "cccp_cb_number": "5142223333",
-       "cccp_cc_number": "5142223333",
+       "cccp_cc_number": "5141115555",
        "last_number_redial_code": "*0",
        "ensure_valid_caller_id": true,
        "default_caller_id_number": "+15140000000",
