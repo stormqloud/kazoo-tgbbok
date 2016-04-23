@@ -5,7 +5,7 @@
 
 * CouchDB
   * CCCP seems to store things in a couple of spots in couchdb if you want to go looking
-    * Inside a new CouchDB database called cccp
+    * Inside a new CouchDB database called cccps
     * Docs are also created inside the account of the user using cccp.
   * You NEED to go looking inside system_config/cccp (which you need to create)
     * Modify below to your information...
