@@ -76,3 +76,5 @@ sup crossbar_maintenance start_module cb_cccps
    "pvt_node": "whistle_apps@test.stormqloud.com"
 }
 ```
+
+wlloyd@stormqloud.ca
