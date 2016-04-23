@@ -1,6 +1,23 @@
 # CCCP
 
 * Adventures with Calling Card Callback Platform
+  * High level overview.  
+    * This module operates in a very uesful but uncommon way in Kazoo. 
+    * You take 2 DID's and make them *CLUSTER WIDE* for CCCP.
+     * One DID is for Callback
+     * One DID is for Dialthrough/DISA
+    * There are 2 types of client records
+      * caller_id records
+      * pin_records
+      * You can see both types through views in cccps database
+    * If you call call the callback number, your caller ID must exist in the database as a caller_id record
+      * It will call you back and give you a dialtone
+    * If you call the dialthrough number
+      * If it knows your caller_id, it will give you a dialtone
+      * Otherwise it will ask you for a code (PIN)
+        * Make sure you use 10 digit PINS.  Serious!
+        * If you enter a valid PIN it will give you a dialtone.
+
   * This module can do callback and dialthrough despite the name.
   * DISA and dialthrough are the same thing.
   * DISA is also available as a callflow action.
