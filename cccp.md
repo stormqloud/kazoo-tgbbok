@@ -77,9 +77,14 @@ sup whistle_maintenance hotload cccp
 sup crossbar_maintenance start_module cb_cccps
 ```
 
-## Account Level CCCP Setup
+## Account/User Level CCCP Setup
 
 * Consult the original source for more information https://github.com/onnet/cccp/blob/master/doc/usage.md
+
+* Lets say that Bob with a cellphone of 15149072508 wants to use the dialthrough with the caller_id +15149072511.
+   * You need to get the auth_token to be able to have access to do the transacion.
+   * You are "mapping" the external caller_id or PIN to a PBX account and user.
+   * Must use a 10 digit or more pin.
 
 ```
 curl -X PUT -H X-Auth-Token:{AUTH_TOKEN} https://{SERVER}:8443/v1/accounts/{ACCOUNT_ID}/cccps -d \
