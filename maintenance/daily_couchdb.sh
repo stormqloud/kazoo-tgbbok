@@ -1,5 +1,5 @@
 #!/bin/sh
-# Version 0.14
+# Version 0.15
 # kazoo-tgbbok
 # stormqloud (wlloyd@prodosec.com)
 
@@ -69,6 +69,7 @@ dest="gs://kazoo-backups/couchdb/${h}/${subdir}/"
 #echo $dest
 cd /
 tar -cJf ${f} srv
+tar --append -cJf ${f} etc/kazoo
 echo ${password} | gpg -vvv --symmetric --batch --passphrase-fd 0 --output ${f}.gpg -c ${f}
 /root/google-cloud-sdk/bin/gcloud auth activate-service-account --key-file /root/service-account.json
 /root/google-cloud-sdk/bin/gsutil -q cp -c ${f}.gpg ${dest}
