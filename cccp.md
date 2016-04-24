@@ -73,8 +73,12 @@
 * this will enable the modules you need.
 * Make a config first.
 ```
-sup whistle_maintenance hotload cccp
+sup whapps_controller start_app cccp
 sup crossbar_maintenance start_module cb_cccps
+
+check..
+sup whapps_controller running_apps
+
 ```
 
 ## Account/User Level CCCP Setup
