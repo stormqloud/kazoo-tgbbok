@@ -20,6 +20,7 @@
  * This is not complete 
  * Also installs for you bash autocomplete for these commands.
  * https://github.com/stormqloud/kazoo-tgbbok/blob/master/sup_commands
+ * whapps_controller are missing from this list..
 
 There are too many sup commands listed in too many places so far...  The super ingenius will know how to scan the Erlang source code to sniff out their own sup commands.
 
