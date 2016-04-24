@@ -3,7 +3,8 @@
 
 * Adventures with Calling Card Callback Platform
   * High level overview.  
-    * This module operates in a very uesful but uncommon way in Kazoo. 
+    * This module operates in a very useful but uncommon way in Kazoo. 
+      * This has cluster level elements and account level elements
     * You take 2 DID's and make them *CLUSTER WIDE* for CCCP.
      * One DID is for Callback
      * One DID is for Dialthrough/DISA
