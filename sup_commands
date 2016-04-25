@@ -6,6 +6,8 @@
 
 # below here comes from the output of.
 # This also sets you up for bash autocompletion.
+# Only works on 3.21+
+# cd /opt/kazoo/scripts/
 # ./sup-build-autocomplete.escript /etc/bash_completion.d/sup.bash /opt/kazoo > /root/sup_commands
 
 # remember this is not the exhaustive list..
