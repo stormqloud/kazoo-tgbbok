@@ -140,8 +140,8 @@ sup whistle_amqp_maintenance remove_broker Broker
 sup whistle_amqp_maintenance validate_assignments 
 sup whistle_media_maintenance import_prompt Path
 sup whistle_media_maintenance import_prompt Path Lang
-sup whistle_media_maintenance import_prompts Path
-sup whistle_media_maintenance import_prompts Path Lang
+sup whistle_media_maintenance import_prompts DirPath
+sup whistle_media_maintenance import_prompts DirPath Lang
 sup whistle_media_maintenance migrate 
 sup whistle_media_maintenance migrate_prompts 
 sup whistle_media_maintenance refresh 
@@ -351,7 +351,8 @@ sup notify_account_crawler handle_info 'next_account' [Account|Accounts]
 sup notify_account_crawler handle_info 'next_account' []
 sup notify_account_crawler handle_info _Info State
 sup notify_account_crawler init []
-sup notify_account_crawler low_balance_threshold Account
+sup notify_account_crawler low_balance_threshold AccountId
+sup notify_account_crawler low_balance_threshold AccountJObj
 sup notify_account_crawler start_link 
 sup notify_account_crawler terminate _Reason _State
 sup notify_maintenance check_initial_call Account
