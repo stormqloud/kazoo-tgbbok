@@ -25,16 +25,30 @@
  * mature voip project, use the canned stuff!
  * No reason to maintain local changes unless you are a developer
 
+```# rpm -qa | grep -i 'kaz\|monster' | sort```
+
+* Monster or Kazoo-UI versions vs Kazoo versions.
+  * These are loosely coupled..
+  * Having a consistent Kazoo itself is the starting point
+  * then you can worry about your monster versions.
+
+
 * 3.22-56
 kazoo-bigcouch-R15B-0.4.x-1.el6.x86_64
-kazoo-json-c-master-0.el6.x86_64
-kazoo-prompts-3.22-0.el6.noarch
 kazoo-configs-3.22-15.el6.noarch
-kazoo-kamailio-4.3.4-8.el6.x86_64
 kazoo-freeswitch-R15B-1.4.26-0.el6.x86_64
+kazoo-json-c-master-0.el6.x86_64
+kazoo-kamailio-4.3.4-8.el6.x86_64
 kazoo-librabbitmq-master-1.el6.x86_64
-kazoo-R15B-3.22-51.el6.x86_64
+kazoo-prompts-3.22-0.el6.noarch
+kazoo-R15B-3.22-56.el6.x86_64
 
+monster-ui-accounts-3.22-7.el6.noarch
+monster-ui-core-3.22-26.el6.noarch
+monster-ui-numbers-3.22-3.el6.noarch
+monster-ui-pbxs-3.22-4.el6.noarch
+monster-ui-voip-3.22-13.el6.noarch
+monster-ui-webhooks-3.22-3.el6.noarch
 
 * 3.22-51
 kazoo-bigcouch-R15B-0.4.x-1.el6.x86_64
