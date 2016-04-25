@@ -46,7 +46,7 @@
   * You can assign this DID to a cccp specific account
     *  dialthrough has 1 leg of CDR that needs to be tracked. 
 * cccp_cc_number <- this is the DID to use for DIALTHROUGH/DISA for all Kazoo accounts and users!
-  * You CANNOT user the same number for both services.
+  * You CANNOT use the same number for both services.
 
 * ensure_valid_caller_id <- Will try to check that the caller ID wanted for outbound is "allowed"
 * default_caller_id_number <- whenever outbound caller_id selection has an issue, it will grab this
