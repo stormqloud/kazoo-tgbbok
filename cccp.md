@@ -95,13 +95,15 @@ sup whapps_controller running_apps
    * Must use a 10 digit or more pin.
 
 ```
-curl -X PUT -H X-Auth-Token:{AUTH_TOKEN} https://{SERVER}:8443/v1/accounts/{ACCOUNT_ID}/cccps -d \
-'{"data":{"pin":"150674729083", \
+curl -X PUT -H X-Auth-Token:{AUTH_TOKEN} https://{SERVER}:8443/v1/accounts/{ACCOUNT_ID}/cccps \
+-H "Content-Type:application/json" \
+-d '{"data":{"pin":"150674729083", \
 "outbound_cid":"+78122404700", \
 "user_id":"e6da57c768533ebf0d349845394ccf26", "active":true}}'
 
-curl -X PUT -H X-Auth-Token:{AUTH_TOKEN} http://{SERVER}:8000/v1/accounts/{ACCOUNT_ID}/cccps -d \
-'{"data":{"pin":"150674729083", \
+curl -X PUT -H X-Auth-Token:{AUTH_TOKEN} http://{SERVER}:8000/v1/accounts/{ACCOUNT_ID}/cccps \
+-H "Content-Type:application/json" \
+-d '{"data":{"pin":"150674729083", \
 "outbound_cid":"+78122404700", \
 "user_id":"e6da57c768533ebf0d349845394ccf26", "active":true}}'
 
