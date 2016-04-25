@@ -40,8 +40,12 @@
   * The system_config/cccp doc contains the "link into the DID" to watch for.
   * In cccp a DID is not owned by anyones callflow.
   
-* cccp_cb_number <- this is the DID to use for CALLBACK servier for all Kazoo accounts and users!
-* cccp_cc_number <- this is the DID to use for DIALTHROUGH for all Kazoo accounts and users!
+* cccp_cb_number <- this is the DID to use for CALLBACK for all Kazoo accounts and users!
+  * You need to assign (number manager or otherwise) this DID to the master account
+  * OR
+  * You can assign this DID to a cccp specific account
+    *  dialthrough has 1 leg of CDR that needs to be tracked. 
+* cccp_cc_number <- this is the DID to use for DIALTHROUGH/DISA for all Kazoo accounts and users!
   * You CANNOT user the same number for both services.
 
 * ensure_valid_caller_id <- Will try to check that the caller ID wanted for outbound is "allowed"
