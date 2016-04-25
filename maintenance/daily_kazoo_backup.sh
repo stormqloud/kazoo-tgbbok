@@ -1,7 +1,12 @@
 #!/bin/sh
-# Version 0.15
+# Version 0.20
 # kazoo-tgbbok
 # stormqloud (wlloyd@prodosec.com)
+
+# This script will backup CouchDB and /etc/kazoo 
+# They will be encrypted and uploaded to Google Cloud Storage
+# They will not be sotred with absolute path names.  
+# This should prevent you from blowing away your real config on a restore..
 
 # To backup BigCouchDB to Google Cloud Storage
 # and do a little MODB cleanup.
