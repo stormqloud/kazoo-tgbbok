@@ -24,6 +24,11 @@
 * Kazoo will cache a copy of the audio stream as a wav file inside of couchdb before you ever hear it.
   * In general you "save money" because each IVR message is only purchased once, but used over and over.
 
+* If you need to add in a pause to the TTS enter that as ...
+  * IF you wanted to say "Hello" (pause) "thanks for calling".
+  * You send the TTS "Hello ... Thanks for calling".
+
+
 Paying ispeech solves the TTS issue. 
 
 SIP trunks.
