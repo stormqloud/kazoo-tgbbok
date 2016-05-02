@@ -11,3 +11,10 @@
 
 * My understanding is Rabbit clustering is not used for Kazoo Federation/zones
   * Have been known to be wrong
+
+http://www.of.rabbit:15672/
+
+username guest
+password guest
+
+wlloyd@stormqloud.ca
