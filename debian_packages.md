@@ -1,12 +1,9 @@
 # Debian packages
 
 * copy packages from one server to another..
-
-To backup:
-
-sudo dpkg --get-selections > /tmp/dpkglist.txt
-To Restore:
-
-sudo dpkg --set-selections < /tmp/dpkglist.txt
-sudo apt-get -y update
-sudo apt-get dselect-upgrade
+ * sudo apt-get install apt-clone
+ * apt-clone clone foo
+* Copy foo.apt-clone.tar.gz to the new machine and run
+ * sudo apt-get install apt-clone
+ * sudo apt-clone restore foo.apt-clone.tar.gz
+ * 
