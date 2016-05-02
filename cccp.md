@@ -12,12 +12,12 @@
       * caller_id records
       * pin_records
       * You can see both types through views in cccps database
-    * If you call call the callback number, your caller ID must exist in the database as a caller_id record
+    * If you call the callback number, your caller ID must exist in the database as a caller_id record
       * It will call you back and give you a dialtone
     * If you call the dialthrough number
       * If it knows your caller_id, it will give you a dialtone
       * Otherwise it will ask you for a code (PIN)
-        * Make sure you use 10 digit PINS.  Serious!
+        * Make sure you use 10 digit PINS.  Serious! Sorter is ignored.
         * If you enter a valid PIN it will give you a dialtone.
 
   * This module can do callback and dialthrough despite the name.
