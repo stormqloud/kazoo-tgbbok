@@ -1,5 +1,5 @@
 #!/bin/sh
-# Version 0.21
+# Version 0.22
 # kazoo-tgbbok
 # stormqloud (wlloyd@prodosec.com)
 
