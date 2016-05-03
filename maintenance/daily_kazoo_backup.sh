@@ -21,7 +21,7 @@
 
 # Run this daily on each BigCouchDB server.
 # Like this in cron..
-# 0 8 * * * /bin/sh /root/daily_couchdb.sh
+# 0 8 * * * /bin/sh /root/daily_kazoo_backup.sh
 # FYI, your big couch server should be setup for GMT(insert PC name) timezone.
 
 # Signup for Google Compute Account.  You get 90 days free.
