@@ -2,7 +2,12 @@
 
 * You might want to check out the information on "upgrading" as well.
 
-*  Install 3.22 at this point
+* Kazoo 4.0
+  * Better than Beta
+  * If you are new install this
+  * If you currently run 3.22 in production, stay there for now.
+ 
+* Kazoo 3.x
   * 3.22 Spring 2016
   * 3.21 (fall 2015)
   * 3.20 (summer 2015)
