@@ -37,7 +37,7 @@ Each port really exists twice.
 | 8021 | P | Freeswtich Event socket
 | 8080 | depreciated | Kamailio websocket
 | 8031 | ? | Freeswitch
-| 8443 | depreciated | Kamailio WebSocket TLS
+| 8443 | P | HTTPS for the Kazoo API, old Kamailio WebSocket TLS
 | 11000 | | Freeswitch (Kamailio Dispatcher sends to this), outbound to CARRIERS from here
 | 11500 | ? | - BigCouch used for ?
 | 15672 | P | RabbitMQ GUI (guest/guest)
