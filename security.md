@@ -9,9 +9,13 @@
  * https://2600hz.atlassian.net/wiki/display/Dedicated/Secure+Your+REST+APIs+with+SSL
  * https://groups.google.com/forum/#!searchin/2600hz-dev/syslog/2600hz-dev/KGI6ss580Gg/xG_pmfblZzUJ
  
+* You can also use haproxy or nginx to proxy the HTTPS into HTTP 
+  * This avoids much of the complecity you see here.
+  * I have not tried this approach, but it's also a good way to approach the issue.
+
 * Extra notes
- * You can use Kazoo with certbot.org (ie free certs)
- * Use certbot to create the certs. It creates all certs as "pem files"
+ * You can use Kazoo with certbot.eff.org (ie free certs)
+ * Use Certbot to create the certs. It creates all certs as "pem files"
    * These files work with Kazoo without issues
    * I just renamed them..
  * reload crossbar (changing the cert) etc
@@ -35,7 +39,12 @@ cp /etc/letsencrypt/live/testkazoo.prodosec.com/privkey.pem /opt/kazoo/applicati
 ```
 
 * Make a daily certbot crontab..
+  * Certbot certificates are valid for 90 days only
+  * You need a daily cron job to renew your certs
+  * If they are still under 80 days it, the job will do nothing.
+  * IF the cert gets replaced then the renew-hook gets called.
 ```
+# sample cron job entry.
 23 4 * * * /opt/certbot/certbot-auto renew --renew-hook "/opt/certbot/certbot-kazoo.sh"
 ```
 
