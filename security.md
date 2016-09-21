@@ -1,8 +1,9 @@
 # Security
 
 * SSL 
- * Warning, self signed certificates are useless in this case for Kazoo
- * The API calls will silently fail in your browser
+ * Warning, self signed certificates are basically useless for Kazoo
+ * The API calls will silently fail in your browser because the cert is not part of a chain
+   *  Because the requests come from jacascript your browser will not ask you to accept the key.. 
  * Get a real cert or use certbot etc to start with
    *  It's your time to waste, you have been warned. 
  * https://2600hz.atlassian.net/wiki/display/Dedicated/Secure+Your+REST+APIs+with+SSL
