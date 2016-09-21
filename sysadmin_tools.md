@@ -16,4 +16,9 @@
  * you might have this installed on your Kamaillio and FreeSwitch machines
   *  and enough resources to run it!
 
+## SIPCAPTURE/HOMER
+  * Capture and log SIP packets for later analysis
+  * Hard to setup but can be very useful to see why a client got a BUSY yesterday
+   * http://sipcapture.org/
+
 http://stormqloud.ca
