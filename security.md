@@ -14,6 +14,9 @@
  * Use certbot to create the certs. IT creates all as "pem files"
    * These files work with Kazoo without issues
 
+ * reload crossbar (changing the cert) etc
+   * `sup whapps_controller restart_app crossbar`
+
 * All *USER* that logs into Kazoo will need to be upgraded to change their application defaults in the user 'doc'
 
 ```
