@@ -9,7 +9,7 @@
  * Use certbot to create the certs. IT creates all as "pem files"
    * These files work with Kazoo without issues
    * 
-   ```
+```
 cp /etc/letsencrypt/live/testkazoo.prodosec.com/cert.pem /opt/kazoo/applications/crossbar/priv/ssl/crossbar.crt
 cp /etc/letsencrypt/live/testkazoo.prodosec.com/privkey.pem /opt/kazoo/applications/crossbar/priv/ssl/crossbar.key
 ```
