@@ -34,4 +34,19 @@ cp /etc/letsencrypt/live/testkazoo.prodosec.com/privkey.pem /opt/kazoo/applicati
 
 ```
 
+* Make a daily certbot crontab..
+```
+23 4 * * * /opt/certbot/certbot-auto renew --renew-hook "/opt/certbot/certbot-kazoo.sh"
+```
+
+
+* Certbot restart script hook for kazoo
+```
+#!/bin/sh
+# certbot-kazoo.sh
+/bin/cp /etc/letsencrypt/live/kazoo.prodosec.com/cert.pem /opt/kazoo/applications/crossbar/priv/ssl/crossbar.crt
+/bin/cp /etc/letsencrypt/live/kazoo.prodosec.com/privkey.pem /opt/kazoo/applications/crossbar/priv/ssl/crossbar.key
+sup whapps_controller restart_app crossbar
+```
+
 http://www.stormqloud.ca
