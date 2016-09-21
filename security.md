@@ -1,6 +1,10 @@
 # Security
 
 * SSL 
+ * Warning, self signed certificates are useless in this case for Kazoo
+ * The API calls will silently fail in your browser
+ * Get a real cert or use certbot etc to start with
+   *  It's your time to waste, you have been warned. 
  * https://2600hz.atlassian.net/wiki/display/Dedicated/Secure+Your+REST+APIs+with+SSL
  * https://groups.google.com/forum/#!searchin/2600hz-dev/syslog/2600hz-dev/KGI6ss580Gg/xG_pmfblZzUJ
  
@@ -23,3 +27,5 @@ cp /etc/letsencrypt/live/testkazoo.prodosec.com/privkey.pem /opt/kazoo/applicati
 /bin/sed -i s/'api.stormqloud.ca'/'api2.stormqloud.ca'/g /var/www/html/kazoo-ui/config/config.js
 
 ```
+
+http://www.stormqloud.ca
